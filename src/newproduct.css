@@ -1,6 +1,6 @@
 .picture{
   max-width: 15rem;
-   height: 5rem;
+   height: 10rem;
    margin: auto;
 }
 .picture__product{
@@ -8,8 +8,8 @@ width: 100%;
 object-fit: cover;
 }
 .picture__product{
-    width: 15rem;
-    height: 10rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -68,7 +68,7 @@ flex-wrap: wrap;
 }
 
  .productWrapper p{
-    margin-top: 6rem;
+    margin-top: 1rem;
 } 
 .moreLink{
     text-decoration: none;
@@ -113,9 +113,24 @@ flex-wrap: wrap;
 
     
     
-    }
+    }}
+
+     @media (max-width:350px) {
+
+        .productWrapper{
+            width: 14rem;
+            height: 20rem;
+          
+           
+        }
+        .picture{
+            max-width: 12rem;
+             
+          }
   
 }
+
+   
 
 
 

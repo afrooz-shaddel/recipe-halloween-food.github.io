@@ -378,20 +378,21 @@
                     justify-content:space-evenly;
         }
         .createButton button{
-            width: 5rem;
+            width: 4rem;
             font-size: 0.75rem;
+            height: 2rem;
             
         }
     
         .createButton{
-            margin-left: 10rem;
+            margin-left: 8rem;
         }
     
     
     }
     @media screen and (max-width:370px) {
         .createButton{
-            margin-left: 7rem;
+            margin-left: 4rem;
         }
     }
     
