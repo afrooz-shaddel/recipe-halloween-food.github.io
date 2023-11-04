@@ -41,7 +41,7 @@
 
 .menu{
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     /* text-transform: capitalize; */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -61,7 +61,7 @@
     cursor: pointer;
     color: #fff;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 .active1{
     background-color: #ff673e;

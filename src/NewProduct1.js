@@ -27,7 +27,7 @@ export default function NewProduct1({product ,color}){
 {product && product.map(({id , title ,cookingTime , img="/product/default3.jfif" })=>{
   
   return<div   key={id}>
- <div className='productWrapper'   >
+ <div className='productWrapper'  data-aos="fade-up"   >
  <h2 className='productWrapper-title'>{title}</h2>
  <div className='picture'>
     <img  className='picture__product' src={img} alt="" />   </div>
