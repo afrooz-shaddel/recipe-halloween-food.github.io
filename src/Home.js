@@ -1,6 +1,6 @@
 import { useFetch } from "./hook/useFetch";
 import Search1 from "./Search1";
-import { BsFillSearchHeartFill} from "react-icons/bs";
+
 import { useNavigate  , Link} from "react-router-dom";
 import  './home.css';
 import { CiLight } from "react-icons/ci";
