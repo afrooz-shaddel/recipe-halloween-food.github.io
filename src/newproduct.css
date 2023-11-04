@@ -1,0 +1,122 @@
+.picture{
+  max-width: 15rem;
+   height: 5rem;
+   margin: auto;
+}
+.picture__product{
+width: 100%;
+object-fit: cover;
+}
+.picture__product{
+    width: 15rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+
+.wrapperProduct{
+    display: flex;
+    /* margin-top: 3rem; */
+justify-content: space-between;
+flex-wrap: wrap;
+
+
+}
+.productWrapper{
+    width: 18rem;
+    height: 20rem;
+    border-radius: 20px 5px 15px 15px;
+  
+    text-align: center;
+    margin-top: 1rem;
+    box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.productWrapper:first-child{
+    margin-top: 2rem;
+}
+
+.darkMode .productWrapper {
+    /* background-color: #af00ff17; */
+    background-image: linear-gradient(90deg , #fd556b , #ff8e80);
+    /* background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa); */
+     background-image: linear-gradient(90deg , #65799b , #5e2563); 
+}
+
+.lightMode .productWrapper {
+    background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa);
+    /* background-image: linear-gradient(90deg , #fd556b , #ff8e80); */
+    /* background-image: linear-gradient(90deg , #C5EEE2 , #f9D4F4); */
+    background-image: linear-gradient(90deg , #f4c4ec , #f38181);
+}
+
+.darkMode .productWrapper{ box-shadow:  2px 2px 5px rgba(255, 255, 255, 0.15)}
+
+
+.productWrapper button{
+    outline: none;
+   border: 1px solid salmon;
+   background-color: white;
+   display: block;
+   width: 15rem;
+   height: 3rem;
+
+}
+.productWrapper button:hover{
+    background-color:salmon ;
+    transition: all 300ms ease-in-out;
+    color: #fff;
+}
+
+ .productWrapper p{
+    margin-top: 6rem;
+} 
+.moreLink{
+    text-decoration: none;
+    color: #fff;
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid beige;
+    /* box-shadow: 2px 2px 2px bisque; */
+    display: block;
+    margin: 1rem auto;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+}
+
+.moreLink:hover{
+   color: black;
+   background-color: beige;
+}
+
+.productWrapper-title , .productWrapper-time{
+    color: #fff;
+    font-size: 1rem;
+    padding-top: 0.75rem;
+}
+
+.darkMode .moreLink {
+    background-color: #af00ff17;
+    border: none;
+    box-shadow: 2px 1px 1px beige;
+}
+
+.lightMode .moreLink {
+    background-color:#de879f4a;
+    
+}
+
+@media (max-width:768px) {
+
+    .wrapperProduct{
+    
+    justify-content:center;
+
+    
+    
+    }
+  
+}
+
+
+
+

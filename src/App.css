@@ -1,0 +1,252 @@
+
+/* * , *::after , *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  height:100vh!important;
+  background-color: #c7cbe4!important;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  overflow-y: scroll;
+
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+li , ul{list-style-type: none;}
+
+.darkMode {
+  background-color: #3e2949f0;
+  color: #fff;
+}
+
+
+.lightMode {
+  background-color: #c7cbe4;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 2px;
+}
+::-webkit-scrollbar-track{
+  background: #e5e8ec;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+  background:transparent;
+  border-top: 60px solid rgb(235, 125, 15);
+ 
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+.searchlight{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 1rem ;
+  top: 5rem;
+}
+.searchBox{
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.searchBox-icon{
+  color: black;
+}
+
+
+.toggleBtn{
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  box-shadow: 2px 2px 12px #35dca069;
+ border: none;
+  /* box-shadow: 2px 2px 4px #eee; */
+/* }
+
+.toggleBtn svg {
+  display: block;
+  margin: auto;
+  
+} */ 
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* , *::after , *::before{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body{
+  height:100vh!important;
+  background-color: #c7cbe4!important;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  overflow-y: scroll;
+
+}
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+li , ul{list-style-type: none;}
+
+.darkMode {
+  background-color: #3e2949f0;
+  color: #fff;
+}
+
+
+.lightMode {
+  background-color: #c7cbe4;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 2px;
+}
+::-webkit-scrollbar-track{
+  background: #e5e8ec;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+  background:transparent;
+  border-top: 60px solid rgb(235, 125, 15);
+ 
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+.searchlight{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 1rem ;
+  top: 5rem;
+}
+.searchBox{
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.searchBox-icon{
+  color: black;
+}
+
+
+.toggleBtn{
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 12px #35dca069;
+          box-shadow: 2px 2px 12px #35dca069;
+ border: none;
+  /* box-shadow: 2px 2px 4px #eee; */
+}
+
+.toggleBtn svg {
+  display: block;
+  margin: auto;
+  
+}

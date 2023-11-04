@@ -1,0 +1,103 @@
+/* 
+
+.plotColor{
+    position: absolute;
+    right: 1rem;
+}
+
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .colorMode{
+    display:flex ;
+    justify-content:space-between ;
+    align-items: center;
+  /* margin-bottom: 2rem; */
+  /* }
+
+  .homeWrapper{
+   
+    max-width: 900px;
+    /* height: 100vh; */
+    /* background-color: aliceblue;
+    margin: 2rem auto;
+    background-image: linear-gradient(90deg,#d57589 ,#ffc7a3);
+    box-shadow: -77px 77px 105px 23px  #b09bd4;
+    border-radius: 15px;
+  }
+
+
+  .darkMode .homeWrapper {
+    /* background-color: #af00ff17; */
+    /* background-image: linear-gradient(90deg , #561f26 , #af00ff17);
+    background-color: #af00ff17;
+}  */ 
+
+
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
+.plotColor{
+  position: absolute;
+  right: 1rem;
+}
+
+
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.colorMode{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex ;
+  -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between ;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+/* margin-bottom: 2rem; */
+}
+
+.homeWrapper{
+ 
+  max-width: 900px;
+  /* height: 100vh; */
+  background-color: aliceblue;
+  margin: 2rem auto;
+  background-image: -webkit-gradient(linear,left top, right top,from(#d57589) ,to(#ffc7a3));
+  background-image: -o-linear-gradient(left,#d57589 ,#ffc7a3);
+  background-image: linear-gradient(90deg,#d57589 ,#ffc7a3);
+  -webkit-box-shadow: -77px 77px 105px 23px  #b09bd4;
+          box-shadow: -77px 77px 105px 23px  #b09bd4;
+  border-radius: 15px;
+}
+
+
+.darkMode .homeWrapper {
+  /* background-color: #af00ff17; */
+  background-image: -webkit-gradient(linear , left top, right top , from(#561f26) , to(#af00ff17));
+  background-image: -o-linear-gradient(left , #561f26 , #af00ff17);
+  background-image: linear-gradient(90deg , #561f26 , #af00ff17);
+  background-color: #af00ff17;
+}
+
+  

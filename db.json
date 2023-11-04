@@ -1,0 +1,53 @@
+{
+    "recipes":[
+
+        {
+            "id":"1",
+            "title":"Gazpacho",
+            "ingredients":[
+                "1 carrot",
+                "1 leek",
+                "200g Tofu",
+                "3000ml veg stock"
+
+            ],
+            "method":"1.Pre-heat the oven to 200c/3c/gas 5. ",
+            "cookingTime":"45 minute"
+        },
+
+        {
+            "id":"2",
+            "title":"Paella",
+            "ingredients":[
+                "1  onion",
+                " bell pepper",
+                " garlic",
+                "tomatoes",
+                "parsley"
+                    
+               
+
+            ],
+            "method":"Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+            "cookingTime":"30 minute"
+        },
+
+        {
+            "id":"3",
+            "title":"Bacalao",
+            "ingredients":[
+            "1 pound bacalao",
+            " 2 tayotas",
+            " medium red onion ",
+            " cloves garlic", 
+            " bell pepper",
+             "large tomato", 
+            " egg "
+               
+
+            ],
+            "method":"Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+            "cookingTime":"55 minute"
+        }
+    ]
+} 
