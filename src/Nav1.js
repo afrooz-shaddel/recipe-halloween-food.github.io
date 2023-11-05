@@ -64,7 +64,7 @@ window.addEventListener("scroll" , controlNavbar)
               <Link to="/create"  className="createButton"   >
         
            
-             <button>recipi</button>
+             <button>recipe</button>
               </Link>
               </div>
          
