@@ -32,25 +32,15 @@ const[open ,setOpen]=useState(false)
    }
 
   //  const [showDark , setShowDark]=useState(false);
-  //  useEffect(()=>{
-  //      window.addEventListener("scroll" , ()=>{
-  //          if(window.scrollY>0){
-  //           setShowDark(true)
-  //          }else{
-  //           setShowDark(false) 
-  //          }
-  //      })
-  //      AOS.init({  duration : 2000});
+   useEffect(()=>{
+       
+   
+       AOS.init({  duration : 2000});
       
-  //  },[])
+   },[])
    
    useEffect(()=>{
-    // if( show ){
-    //   document.body.style.overflow='hidden';
-
-    // }else{
-    //   document.body.style.overflow='unset';
-    // }
+  
     setRecipie(data)
     
    },[data])

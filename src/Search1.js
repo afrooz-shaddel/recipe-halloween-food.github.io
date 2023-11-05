@@ -8,22 +8,34 @@ import { useNavigate } from "react-router-dom";
 import NewProduct1 from "./NewProduct1";
 import { BiChevronDown } from "react-icons/bi";
 import NotFound from "./NotFound";
+import AOS from "aos";
 export default function Search1(){
+  
 const[filter1 ,setFilter1]=useState([])
 const[alert ,setAlert]=useState("")
 const [found , setFound]=useState(false)
+const[recipie , setRecipie]=useState("")
 
 const {data}=useFetch(' http://localhost:3000/recipes')
  
 let elemenRef=useRef(null)
 
-useEffect(()=>{   if(elemenRef.current.value==="" ){
-        setFilter1(data)   
+ 
+useEffect(()=>{ 
+  setRecipie(data) 
+  
+  if(elemenRef.current.value==="" ){
+        setFilter1(recipie)   
     }
+
 },[data])
+useEffect(() => {
+  AOS.init({  duration : 2000});
+}, [])
+
 function changeHandeler(e){
   let newSearch=e.target.value
-    const newFilter=data.filter((item)=>item.title.toLowerCase().includes(newSearch.toLowerCase()))
+    const newFilter=recipie.filter((item)=>item.title.toLowerCase().includes(newSearch.toLowerCase()))
     console.log(newFilter)
     console.log(filter1)
     const newFilter2=data.some((item)=>item.title.toLowerCase().includes(newSearch.toLowerCase()))

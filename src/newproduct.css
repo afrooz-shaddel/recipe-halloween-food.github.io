@@ -115,10 +115,10 @@ flex-wrap: wrap;
     
     }}
 
-     @media (max-width:350px) {
+     @media (max-width:320px) {
 
         .productWrapper{
-            width: 14rem;
+           max-width: 15rem;
             height: 20rem;
           
            
