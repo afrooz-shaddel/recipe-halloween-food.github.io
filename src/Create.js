@@ -113,7 +113,7 @@ else{
               
                
                     <input type="text"   onChange={(e)=>setNewIngredient(e.target.value)} value={newIngredient} placeholder='ingredient'   />
-                    <button  type='submit'  className='addbtn' onClick={submitbtnHandeler1}>add</button>
+                    <button  type='submit'  className='addbtn' onClick={submitbtnHandeler1}>Add</button>
                     
          
 

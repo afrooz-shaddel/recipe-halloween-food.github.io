@@ -28,42 +28,36 @@ export default function Recipes(){
                 <p className="recepi-title">{data.title}</p>
 
 {
-       data.img && <div className='picture50'>
-        <div>
-
-          <img src="" alt="" />
- 
-         
-        </div>
+       data.img && 
+        
         <div className="recipie-img">
-        <img src={data.img}  alt=""/>
+        <img src={data.img} className="img-fluid" alt=""/>
         </div>
-        <p className="recipe-method">This easy Halloween cake recipe is ideal for a last-minute party as it's simply a matter of decorating two ready-made Victoria sponge cakes with black icing and this slimy white chocolate 'drip'. The black and green icings create a dramatic effect that guests will love, and it tastes delicio</p>
-      
-     
-         </div>
+         
       } 
-            <div className="background20">
-              
-                <p className="recepi-time"> <BiSolidTimeFive/> :  {data.cookingTime}</p>
-                {/* <h1>How to make  {data.title}</h1> */}
-                {/* <button onClick={()=>setBtnShow(!btnShow)}>more</button> */}
 
-                <p>{data.method}</p>
+<p className="recipe-method">This easy Halloween cake recipe is ideal for a last-minute party as it's simply a matter of decorating two ready-made Victoria sponge cakes with black icing and this slimy white chocolate 'drip'. The black and green icings create a dramatic effect that guests will love, and it tastes delicio</p>
+<p className="recepi-time  center"> <BiSolidTimeFive /> :  {data.cookingTime}</p> 
+
+           
+              
+               
+              
+
+              
                
              
      
-            </div>
-        
-          
-            <p className="recepi-ingredient">what ingredients do i need for {data.title}?</p>
+           
+            <p className="recepi-ingredient center">what ingredients do i need for {data.title}?</p>
      
       {allData.ingredients && allData.ingredients!==undefined &&  (<ul>{allData.ingredients.map(item=>(
-              <li> <BiCheck  className="color"/>{item}</li>
+              <li className="ingredients-item"> <BiCheck  className="color"/>{item}</li>
             ))}</ul>)}
+            <p className="recipe-method center">{data.method}</p> 
         </div>
       }
-        </div>) }
+      </div>) }
 
 </> )
 }

@@ -1,7 +1,10 @@
+@import "./fonts/fonts.css";
+
 .picture{
   max-width: 15rem;
    height: 10rem;
    margin: auto;
+   width: 100%;
 }
 .picture__product{
 width: 100%;
@@ -26,7 +29,7 @@ flex-wrap: wrap;
     width: 18rem;
     height: 20rem;
     border-radius: 20px 5px 15px 15px;
-  
+  font-family: "Roboto Medium";
     text-align: center;
     margin-top: 1rem;
     box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2);
@@ -83,15 +86,15 @@ flex-wrap: wrap;
     font-size: 1rem;
 }
 
-.moreLink:hover{
-   color: black;
-   background-color: beige;
-}
 
 .productWrapper-title , .productWrapper-time{
     color: #fff;
-    font-size: 1rem;
+    
     padding-top: 0.75rem;
+}
+.productWrapper-title{
+    font-family: "Roboto";
+    font-size: 1.3rem;
 }
 
 .darkMode .moreLink {

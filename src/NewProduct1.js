@@ -19,13 +19,15 @@ export default function NewProduct1({product ,color}){
    AOS.init({  duration : 2000});
  }, [])
 
+
   
  return(
 
 
 <div className='wrapperProduct container'   >
-{product && product.map(({id , title ,cookingTime , img="/product/default3.jfif" })=>{
-  
+{product.length>0  && product!==undefined &&
+ product.map(({id , title ,cookingTime , img="/product/default3.jfif" })=>{
+  {console.log(product)}
   return<div   key={id}>
  <div className='productWrapper'  data-aos="fade-up"   >
  <h2 className='productWrapper-title'>{title}</h2>

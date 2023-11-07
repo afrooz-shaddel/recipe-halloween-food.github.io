@@ -1,48 +1,14 @@
-/* .menu{
-    font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    /* text-transform: capitalize; */
-    /* display: flex;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+@font-face{
+    font-family: "Robto";
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
 }
-
- .menuItem{
-    padding:0.3rem 1rem;
-    cursor: pointer;
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.9rem;
+@font-face{
+    font-family: "Archivo Black";
+    src: url("./fonts/Archivo/Archivo-Black.ttf");
 }
-.active1{
-    background-color: #ff673e;
-    box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.menuItem:hover{
-    background-color: rgb(56, 13, 83);
-    color: #fff;
-}
-
-.darkMode .active1 {
-    /* background-color: #af00ff17; */
-    /* background-image: linear-gradient(90deg , #fd556b , #ff8e80);
-    background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa);
-    background-color: #af00ff17;
-} / / */
-
-/* .lightMode .active1{
-    background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa);
-    background-image: linear-gradient(90deg , #fd556b , #ff8e80);
-} */
-
-
 .menu{
     font-size: 1rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    /* text-transform: capitalize; */
+    font-family:"Archivo Black";
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -85,3 +51,12 @@
     background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa);
     background-color: #af00ff17;
 }
+
+
+@media screen and (max-width:406px) {
+    .menuItem{
+        padding:0.3rem 0.5rem;
+    
+        font-weight: 300;
+        font-size: 1rem;
+    }}

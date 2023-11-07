@@ -1,186 +1,4 @@
-/* .nav2{
-    width: 100%;
-   
-    display: flex;
- 
-    align-items: center;
-  
-   
-    justify-content: space-between;
-  
-  
-  
-  
-}
-
-.nav{
- 
-   
-   max-width: 1300px;
-   margin: 0 auto ;
-   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
- 
-  
-}
-
-.onBlur{
-    filter:blur(7px)
-}
-.offBlur{
-    filter:blur(0px)
-}
-
-
-.hambergurMenue{
-    color: rgb(7, 125, 17);
-    color: darkslateblue;
-    font-size: 2.5rem;
-    display: none;
-}
-.navItem{
-    display: flex;
-    
-}
-
-.createButton button{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem;
-}
-
-
-.createButton{
-   
-    font-size: 4rem;
-    color: #970b6b91;
-   
-   
-    cursor: pointer;
-    margin-left: 14rem;
-    text-decoration: none;
-   
-}
-
-.createButton button{
-    background-color:  #ff5722;
-    border:1px solid #fff;
-   display: block;
-   height: 2rem;
-   color: #fff;
-   text-transform: capitalize;
-   width: 7rem;
-   height: 2.3rem;
-   border-radius: 1rem;
-   border: 1px solid orange;
-  
-} 
-
-.imageIcon{
-    width: 4.3rem;
-}
-
-
-.searchBox{
-    display: flex;
-    
-}
-
-.searchBox label{
-    font-size: 1.2rem;
-}
-
-.searchBox input{
-    outline: none;
-}
-
-.foodLogo{
- width:4rem;
- height: 4rem;
- display: block;
-}
-.logoText{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-
-
-.foodLogo img{
-    width: 100%;
-    height: 100%;
-}
-
-.logoText h3{
-    color: green;
-    font-family: serif;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-
-
-.BiChevronDown  {
-  font-size: 2.5rem;
-    transform: translate(-50%, -50%);
-    transition: top 1.5s linear;
-    position: fixed;
-    top:-50%;
-    left: 50%;
-    z-index: 2;}
-
-    .BiChevronDown:hover{
-        border-radius: 50%;
-        background-color: rgba(179, 177, 175, 0.375);
-        width: 2rem;
-        height: 2rem;
-  
-    }
-
-.ma{
-    top:14%;}
-
-    .md{
-        opacity: 0;
-        
-    }
-
-
-
-    .darkMode nav {
-        background-color: #3e2949f0;
-        color: #fff;
-        box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
-      }
-      
-      
-      .lightMode nav{
-        background-color: #c7cbe4;
-      }
-
-@media screen and (max-width:480px) {
-    .nav2{
-        justify-content:space-evenly;
-    }
-    .createButton button{
-        width: 5rem;
-        font-size: 0.75rem;
-        
-    }
-
-    .createButton{
-        margin-left: 10rem;
-    }
-
-
-}
-@media screen and (max-width:370px) {
-    .createButton{
-        margin-left: 7rem;
-    }
-}
-
-     
-     
-     */
+@import "./fonts/fonts.css";
 
 
      .nav2{
@@ -247,8 +65,8 @@
     }
     
     .createButton button{
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 1.2rem;
+        font-family: "Archivo Black";
+        font-size: 1rem;
     }
     
     
@@ -265,7 +83,7 @@
     }
     
     .createButton button{
-        background-color:  #ff5722;
+        background-color:  #E76F51;
         border:1px solid #fff;
        display: block;
        height: 2rem;
@@ -321,7 +139,7 @@
     
     .logoText h3{
         color: green;
-        font-family: serif;
+        font-family: "Roboto";
         font-size: 1.2rem;
         font-weight: bold;
     }
