@@ -1,18 +1,22 @@
 import { useFetch } from "./hook/useFetch";
 import Search1 from "./Search1";
-
+import Cart from "./Cart";
 import { useNavigate  , Link} from "react-router-dom";
 import  './home.css';
-import { CiLight } from "react-icons/ci";
+// import { CiLight } from "react-icons/ci";
 import Menu from "./Menu";
-import {MdDarkMode} from "react-icons/md";
+// import {MdDarkMode} from "react-icons/md";
 import AOS from 'aos';
 import NewProduct1 from "./NewProduct1";
 import {contexData} from './CreatContext2';
 import { useContext, useState , useEffect} from "react";
 import PoletColor from "./PoletColor";
+import './fonts/fonts.css'
+// import {typewriter-effect} from 'typewriter-effect'
+import Typewriter from "typewriter-effect";
 
 import ScrollToTop from './ScrollToTop'
+import Loader from "./Loader";
 
 export default function Home(){
  const {data ,  isLoading , error}=useFetch(' http://localhost:3000/recipes')
@@ -64,8 +68,35 @@ const[open ,setOpen]=useState(false)
 
 
     return(
- 
-        <div  className="homeWrapper">
+      <>
+    
+      <div  className="homeHeaderPicture">
+    
+      {/* <img   src="\picture\Burger-scaled-1.jpg" alt="" /> */}
+      <img src="\icon\1 (1).jpg" alt="" />
+      <p className="headerType"> 
+      
+      <Typewriter
+          onInit={Typewriter=>{
+            Typewriter.typeString('The Best Recipes')
+            .start()
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Halloween food')
+            .start()
+            .pauseFor(2000)
+          }}
+          options={{
+            loop: true
+          }}
+          
+          />
+      
+      </p>
+    </div>
+        {/* <div  className="homeWrapper">
+
+         
         
 
 
@@ -79,7 +110,7 @@ const[open ,setOpen]=useState(false)
          
                   <PoletColor key={item} color={item} clicked={()=>clickHandeler(item)}  />
           ))}
-          </div>
+          </div> */}
 
 
          {/* { showDark && <div   className="searchlight" >
@@ -107,10 +138,10 @@ const[open ,setOpen]=useState(false)
 
 
 
-          </div>
-          <div>
+          {/* </div> */}
+          {/* <div>
             <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…G8xwFNtzzmTJib6h2LuYHngaxmTIZZt7JPiTJkyd1MZ1M/9k=" alt="" />
-          </div>
+          </div> */}
           
 
           
@@ -119,18 +150,33 @@ const[open ,setOpen]=useState(false)
         
         
 
-              <div>
+              {/* <div>
                  <Menu   allMenu={category} filter1={filterMenu} />
               </div>
             {recipie && 
             <div>
         
                   <NewProduct1  color={color2}   product={recipie}/>
-            </div>}
+            </div>} */}
+
+            {/* // <div>
+            
+            // </div> */}
        
       
         
+        {/* </div> */}
+
+        <Cart/>
+{/* 
+        <div style={{width:"1400" }}>
+          <img style={{width:"100%" , objectFit:"cover" , height:"15rem"}}  src="\new\download (3).jpg" alt="" />
+          <img src="\new\download (2).jpg" alt="" style={{width:"100%" , objectFit:"cover" , height:"15rem"}} />
         </div>
+       */}
+
+        
+        </>
    
 
     )

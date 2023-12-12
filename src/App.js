@@ -2,7 +2,7 @@ import  React , {useEffect , useState ,useMemo} from 'react';
 import {BrowserRouter ,Routes ,Route} from 'react-router-dom';
 import { Button } from '@mui/material';
 
-
+import Gallery from './Gallery';
 import Home from './Home';
 import Create from './Create';
 import { BsFillSearchHeartFill} from "react-icons/bs";
@@ -15,6 +15,7 @@ import Recipes  from './Recipes';
 import Search1 from './Search1';
 import { useContext } from 'react';
 import {contexData} from './CreatContext2';
+import Allrecipes from './Allrecipes';
 
 import './App.css'
 
@@ -93,8 +94,11 @@ useEffect(()=>{
      <Routes>
       <Route   path='/'      element={< Home/>  } />
       <Route  path='/create'   element={  <Create/>}/>
+      <Route  path='/gallery'   element={  <Gallery/>}/>
+      <Route  path='/allrecipes'   element={  <Allrecipes/>}/>
       <Route  path='/search1'   element={  <Search1/>}/>
       <Route  path='/recipes/:id'   element={  <Recipes/>}/>
+
      </Routes>
 
    

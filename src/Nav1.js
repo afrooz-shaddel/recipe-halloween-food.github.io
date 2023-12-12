@@ -50,12 +50,21 @@ window.addEventListener("scroll" , controlNavbar)
                 <Link to='/'  className="logoText">
                  
                         <div  className="foodLogo">
-                        <img src="\hollowin\download__1_-removebg-preview (3).png" alt=""  />
+                        <img src="\gift\download__1_-removebg-preview (1).png" alt=""  />
+                        
                         </div>
-                    
-                    <h3>Food</h3>
+                        <h3>Food</h3>
                     
                    
+                    
+                   
+                </Link>
+
+                <Link  to="/gallery" >
+                    <p>gallery</p>
+                </Link>
+                <Link  to="/allrecipes" >
+                    <p>Allrecipes</p>
                 </Link>
      
             

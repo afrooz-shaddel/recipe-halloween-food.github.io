@@ -102,6 +102,7 @@ html {
   position: fixed;
   right: 1rem ;
   top: 5rem;
+  z-index: 999;
 }
 .searchBox{
   margin-top: 1rem;
@@ -110,13 +111,14 @@ html {
 }
 
 .searchBox-icon{
-  color: black;
+  color: orangered;
 }
 
 
 .toggleBtn{
-  width: 2.9rem;
-  height: 2.9rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 999;
   border-radius: 50%;
   -webkit-box-shadow: 2px 2px 12px #35dca069;
           box-shadow: 2px 2px 12px #35dca069;

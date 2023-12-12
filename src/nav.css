@@ -84,6 +84,7 @@
     
     .createButton button{
         background-color:  #E76F51;
+        background-color: #fe5d42;
         border:1px solid #fff;
        display: block;
        height: 2rem;
@@ -117,7 +118,7 @@
     }
     
     .foodLogo{
-     width:4rem;
+     width:5rem;
      height: 4rem;
      display: block;
     }
@@ -142,6 +143,7 @@
         font-family: "Roboto";
         font-size: 1.2rem;
         font-weight: bold;
+        margin-top: 1.2rem;
     }
     
     

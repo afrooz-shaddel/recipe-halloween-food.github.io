@@ -1,0 +1,105 @@
+.swiper-img{
+    width: 10rem;
+    height: 15rem;
+}
+
+body{
+    background-color: blue;
+}
+.galleryTitle{
+    font-size: 2rem;
+    text-align: center;
+    color: orangered;
+    color:#fe5d42;
+    margin-top: 2rem;
+}
+
+Swiper{
+    width: 100%;
+}
+
+.swiper {
+    width: 300px;
+    height: 320px;
+    margin-top: 3rem;
+  }
+  .swiper img{
+    width: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    /* color: #fff; */
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    position: relative;
+}
+  
+   .swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 74);
+  } 
+   
+  .swiper-slide:nth-child(2n) {
+    background-color: orangered;
+  }
+  
+  .swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+  }
+  
+  .swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+  }
+  
+  .swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+  }
+  
+  .swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+  }
+  
+  .swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+  }
+  
+  .swiper-slide:nth-child(8n) {
+    background-color: rgb(255, 128, 0);
+  }
+  
+  .swiper-slide:nth-child(9n) {
+    background-color: rgb(236, 101, 236);
+  }
+  
+  .swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+  }
+
+
+ .heart{
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    transition: 0.1s all ease-in-out ;
+    -webkit-transition: 0.1s all ease-in-out ;
+    -moz-transition: 0.1s all ease-in-out ;
+    -ms-transition: 0.1s all ease-in-out ;
+    -o-transition: 0.1s all ease-in-out ;
+} 
+
+ .heart:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}

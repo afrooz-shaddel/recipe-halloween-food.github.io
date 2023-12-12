@@ -1,0 +1,46 @@
+import './cart.css';
+import { useEffect } from 'react';
+import './fonts/fonts.css'
+import AOS from 'aos';
+
+export default function Cart(){
+    useEffect(() => {
+        AOS.init({  duration : 2000});
+      }, [])
+     
+    return(
+        <div className='cartWrapper container'>
+        <div className="linkpicture " data-aos="fade-up"  >
+        <img src="\icon\ghosts 1 .jpg" alt="" />
+        <p className="linkpicture-title">design food for kids</p>
+        <p className='linkpicture-dis'>Easy Halloween Party Food Ideas</p>
+          </div>
+          <div className="linkpicture" data-aos="fade-up" >
+        <img src="\icon\halloween_dinos_copy.webp" alt="" />
+        <p className="linkpicture-title"> Healthy Halloween </p>
+        <p className='linkpicture-dis'> 10 Easy and Healthy Treats!</p>
+          </div>
+        <div className="linkpicture" data-aos="fade-up" >
+        <img src="\gift\images (3).jpg" alt="" />
+        <p className="linkpicture-title">Quick & Easy </p>
+        <p className='linkpicture-dis'>Quick & Easy Halloween Treats 
+</p>
+          </div>
+    
+          
+
+
+
+
+
+
+{/* 40 Halloween Dinner Ideas - Best Recipes for Halloween 2022 */}
+
+
+
+
+      
+      </div>
+
+    )
+}
