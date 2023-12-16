@@ -6,7 +6,8 @@ import { useEffect, useRef, useState  , useContext} from "react";
 
 import {contexData} from './CreatContext2'
 import { MdFoodBank} from "react-icons/md"
-
+import { FaBars } from "react-icons/fa";
+import { AiOutlineClose } from "react-icons/ai";
 import {BiChevronDown} from "react-icons/bi";
 import { IoCreate } from "react-icons/io5";
 // import {IoFastFoodOutline} from 'react-icons/io'
@@ -18,31 +19,13 @@ export default function Nav1(){
     let[isOpen , setIsOpen]=useState(false)
 let [showButton , setShowButton]=useState(false)
 const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexData);
- let refData=useRef(null)
 
- let refData3=useRef(null)
- const controlNavbar=()=>{
-    if(window.scrollY>100){
-        setIsOpen(false)
-    }else{
-        setIsOpen(true)
-    }
- }
-window.addEventListener("scroll" , controlNavbar)
-//  useEffect(()=>{
-//   window.addEventListener("scroll" , controlNavbar)
-//   return()=>{
-//     window.removeEventListener('scroll' , controlNavbar)
-//   }
-
-//  },[])
- 
 
     return(<>
         <BiChevronDown className={show ?'BiChevronDown  ma ':'BiChevronDown md '}    onClick={()=>setShow(!show)} /> 
        
 <nav   className='nav'  style={{backgroundColor:color2}} >
-        <div className="container"    >
+        {/* <div className="container"    > */}
             <div className="nav2"  >
 
             
@@ -50,7 +33,7 @@ window.addEventListener("scroll" , controlNavbar)
                 <Link to='/'  className="logoText">
                  
                         <div  className="foodLogo">
-                        <img src="\gift\download__1_-removebg-preview (1).png" alt=""  />
+                        <img src="\gift\New folder\images__2_-removebg-preview (1).png" alt=""  />
                         
                         </div>
                         <h3>Food</h3>
@@ -59,25 +42,43 @@ window.addEventListener("scroll" , controlNavbar)
                     
                    
                 </Link>
+                <div className={isOpen?'navMobile active':"navMobile"}>
 
-                <Link  to="/gallery" >
+                
+
+                <Link onClick={()=>{
+                    setIsOpen(false)
+                }}   className="linknav"  to="/gallery" >
                     <p>gallery</p>
                 </Link>
-                <Link  to="/allrecipes" >
-                    <p>Allrecipes</p>
+                <Link onClick={()=>{
+                    setIsOpen(false)
+                }} className="linknav" to="/allrecipes" >
+                    <p>Recipes</p>
                 </Link>
-     
+
+                {/* <Link onClick={()=>{
+                    setIsOpen(false)
+                }} className="linknav" to="/contact" >
+                    <p>Contact</p>
+                </Link> */}
+                </div>
             
        
 
               <Link to="/create"  className="createButton"   >
         
            
-             <button>recipe</button>
+             <button>create</button>
               </Link>
+                <button  className="btnBar"  onClick={()=>setIsOpen(!isOpen)}>
+ {isOpen? <AiOutlineClose  className="hambergurmenu "/>: <FaBars  className="hambergurmenu"  /> }    
+                </button>
+              {/* <FaBars className="hambergurmenu"   /> */}
+               
               </div>
          
-            </div>
+            {/* </div> */}
    
        
 

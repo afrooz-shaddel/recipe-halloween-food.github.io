@@ -9,7 +9,9 @@ export default function Cart(){
       }, [])
      
     return(
-        <div className='cartWrapper container'>
+      <>
+      {/* <p>Services</p> */}
+        <div className='cartWrapper '>
         <div className="linkpicture " data-aos="fade-up"  >
         <img src="\icon\ghosts 1 .jpg" alt="" />
         <p className="linkpicture-title">design food for kids</p>
@@ -20,27 +22,16 @@ export default function Cart(){
         <p className="linkpicture-title"> Healthy Halloween </p>
         <p className='linkpicture-dis'> 10 Easy and Healthy Treats!</p>
           </div>
-        <div className="linkpicture" data-aos="fade-up" >
+        <div className="linkpicture right" data-aos="fade-up" >
         <img src="\gift\images (3).jpg" alt="" />
         <p className="linkpicture-title">Quick & Easy </p>
         <p className='linkpicture-dis'>Quick & Easy Halloween Treats 
 </p>
           </div>
     
-          
-
-
-
-
-
-
-{/* 40 Halloween Dinner Ideas - Best Recipes for Halloween 2022 */}
-
-
-
-
+      
       
       </div>
-
+      </>
     )
 }

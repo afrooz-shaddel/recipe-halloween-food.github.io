@@ -47,7 +47,7 @@ export default function NewProduct1({product ,color}){
    
  <h2 className='productWrapper-title'>{title}</h2>
 
-<GoHeartFill  className='heart' color={like?'#f90018':"white"}  onClick={()=>likeHandeler(id)} />  
+
 
 
  
@@ -58,7 +58,7 @@ export default function NewProduct1({product ,color}){
 
  <p className='productWrapper-time'>CookingTime: {cookingTime}</p>
 
-    <Link  className='moreLink' to={`/recipes/${id}`} onClick={()=>setShow(false)}   >show recipie</Link>
+    <Link  className='moreLink' to={`/recipes/${id}`} onClick={()=>setShow(false)}   >show recipe</Link>
   
 
 

@@ -72,8 +72,8 @@ const[open ,setOpen]=useState(false)
     
       <div  className="homeHeaderPicture">
     
-      {/* <img   src="\picture\Burger-scaled-1.jpg" alt="" /> */}
-      <img src="\icon\1 (1).jpg" alt="" />
+     
+       <img src="\icon\1 (1).jpg" alt="" />
       <p className="headerType"> 
       
       <Typewriter
@@ -92,88 +92,13 @@ const[open ,setOpen]=useState(false)
           
           />
       
-      </p>
-    </div>
-        {/* <div  className="homeWrapper">
-
-         
-        
-
-
-            { isLoading && <div>isloading.......</div>}
-            {error  &&  <div>{error}</div>}
-          <div   className="container  colorMode"  >
-
-          <div style={{display:"flex" , marginTop:"2rem"}}>
-            {  colors.map(item=>(
+      </p> 
      
+    </div>
          
-                  <PoletColor key={item} color={item} clicked={()=>clickHandeler(item)}  />
-          ))}
-          </div> */}
 
-
-         {/* { showDark && <div   className="searchlight" >
-          <div data-aos="fade-up">
-            <button   className="toggleBtn" onClick={()=>{theme=="light"?setTheme("dark")  :setTheme("light") }}>
-                 {theme=="light" ?<MdDarkMode/> :<CiLight/>}
-        
-            </button>
-            </div>
-          
-
-            {/* <div  className="searchBox"  onClick={()=>{ navigate("/search1")}}  data-aos="fade-up" >
-             <BsFillSearchHeartFill    />
-             {/* {show && < Search1/>} */}
-             {/* </div> */}
-
-             {/* <Link to="/search1"   className="searchBox"   >
-        
-             <BsFillSearchHeartFill  className="searchBox-icon"   />
-         </Link>
-
-
-            
-          </div>} */} 
-
-
-
-          {/* </div> */}
-          {/* <div>
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…G8xwFNtzzmTJib6h2LuYHngaxmTIZZt7JPiTJkyd1MZ1M/9k=" alt="" />
-          </div> */}
-          
-
-          
-      
-        
-        
-        
-
-              {/* <div>
-                 <Menu   allMenu={category} filter1={filterMenu} />
-              </div>
-            {recipie && 
-            <div>
-        
-                  <NewProduct1  color={color2}   product={recipie}/>
-            </div>} */}
-
-            {/* // <div>
-            
-            // </div> */}
        
-      
-        
-        {/* </div> */}
-
-        <Cart/>
-{/* 
-        <div style={{width:"1400" }}>
-          <img style={{width:"100%" , objectFit:"cover" , height:"15rem"}}  src="\new\download (3).jpg" alt="" />
-          <img src="\new\download (2).jpg" alt="" style={{width:"100%" , objectFit:"cover" , height:"15rem"}} />
-        </div>
-       */}
+    <Cart/> 
 
         
         </>

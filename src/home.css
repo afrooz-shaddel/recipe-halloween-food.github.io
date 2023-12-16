@@ -55,8 +55,8 @@
 
 .homeHeaderPicture{
   /* width: 1400px; */
-  height: 30rem;
-  width: 1200px;
+  height: 40rem;
+  /* width: 1600px; */
 }
 .homeHeaderPicture img{
   width: 100%;
@@ -67,7 +67,7 @@
 
 .headerType{
   position: absolute;
-  top:11rem;
+  top:16rem;
   left: 30%;
   color:orangered;
   color: #fe5d42;
@@ -81,13 +81,20 @@
 }
 
 
-.linkpicture{
-  width: 1400px;
+
+
+
+
+  @media screen and (max-width:768px) {
+   
+    .headerType{
+
+      top:16rem;
+   left: 0;
+      font-size: 3rem;
+      right: 0;
+      font-weight: bold;
+    }
+
+
 }
-
-.linkpicture{
-  width: 100%;
-}
-
-
-  

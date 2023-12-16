@@ -79,14 +79,30 @@ margin: 3rem auto;
 .moreLink{
     text-decoration: none;
     color: #fff;
-    width: 6rem;
-    height: 2rem;
+    width: 8rem;
+    height: 2.4rem;
     border: 1px solid beige;
-    /* box-shadow: 2px 2px 2px bisque; */
-    display: block;
+    border-radius: 7px;
+    /*box-shadow: 2px 2px 2px bisque;
+    */display: block;
     margin: 1rem auto;
+    padding-top: 0.5rem;
     transition: all 0.3s ease-in-out;
     font-size: 1rem;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.moreLink:hover{
+    border: 2px solid #fd556b;
+    color:#5e2563;
 }
 
 

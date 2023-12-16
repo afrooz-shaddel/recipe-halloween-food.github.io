@@ -16,6 +16,7 @@ import Search1 from './Search1';
 import { useContext } from 'react';
 import {contexData} from './CreatContext2';
 import Allrecipes from './Allrecipes';
+import Contact from './Contact/Contact';
 
 import './App.css'
 
@@ -98,10 +99,10 @@ useEffect(()=>{
       <Route  path='/allrecipes'   element={  <Allrecipes/>}/>
       <Route  path='/search1'   element={  <Search1/>}/>
       <Route  path='/recipes/:id'   element={  <Recipes/>}/>
-
+      <Route  path='/contact'   element={  <Contact/>}/>
      </Routes>
 
-   
+   <Contact/>
 
     </BrowserRouter>
 

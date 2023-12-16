@@ -116,13 +116,13 @@ else{
                     <button  type='submit'  className='addbtn' onClick={submitbtnHandeler1}>Add</button>
                     
          
-
+                    </div>
                 <ul  className="ingredientList">
-       <p> ingredient:</p> { ingredients.map(item=><li className='itemIngredients'   key={item}>{item}</li>)}
+       <span> ingredient:</span> { ingredients.map(item=><li className='itemIngredients'   key={item}>{item}</li>)}
                 
                   
                    </ul>
-            </div>
+            
          { submit && ingredients.length<2 && ( <span className='textunder'>please Enter ingredients of food</span>)}
 
         
