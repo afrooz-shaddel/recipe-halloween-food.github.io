@@ -38,7 +38,7 @@
 }
 .linkpicture-title{
     width: 12rem;
-    margin: auto;
+    /* margin: auto; */
     border-bottom: 3px dashed rgb(255, 64, 0);
     font-family: 'Archivo ';
     font-size: 1.2rem;

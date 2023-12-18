@@ -45,7 +45,7 @@ export default function NewProduct1({product ,color}){
   return<div   key={id}>
  <div className='productWrapper'  data-aos="fade-up"   >
    
- <h2 className='productWrapper-title'>{title}</h2>
+
 
 
 
@@ -55,7 +55,7 @@ export default function NewProduct1({product ,color}){
  <div className='picture'>
     <img  className='picture__product' src={img} alt="" />   </div>
  
-
+    <h2 className='productWrapper-title'>{title}</h2>
  <p className='productWrapper-time'>CookingTime: {cookingTime}</p>
 
     <Link  className='moreLink' to={`/recipes/${id}`} onClick={()=>setShow(false)}   >show recipe</Link>

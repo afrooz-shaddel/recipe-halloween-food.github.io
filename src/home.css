@@ -31,7 +31,7 @@
 
 .homeWrapper{
  
-  max-width: 1100px;
+  max-width: 1300px;
   /* height: 100vh; */
   background-color: aliceblue;
   margin: 2rem auto;
@@ -55,7 +55,7 @@
 
 .homeHeaderPicture{
   /* width: 1400px; */
-  height: 40rem;
+  height: 35rem;
   /* width: 1600px; */
   background-image: url(./holloween/1.jpg);
 
@@ -75,7 +75,7 @@
 
 .headerType{
   position: absolute;
-  top:20rem;
+  top:15rem;
   left: 30%;
   color:orangered;
   color: #fe5d42;

@@ -31,14 +31,15 @@
     font-size: 1.2rem;
 }
 .active1{
-    background-color: #ff673e;
-    -webkit-box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
-            box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
+    /* background-color: #ff673e; */
+    border-bottom: 4px solid #ff673e ;
+    /* -webkit-box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2); */
 }
 
 
 .menuItem:hover{
-    background-color: rgb(56, 13, 83);
+    background-color:#ff673e;
     color: #fff;
 }
 

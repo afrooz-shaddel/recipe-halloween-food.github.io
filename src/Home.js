@@ -18,6 +18,7 @@ import Typewriter from "typewriter-effect";
 
 import ScrollToTop from './ScrollToTop'
 import Loader from "./Loader";
+import AutoPlay from "./holloween/AutoPlay/AutoPlay";
 
 export default function Home(){
  const {data ,  isLoading , error}=useFetch(' http://localhost:3000/recipes')
@@ -107,6 +108,8 @@ const[open ,setOpen]=useState(false)
 </Link>
     </div>
 
+
+{/* <AutoPlay/> */}
         
         </>
    
