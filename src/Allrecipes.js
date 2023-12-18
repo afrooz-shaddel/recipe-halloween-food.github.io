@@ -42,7 +42,7 @@ function filterMenu(type){
 
 return(
     <>
-      <Header item='R E C I P E S'/>
+      
     <div className='homeWrapper'>
       
     <div>

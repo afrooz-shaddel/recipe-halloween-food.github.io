@@ -1,4 +1,5 @@
 import { useFetch } from "./hook/useFetch";
+
 import Search1 from "./Search1";
 import Cart from "./Cart";
 import { useNavigate  , Link} from "react-router-dom";
@@ -73,7 +74,7 @@ const[open ,setOpen]=useState(false)
       <div  className="homeHeaderPicture">
     
      
-       <img src="\icon\1 (1).jpg" alt="" />
+       {/* <img src="\icon\1 (1).jpg" alt="" /> */}
       <p className="headerType"> 
       
       <Typewriter
@@ -99,6 +100,12 @@ const[open ,setOpen]=useState(false)
 
        
     <Cart/> 
+
+    <div className="linkPicture">
+      <Link rel="stylesheet" to="/allrecipes" >
+    <p>What can you make for Halloween ?</p>
+</Link>
+    </div>
 
         
         </>

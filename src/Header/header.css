@@ -1,12 +1,13 @@
-.headerMD{
+.headertext{
     font-size: 2rem;
     text-align: center;
     margin-top: 2rem;
+ justify-content: left;
  
 
 }
 
-.headerMD span{
+.headertext span{
    
     background-color:  #fe5d42; 
      margin-left: 0.5rem;
@@ -14,6 +15,7 @@
     height:3rem; 
    display: inline-block;
     color: white;
+  
     
 
 

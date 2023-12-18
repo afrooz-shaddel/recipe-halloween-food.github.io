@@ -230,7 +230,7 @@ export default  function Gallery(){
 
           <SwiperSlide  className='tranding-slide'>
           <div className='tranding-slide-img'>
-              <img src="\gallery\exps201865_UH153291A04_29_2b.jpg" alt="tranding" />
+              <img src="\gallery\Peanut-Butter-Rice-Krispie-Treat-Pumpkins-Recipe-4.jpg" alt="tranding" />
 
           </div>
           <div className='tranding-slide-content'>
