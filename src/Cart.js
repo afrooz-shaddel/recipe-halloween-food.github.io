@@ -2,6 +2,7 @@ import './cart.css';
 import { useEffect } from 'react';
 import './fonts/fonts.css'
 import AOS from 'aos';
+import Header from './Header/Header';
 
 export default function Cart(){
     useEffect(() => {
@@ -11,6 +12,7 @@ export default function Cart(){
     return(
       <>
       {/* <p>Services</p> */}
+      <Header item="S E R V I C E S"/>
         <div className='cartWrapper '>
         <div className="linkpicture " data-aos="fade-up"  >
         <img src="\icon\ghosts 1 .jpg" alt="" />

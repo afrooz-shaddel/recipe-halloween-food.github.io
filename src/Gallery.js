@@ -12,7 +12,7 @@ import 'swiper/css/effect-coverflow';
 import { EffectCoverflow} from 'swiper/modules';
 
 import './gallery.css';
-
+import Header from './Header/Header';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import { CiStar } from "react-icons/ci";
@@ -32,9 +32,9 @@ export default  function Gallery(){
         <>
         <div id='tranding'>
 <div className='container1'>
-  <h2 className='text-center section-subheading'>Gallery</h2>
+  {/* <h2 className='text-center section-subheading'>Gallery</h2> */}
+  <Header  item="G A L l E R Y"/>
   
-
   </div>
           
                  
@@ -390,70 +390,3 @@ export default  function Gallery(){
 }
 
 
-{/* <div id='tranding'>
-<div className='container'>
-  <h2 className='text-center section-subheading'>Gallery</h2>
-  <h1 className='text-cent section-heading'> Trending food</h1>
-
-  </div>
-  {
-    img1.forEach(item=>(
-     
-      <div className='container'>
-    <div className='swiper tranding-slider'>
-      <div className='swiper-wraper'>
-        <div className='swiper-slide tranding-slide'>
-          <div className='tranding-slide-img'>
-              <img src={item.img} alt="tranding" />
-
-          </div>
-          <div className='tranding-slide-content'>
-           
-            <div className='tranding-slide-content-bottom'>
-              <h2 className='food-name'>
-               {item.name}
-
-              </h2>
-              <h3 className='food-rating'>
-                <span>{item.rating}</span>
-                <div className='rating'>
-                <CiStar className='star'/>
-                <CiStar className='star'/>
-                <CiStar className='star'/>
-                <CiStar className='star'/>
-                <CiStar className='star'/>
-
-
-                </div>
-
-              </h3>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-    ))
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div> */}

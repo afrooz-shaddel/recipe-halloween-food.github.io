@@ -1,0 +1,20 @@
+.headerMD{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+ 
+
+}
+
+.headerMD span{
+   
+    background-color:  #fe5d42; 
+     margin-left: 0.5rem;
+     width: 3rem;
+    height:3rem; 
+   display: inline-block;
+    color: white;
+    
+
+
+}

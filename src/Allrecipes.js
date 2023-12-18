@@ -2,6 +2,7 @@ import './allrecipe.css';
 import './fonts/fonts.css';
 import { useFetch } from "./hook/useFetch";
 import  './home.css';
+import Header from './Header/Header';
 import Menu from "./Menu";
 import AOS from 'aos';
 import NewProduct1 from "./NewProduct1";
@@ -41,7 +42,9 @@ function filterMenu(type){
 
 return(
     <>
+      <Header item='R E C I P E S'/>
     <div className='homeWrapper'>
+      
     <div>
     <Menu   allMenu={category} filter1={filterMenu} />
  </div>
