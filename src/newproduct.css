@@ -31,12 +31,17 @@ margin: 3rem auto;
     width: 24rem;
     height: 26rem;
     border-radius: 20px 5px 15px 15px;
-  font-family: "Roboto Medium";
+    font-family: "Roboto Medium";
     text-align: center;
     margin-top: 1rem;
     margin-right: 1rem;
     box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    transition:all 0.3s ease-in-out ;
+    -webkit-transition:all 0.3s ease-in-out ;
+    -moz-transition:all 0.3s ease-in-out ;
+    -ms-transition:all 0.3s ease-in-out ;
+    -o-transition:all 0.3s ease-in-out ;
 }
 .productWrapper:first-child{
     margin-top: 2rem;

@@ -1,0 +1,10 @@
+.myautoplay{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.autoplaypicture{
+    width: 10rem;
+    height: 10rem;
+}

@@ -109,7 +109,7 @@ const[open ,setOpen]=useState(false)
     </div>
 
 
-{/* <AutoPlay/> */}
+<AutoPlay/>
         
         </>
    

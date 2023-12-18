@@ -24,7 +24,7 @@ const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexD
     return(<>
         <BiChevronDown className={show ?'BiChevronDown  ma ':'BiChevronDown md '}    onClick={()=>setShow(!show)} /> 
        
-<nav   className='nav'  style={{backgroundColor:color2}} >
+<nav   className='nav'  style={{backgroundColor:theme}} >
         {/* <div className="container"    > */}
             <div className="nav2"  >
 
