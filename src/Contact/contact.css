@@ -3,10 +3,25 @@
     justify-content: center;
  flex-wrap: wrap;
     margin-top: 2rem;
+   
 }
+.contactwrapper{
+    background-color:#c1cce6;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+}
+
+.copyright{
+    font-size: 1.2rem;
+    color: 1.5rem;
+    margin-top: 1rem;
+}
+
 
 .tooltip-item span{
     background-color: #fe5d42;
+    background-color: green;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 60px;
     height: 60px;
@@ -105,6 +120,7 @@
 
 .tooltip-section .tooltip-item:nth-child(3):hover span , .tooltip-section .tooltip-item:nth-child(3):hover .tooltip-text , .tooltip-section .tooltip-item:nth-child(3):hover .tooltip-text::before{
     background-color: #e1306c;
+    background-color: #333;
 }
 
 .tooltip-section .tooltip-item:nth-child(4):hover span , .tooltip-section .tooltip-item:nth-child(4):hover .tooltip-text , .tooltip-section .tooltip-item:nth-child(4):hover .tooltip-text::before{

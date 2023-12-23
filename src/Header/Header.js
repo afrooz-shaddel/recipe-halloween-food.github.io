@@ -11,7 +11,7 @@ export default function Header({item}){
         <>
          <div className='headertext'  data-aos="fade-up" >       
           {splitText.map((item ,index)=>(
-                <span key={index}>{item}</span>
+                <span  key={index}>{item}</span>
 
         ))}
           </div>

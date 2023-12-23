@@ -47,12 +47,13 @@ export default  function Gallery(){
         keyboard={true}
         loop={true}
         centeredSlides={true}
-        effect={'coverflow'}
+        effect='coverflow'
         coverflowEffect={{
-          rotate: 0,
+          rotate:0,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
+          slideShadows:true
           
         }}
         grabCursor={true}
