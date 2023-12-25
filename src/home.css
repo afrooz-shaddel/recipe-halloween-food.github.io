@@ -74,18 +74,46 @@
 }
 
 .headerType{
+  
   position: absolute;
-  top:15rem;
-  left: 30%;
   color:orangered;
   color: #fe5d42;
   font-size: 5rem;
   font-weight: bold;
-  font-family: 'GreatVibes-Regular';
+  /* font-family: 'GreatVibes-Regular'; */
+   top:15rem; 
+  /* right: 0;
+  left: 0; 
+   margin-left: auto;
+  margin-right: auto; */
+  width: 100%; 
+
+  white-space: nowrap;
+ 
+  text-align: center;
+  
+
 }
+.Typewriter{
+  /* position: absolute; */
+  /* left: 0;
+  right: 0; */
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 100%; */
+  /* text-align: center; */
+}
+/* Typewriter__wrapper */
 
 .headerType span{
   color:green;
+  color: #198754;
+  color: #fe5d42;
+
+  
+  /* text-align: center; */
+
+ 
 }
 
 .linkPicture{
@@ -116,19 +144,74 @@
 
 
 
-
-
-
-  @media screen and (max-width:768px) {
+@media screen and (max-width:990px) {
    
-    .headerType{
+  .linkPicture p{
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 5rem;
+  }
 
-      top:16rem;
-   left: 0;
-      font-size: 3rem;
-      right: 0;
-      font-weight: bold;
-    }
+}
+
+@media screen and (max-width:550px) {
+   
+  .linkPicture p{
+  font-size: 2rem;
+  }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+   
+  .headerType {
+  
+
+    font-size: 4rem;
+   
+  }
+
 
 
 }
+@media screen and (max-width:538px) {
+   
+  .headerType {
+  
+
+    font-size: 3rem;
+   
+  }
+
+
+
+}
+
+@media screen and (max-width:400px) {
+   
+  .headerType {
+  
+
+    font-size: 2.5rem;
+   
+  }
+
+
+
+}
+@media screen and (max-width:360px) {
+   
+  .headerType {
+  font-size: 2rem;
+
+  
+   
+  }
+
+
+
+}
+

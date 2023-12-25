@@ -31,7 +31,7 @@ export default function Recipes(){
        data.img && 
         
         <div className="recipie-img">
-        <img src={data.img} className="img-fluid" alt=""/>
+        <img src={data.img} className="img-fluid" alt="" width={"400px"}/>
         </div>
          
       } 

@@ -57,11 +57,11 @@ const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexD
                     <p>Recipes</p>
                 </Link>
 
-                {/* <Link onClick={()=>{
+                <Link onClick={()=>{
                     setIsOpen(false)
-                }} className="linknav" to="/contact" >
-                    <p>Contact</p>
-                </Link> */}
+                }} className="linknav" to="/about" >
+                    <p>About</p>
+                </Link>
                 </div>
             
        

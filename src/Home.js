@@ -76,7 +76,7 @@ const[open ,setOpen]=useState(false)
     
      
        {/* <img src="\icon\1 (1).jpg" alt="" /> */}
-      <p className="headerType"> 
+      <div className="headerType"> 
       
       <Typewriter
           onInit={Typewriter=>{
@@ -94,7 +94,7 @@ const[open ,setOpen]=useState(false)
           
           />
       
-      </p> 
+      </div> 
      
     </div>
          
@@ -104,7 +104,7 @@ const[open ,setOpen]=useState(false)
 
     <div className="linkPicture">
       <Link rel="stylesheet" to="/allrecipes" >
-    <p>What can you make for Halloween ?</p>
+    <p>What can you make for Halloween?</p>
 </Link>
     </div>
 

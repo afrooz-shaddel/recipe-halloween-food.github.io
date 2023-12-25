@@ -6,7 +6,7 @@ let [menu , setMenu]=useState("All")
     return(
 
         <ul className='menu'>
-            {allMenu.map(item=>(<li  className={item==menu? "menuItem active1":"menuItem"} onClick={()=>{filter1(item)
+            {allMenu.map(item=>(<li  key={item} className={item==menu? "menuItem active1":"menuItem"} onClick={()=>{filter1(item)
             setMenu(item)}}>{item}</li>))}
 
         </ul>

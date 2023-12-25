@@ -1,4 +1,6 @@
 import './contact.css'
+import {contexData} from '../CreatContext2';
+import { useEffect, useRef, useState  , useContext} from "react";
 import { CiInstagram } from "react-icons/ci";
 import { CiYoutube } from "react-icons/ci";
 import { CiTwitter } from "react-icons/ci";
@@ -7,9 +9,11 @@ import { FaPhone } from "react-icons/fa";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa6";
 export default function Contact(){
+    const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexData);
+
     return(
         <>
-        <div  className='contactwrapper' style={{display:"flex" , flexDirection:"column"}}>
+        <div  className='contactwrapper' style={{backgroundColor:theme , display:"flex" }}  >
         <div className='tooltip-section'>
         
             <div className='tooltip-item'>
@@ -38,3 +42,4 @@ export default function Contact(){
         </>
     )
 }
+

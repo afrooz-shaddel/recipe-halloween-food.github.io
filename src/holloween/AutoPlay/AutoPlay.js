@@ -17,13 +17,14 @@ import './AutoPlay.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 export default function AutoPlay() {
-  let img=["/remove/New folder (2)/pizza-food-monster-graphic-illustration-260nw-1543141172.png","/remove/360_F_635646268_68UfNglAzkljsJk5si30KF8geXVPzKEx.png" ,
+  let img=[
+   
   "/remove/images (4).png",
   "/remove/images (8).png",
   "/remove/images (9).png",
   "/remove/New folder (2)/images (7).png",
 "/remove/New folder (2)/there-is-glass-orange-juice-with-pumpkins-it-generative-ai_900396-38403.png" ,
-"/remove/there-is-cupcake-with-halloween-decoration-top-generative-ai_1034638-402.png",
+"/remove/images (3).png",
 ,"/remove/New folder (2)/pngtree-pizza-with-olives-and-sausage-spider-for-halloween-party-png-image_10301020.png"
 ,"/remove/New folder (2)/106223985.png"
 ]
@@ -35,6 +36,32 @@ export default function AutoPlay() {
        autoplay={true}
        slidesPerView={5}
        spaceBetween={20}
+    
+     
+       data-swiper-autoplay="2000"
+
+       breakpoints={{
+        900:{
+          slidesPerView:5,
+          spaceBetween:20
+        },
+        800:{
+          slidesPerView:4,
+          spaceBetween:10
+        },
+        600:{
+          slidesPerView:3,
+          spaceBetween:10
+        },
+        400:{
+          slidesPerView:2,
+          spaceBetween:10
+        },
+        300:{
+          slidesPerView:1,
+          spaceBetween:8
+        }
+       }}
       
        className="mySwiper myautoplay">
       

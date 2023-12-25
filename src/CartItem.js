@@ -12,10 +12,11 @@ export default  function CartItem({product}){
     return(
         <div className="linkpicture " data-aos="fade-up"  >
         <img src={product.src} alt="" />
-        <div style={{display:"flex"  , justifyContent:"center" , alignItems:"center"}}>
         <button className="heartbtn">
         <IoHeart color={like?'red':""}   onClick={()=>setLike(!like)}/>
         </button>
+        <div style={{display:"flex"  , justifyContent:"center" , alignItems:"center"}}>
+       
         <p className="linkpicture-title">{product.title}</p>
         </div>
         

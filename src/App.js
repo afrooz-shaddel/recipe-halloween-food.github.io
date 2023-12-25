@@ -19,6 +19,7 @@ import Allrecipes from './Allrecipes';
 import Contact from './Contact/Contact';
 
 import './App.css'
+import About from './About/About';
 
 // import Button from '@mui/material-next/Button';
 import { useRef } from 'react';
@@ -100,6 +101,7 @@ useEffect(()=>{
       <Route  path='/search1'   element={  <Search1/>}/>
       <Route  path='/recipes/:id'   element={  <Recipes/>}/>
       <Route  path='/contact'   element={  <Contact/>}/>
+      <Route  path='/about'   element={  <About/>}/>
      </Routes>
 
    <Contact/>

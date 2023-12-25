@@ -16,9 +16,9 @@ position: absolute;
 .heartbtn{
     outline: none;
     background-color: transparent;
-/* position: absolute !important;
+position: absolute !important;
 right: 2rem;
-top: 0.5rem; */
+top: 0.5rem;
     border: none;
     z-index: 99;
 

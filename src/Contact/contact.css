@@ -6,10 +6,13 @@
    
 }
 .contactwrapper{
-    background-color:#c1cce6;
+    display:"flex" !important;
+    flex-direction: column !important;
+
     justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+    
 }
 
 .copyright{
@@ -22,6 +25,7 @@
 .tooltip-item span{
     background-color: #fe5d42;
     background-color: green;
+    background-color: #198754;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 60px;
     height: 60px;
