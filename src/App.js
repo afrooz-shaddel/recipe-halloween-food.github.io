@@ -1,51 +1,27 @@
 import  React , {useEffect , useState ,useMemo} from 'react';
 import {BrowserRouter ,Routes ,Route} from 'react-router-dom';
-import { Button } from '@mui/material';
-
-import Gallery from './Gallery';
-import Home from './Home';
-import Create from './Create';
+import Gallery from './pages/Gallery';
+import Home from './pages/Home';
+import Create from './pages/Create';
 import { BsFillSearchHeartFill} from "react-icons/bs";
 import { CiLight } from "react-icons/ci";
 import { Link } from 'react-router-dom';
-import Menu from "./Menu";
+import Menu from "./component/Menu";
 import {MdDarkMode} from "react-icons/md";
 import AOS from 'aos';
-import Recipes  from './Recipes';
-import Search1 from './Search1';
+import Recipes  from './pages/Recipes';
+import Search1 from './pages/Search1';
 import { useContext } from 'react';
 import {contexData} from './CreatContext2';
-import Allrecipes from './Allrecipes';
-import Contact from './Contact/Contact';
-
+import Allrecipes from './pages/Allrecipes';
+import Contact from './pages/Contact/Contact';
 import './App.css'
-import About from './About/About';
-
-// import Button from '@mui/material-next/Button';
-import { useRef } from 'react';
-// import About from './About';
-// import Home from './Home';
-// import Error from './Error';
-// import Product2 from './Tost/Product2';
-// import Product3 from './Tost/Product3'
-// import Nav from './Nav';
-// import Shop from './Shop';
-// import Login from './Login';
-
-// import Search from  './pages/Search/Search';
-// import Product from './pages/Product/Product';
-// import Ingredient from './pages/Ingredient/Ingredient';
-// import CreatFood from './pages/CreatFood/CreatFood';
-// import Nav from './Nav';
-// import ButtonEnter from './ButtonEnter'
-// import {DeleteIcon} from '@mui/icons-material';
-
-import Nav1 from './Nav1';
-import ScrollToTop from './ScrollToTop'
-
+import About from './pages/About/About';
+import Nav1 from './component/Nav1';
+import ScrollToTop from './component/ScrollToTop'
+import NotFound from './pages/NotFound';
+import Searchend from './Searchend'
 export default function App(){
-
-let elementRef=useRef()
 
 const {theme , setTheme , color2 ,setColor2}=useContext(contexData);
 const [showDark , setShowDark]=useState(false);
@@ -102,6 +78,8 @@ useEffect(()=>{
       <Route  path='/recipes/:id'   element={  <Recipes/>}/>
       <Route  path='/contact'   element={  <Contact/>}/>
       <Route  path='/about'   element={  <About/>}/>
+      <Route path='/search'   element={<Searchend/>}/>
+      <Route  path='/*'   element={  <NotFound/>}/>
      </Routes>
 
    <Contact/>

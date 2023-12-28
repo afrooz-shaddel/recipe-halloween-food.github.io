@@ -1,0 +1,214 @@
+@import '../../fonts/fonts.css';
+#about{
+    margin-top: 5rem;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+   
+}
+
+.about-picture{
+ 
+    box-shadow: 1px 1px 15px rgba(0, 0,0, 0.1);
+
+    max-width:45rem; 
+   
+    height:30rem;
+ 
+    
+}
+.about-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.margin{
+    margin-left: 2rem;
+}
+
+.about-text{
+   max-width: 400px;
+}
+.about-text p{
+   font-family:"Roboto Medium" ;
+   text-align: justify;
+   width: 100%;
+   
+}
+
+
+
+/* slider */
+
+
+.cardintroduction{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+     width: 300px;
+     height: 300px;
+     background:#eff0f4;
+     background-color: rgba(255, 255, 255, 0.5);
+     box-shadow: inset 20px 20px 20px rgba(0, 0,0, 0.05),5px 25px 20px rgba(0, 0,0, 0.05) ,5px 25px 30px rgba(0, 0,0, 0.05)  ,inset -20px -20px 25px rgba(255, 255,255, 0.9);
+     border-radius:61% 39% 52% 48% /44% 59% 41% 56%;
+     -webkit-border-radius:61% 39% 52% 48% /44% 59% 41% 56%;
+     -moz-border-radius:61% 39% 52% 48% /44% 59% 41% 56%;
+     -ms-border-radius:61% 39% 52% 48% /44% 59% 41% 56%;
+     -o-border-radius:61% 39% 52% 48% /44% 59% 41% 56%;
+     display: flex;
+     transition: all 0.3s ease-in-out;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+}
+
+.cardintroduction:hover{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cardintroduction::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color:#fff;
+    top: 80px;
+    left: 30px;
+    position: absolute;
+}
+.cardintroduction::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color:#fff;
+    top: 110px;
+    left: 25px;
+    position: absolute;
+}
+
+.imageintroduction{
+    width:9rem;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imageintroduction img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.nameintroduction{
+    font-family: "Roboto Medium";
+    margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.starintroduction svg{
+    font-size: 22px;
+    color: #ff0f5b;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1250px) {
+   
+    .aboutWrapper{
+        margin-left: 2rem;
+        margin-right: 2rem;
+     }
+
+}
+@media screen and (max-width:1032px) {
+   
+    /* .about-picture{
+        width: 400px;
+        height: 500px;
+        box-shadow: 1px 1px 15px rgba(0, 0,0, 0.1);
+    } */
+
+    
+
+
+}
+
+@media screen and (max-width:990px) {
+   
+    
+        .about{
+            flex-direction: column;
+        }
+        .about1{
+            flex-direction: column-reverse;
+        }
+        .margin{
+            margin-left: 0;
+        }
+        .about-text{
+            margin-top: 2rem;
+            max-width: 45rem;
+        }
+        
+    }
+      
+
+        @media screen and (max-width:668px) {
+
+           .SwiperSlide{
+            margin: auto;
+           }
+            
+        }
+
+        @media screen and (max-width:480px) {
+
+            about-picture{
+                
+                height: 200px;
+                box-shadow: 1px 1px 15px rgba(0, 0,0, 0.1);}
+            
+            
+        }
+
+
+
+
