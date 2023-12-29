@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import NewProduct1 from "../component/NewProduct1";
 import { BiChevronDown } from "react-icons/bi";
 import NotFound from "./NotFound";
+import Nomatch from '../component/Nomatch'
 import AOS from "aos";
 export default function Search1(){
   
@@ -79,10 +80,10 @@ let navigate=useNavigate()
                  className="searchInput" />
                 </div>
            
-                {found && <NotFound/>}
+                {found && <Nomatch/>}
                 {  filter1.length>0 &&<NewProduct1  product={filter1}/>  }
               
-             {filter1.length===0 && <NotFound/>}
+             {filter1.length===0 && <Nomatch/>}
                 </div>
                 
              

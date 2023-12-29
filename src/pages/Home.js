@@ -21,8 +21,9 @@ import Loader from "../component/Loader";
 import AutoPlay from "../component/AutoPlay/AutoPlay";
 
 export default function Home(){
- const {data ,  isLoading , error}=useFetch(' https://recipefood-json-server.liara.run/recipes')
 
+//  const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+ const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
  const[recipie , setRecipie]=useState("")
 
 let navigate=useNavigate()
@@ -103,7 +104,7 @@ const[open ,setOpen]=useState(false)
     <Cart/> 
 
     <div className="linkPicture">
-      <Link rel="stylesheet" to="/allrecipes" >
+      <Link rel="stylesheet" to="/search" >
     <p>What can you make for Halloween?</p>
 </Link>
     </div>
