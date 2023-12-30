@@ -8,7 +8,7 @@ export default  function Modal({allMenu , close ,filter}){
     return(
         <div className="mobilecategoryitem"   >
            <RxCross2  className="cross"  onClick={()=>close(false)}/>
-           <span><BiSolidCategory className='svgCategory1'/>Categories</span> 
+           <span><BiSolidCategory />Categories</span> 
          <Menu  allMenu={allMenu} menuFilter={filter}/>
         </div>
         
