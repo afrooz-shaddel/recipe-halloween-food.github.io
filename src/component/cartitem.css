@@ -1,7 +1,7 @@
 .heart{
 color: white;
 font-size: 2.5rem;
-position: absolute;
+/* position: absolute; */
 /* right: 1rem; */
  right: 2.5rem; 
 
@@ -10,22 +10,30 @@ position: absolute;
     color: red;
 } 
 .inkpicture img{
-    position: relative;
+    /* position: relative; */
 } 
 
 .heartbtn{
     outline: none;
     background-color: transparent;
-position: absolute !important;
-right: 2rem;
-top: 0.5rem;
+/* position: absolute !important; */
+
+/* right: 2rem;
+top: 0.5rem; */
+    /* border: 2px solid red; */
     border: none;
     z-index: 99;
 
 }
+
+.linkpictur img{
+    /* position: relative!important; */
+}
 .heartbtn svg{
     color: white;
     font-size: 2rem;
+    
+ 
 }
 .heartbtn:hover{
     transform: scale(1.1);

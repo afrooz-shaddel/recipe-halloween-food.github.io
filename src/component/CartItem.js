@@ -13,7 +13,7 @@ export default  function CartItem({product}){
         <div className="linkpicture " data-aos="fade-up"  >
         <img src={product.src} alt="" />
         <button className="heartbtn">
-        <IoHeart color={like?'red':""}   onClick={()=>setLike(!like)}/>
+        <IoHeart color={like?'red':''}   onClick={()=>setLike(!like)}/>
         </button>
         <div style={{display:"flex"  , justifyContent:"center" , alignItems:"center"}}>
        
