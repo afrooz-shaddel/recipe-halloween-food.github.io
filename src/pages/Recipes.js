@@ -9,7 +9,7 @@ import { BsTypeH1 } from "react-icons/bs";
 export default function Recipes(){
   const[btnShow , setBtnShow]=useState(false)
     const {id}=useParams()
-    let url=`http://localhost:3000/recipes/${id}`
+    let url=`https://recipefood-json-server.liara.run/recipes/${id}`
     const {data ,  isLoading , error}=useFetch(url);
     const[allData , setAllData]=useState(data)
 

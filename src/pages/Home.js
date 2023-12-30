@@ -23,7 +23,7 @@ import AutoPlay from "../component/AutoPlay/AutoPlay";
 export default function Home(){
 
 //  const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
- const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
+ const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
  const[recipie , setRecipie]=useState("")
 
 let navigate=useNavigate()

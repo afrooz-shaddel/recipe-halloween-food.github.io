@@ -96,18 +96,7 @@
       "cookingTime": "30 minute",
       "img": "/picture2/food2.jpg",
       "type": "lunch"
-    },
-    {
-      "title": "djk",
-      "ingredients": [
-        "ewew",
-        "ewwede"
-      ],
-      "method": "wellkew",
-      "cookingTime": "2minute",
-      "img": "/hollowin/default2.jfif",
-      "type": "drink",
-      "id": "LkF9JmI"
     }
+   
   ]
 }

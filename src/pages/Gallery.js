@@ -20,15 +20,23 @@ import { CiStar } from "react-icons/ci";
 export default  function Gallery(){
 
   
-  let img1=[{id:1,img: "/gallery/images (2)-2.jpg" , name :"spooky"  ,rating:2.5},
-  {id:2,img: "/gallery/IMG_5089.jpg"  , name :"spine" ,rating:2.5}  , 
-  {id:3,img: "/gallery/Fright+Night+Scoop_3c97255e-4b86-4123-97d7-48916c48ff65-prv.jpg"  , name :"Vegan" ,rating:2.5}  
-  ,{id:4,img: "/gallery/images (4).jpg"  , name :"Secretly" ,rating:2.5} ,
-  {id:5,img: "/gallery/download (3).jpg"  , name :"Shortbread" ,rating:2.5} ,
-    {id:6,img: "/gallery/images (2).jpg"   , name :"Lunch Box" ,rating:2.5}  ,
-    {id:7,img: "/gallery/images25.jpg"   , name :" Scary halloween" ,rating:2.5} ,
-    {id:8,img:"/gallery/Halloween-Broom-Table-Tree-Root-Decor-Round-Square-Resin-Table-Cake-Stand-Dessert-Fruit-Table-Stand.webp"  , name :"finger food" ,rating:2.5} , 
-    {id:9,img: "/gallery/images.jpg"   , name :"floady" ,rating:2.5} ]
+  let img1=[{id:1,img: "/gallery/best-halloween-party-appetizers-1624627428.jpg" , name :"spooky"  ,rating:2.5},
+  
+  
+  {id:2,img: "/gallery/p1bosrj8k15on1q3vj7p14r71786.jpg"  , name :"Vegan" ,rating:2.5}  
+  ,{id:5,img: "/gallery/healthy_halloween_stuffedpeppers-cd538b9.jpg"  , name :"Shortbread" ,rating:2.5} ,
+  {id:9,img: "/gallery/22.jpg"   , name :"floady" ,rating:2.5},
+  
+  ,{id:3,img: "/gallery/IMG_5089.jpg"  , name :"spine" ,rating:2.5}  , 
+  
+  {id:6,img: "/gallery/21.jpg"   , name :"Lunch Box" ,rating:2.5}  ,
+    {id:7,img: "/gallery/images (58).jpg"   , name :" Scary halloween" ,rating:2.5} ,
+    {id:8,img:"/gallery/24.jpg"  , name :"finger food" ,rating:2.5} , 
+    ,{id:4,img: "/gallery/images (2).jpg"  , name :"Secretly" ,rating:2.5} ,
+  
+    {id:10,img: "/gallery/19.webp"   , name :"floa" ,rating:2.5},
+ 
+     ]
 
  
     return(
