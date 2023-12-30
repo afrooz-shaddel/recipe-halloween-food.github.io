@@ -8,7 +8,8 @@ const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
     return(
 
         <ul className='menu' >
-            {allMenu.map(item=>(<li  key={item} className={console.log(category1)}    onClick={menuFilter} >{item}</li>))}
+            {allMenu.map(item=>(<li  key={item} className={item.toLowerCase()==menu.toLowerCase()?'menuItem active1':"menuItem"} onClick={()=>{setMenu(item)
+            menuFilter}}  >{item}</li>))}
 
         </ul>
 
