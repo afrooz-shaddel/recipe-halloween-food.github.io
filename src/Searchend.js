@@ -1,6 +1,6 @@
 import './searchend.css'
 import { useEffect, useState } from 'react';
-import { CiSearch } from "react-icons/ci";
+
 import NewProduct1 from './component/NewProduct1';
 import { useFetch } from './hook/useFetch';
 import { BsFillSearchHeartFill} from "react-icons/bs";
@@ -10,9 +10,12 @@ import { RxCross2 } from "react-icons/rx";
 import {SearchItem} from './Handeler';
 import { CategoriesItem1 } from './Handeler';
 import { useSearchParams } from 'react-router-dom';
-import Categories from './Category/Category';
+import Categories from './Category/Modal';
 import Menu from './component/Menu'
 import { MdCategory } from "react-icons/md";
+import Modal from './Category/Modal';
+import { CiSearch } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
 
 export default function Searchend(){
     const {data}=useFetch(' http://localhost:3000/recipes')
@@ -64,10 +67,7 @@ let categoryItem="";
         
     }
 
-    function filterHandeler(){
-        setFilter(true)
-    }
-
+    
     function clickHandeler(event){
     categoryItem=event.target.innerHTML.toLowerCase()
     setQuery(query=>({...query , categoryItem}))
@@ -93,24 +93,14 @@ let categoryItem="";
             // if( search.length && categoryItem){
                
             let data2=data.filter(item=> item.title.toLowerCase().includes(search.toLowerCase()))
-            // setProduct(data2)
-            // } else{ 
-
-            // } 
+        
             setProduct(data2)
             
 
            
 
-        //    }
-
-        // }
     }
-    function crossHandeler(){
-        setFilter(false)
-       
-       
-    }
+  
 
 
     return(
@@ -122,6 +112,15 @@ let categoryItem="";
                 className="searchInput1" />     <BsFillSearchHeartFill className="search-bs1" 
                
              />  </div>
+
+
+         
+              
+
+
+
+
+
              
              <div  className='categorywrapper'  >   <span><BiSolidCategory className='svgCategory'/>Categories</span> 
              <ul onClick={clickHandeler}  className='categorylist' >
@@ -130,23 +129,29 @@ let categoryItem="";
                 {/* {category.map(item=> <li className={ item.type.toLowerCase()===query.categoryItem?'selected':null}>{item.type}</li>       )} */}
              </ul>
              </div>
-             <div className='mobilCategory' onClick={filterHandeler}><span> <MdCategory  className='svgCategory' />Filter</span>
-            
-             {/* <ul onClick={clickHandeler}  > */}
+             <div className='mobilea' >
+                <div className='mobilename1'>
+             <p className='mobilename'>Filter& Search</p>
+             </div>
+              <div className='mobilSearch-category'>
+               
+             <div className='inputSearch'>
              
-              {/* {filter && <Categories allMenu={category21} click1={crossHandeler}  menuFilter={clickHandeler} />}
-            {console.log(filter)} */}
-
-            {filter &&
-                
-              <div className="mobilecategoryitem"   >
-              <RxCross2  className="cross"         onClick={()=>{
-                    setFilter(false)
-                }}  />
-            <Menu  allMenu={category21}  menuFilter={clickHandeler}/>
+             <input type="text" placeholder='Type here...' onKeyUp={searchHandeler}/>
+            <label htmlFor=""> <FaSearch/> </label>
            </div>
+             <div className='mobilCategory' onClick={()=>{
+                setFilter(true)
+             }}><span> <MdCategory  className='svgCategory' />Filter</span>
+            
+           
+
+           
+           
+             </div>
+             {filter &&<Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  />
             }
-            {console.log(filter)}
+             </div>
              </div>
         </div>
 
