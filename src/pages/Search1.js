@@ -80,10 +80,10 @@ let navigate=useNavigate()
                  className="searchInput" />
                 </div>
            
-                {found && <Nomatch/>}
+                {/* {found && <Nomatch/>} */}
                 {  filter1.length>0 &&<NewProduct1  product={filter1}/>  }
-              
-             {filter1.length===0 && <Nomatch/>}
+{/*               
+             {filter1.length===0 && <Nomatch/>} */}
                 </div>
                 
              
