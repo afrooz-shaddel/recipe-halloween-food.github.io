@@ -27,20 +27,29 @@ export default function Searchend(){
    let[search , setSearch]=useState("")
    let[query , setQuery]=useState({})
    const[filter , setFilter]=useState(false)
- let[searchParam , setSearchParam]=useSearchParams()
+ let[searchParams , setSearchParams]=useSearchParams()
+
 
 
     useEffect(()=>{
    setProduct(data)
+   let query={};
+   const categoryItem=searchParams.get("categoryItem")
+   const search=searchParams.get("search")
+  
+   if(search) query.search=search
+     if(categoryItem) query.categoryItem=categoryItem
+     setQuery(query)
     },[data])
 
     useEffect(()=>{
-        setSearchParam(query)
+        setSearchParams(query)
     let finalProduct=SearchItem(product , query.search)
     
     finalProduct=CategoriesItem1(finalProduct , query.categoryItem) 
       
     //    setProduct(cate)
+    setSearch(query.search || "")
     setProduct(finalProduct)
     }, [query])
  
@@ -124,7 +133,7 @@ let categoryItem="";
              
              <div  className='categorywrapper'  >   <span><BiSolidCategory className='svgCategory'/>Categories</span> 
              <ul onClick={clickHandeler}  className='categorylist' >
-                <Menu allMenu={category21}/>
+                <Menu allMenu={category21}  query1={query} categoy={categoryItem}/>
 
                 {/* {category.map(item=> <li className={ item.type.toLowerCase()===query.categoryItem?'selected':null}>{item.type}</li>       )} */}
              </ul>
@@ -149,7 +158,7 @@ let categoryItem="";
            
            
              </div>
-             {filter &&<Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  />
+             {filter &&<Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  query1={query} categoy={categoryItem} />
             }
              </div>
              </div>

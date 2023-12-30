@@ -13,7 +13,7 @@ import { EffectCoverflow} from 'swiper/modules';
 import './gallery.css';
 import Header from '../component/Header/Header';
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard , Autoplay } from 'swiper/modules';
 import { CiStar } from "react-icons/ci";
 
 // import { useState } from 'react';
@@ -42,12 +42,14 @@ export default  function Gallery(){
         <Swiper
         cssMode={true}
         navigation={true}
-        pagination={true}
+       
+//  autoplay={true}
         mousewheel={true}
         keyboard={true}
         loop={true}
         centeredSlides={true}
         effect='coverflow'
+        data-swiper-autoplay="2000"
         coverflowEffect={{
           rotate:0,
           stretch: 0,
@@ -56,10 +58,14 @@ export default  function Gallery(){
           slideShadows:true
           
         }}
+        pagination={{
+          clickable: true,
+        }}
+      
         grabCursor={true}
         slidesPerView='auto'
       
-        modules={[Navigation,EffectCoverflow, Mousewheel, Keyboard]}
+        modules={[Navigation,EffectCoverflow, Mousewheel, Keyboard ,Pagination , Autoplay]}
         className="mySwiper  tranding-slider"
       >
         {img1.map(item=>(
