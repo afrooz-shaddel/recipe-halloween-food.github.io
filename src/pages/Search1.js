@@ -7,17 +7,17 @@ import { BsFillSearchHeartFill} from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import NewProduct1 from "../component/NewProduct1";
 import { BiChevronDown } from "react-icons/bi";
-import NotFound from "./NotFound";
+// import NotFound from "./NotFound";
 import Nomatch from '../component/Nomatch'
 import AOS from "aos";
 export default function Search1(){
   
 const[filter1 ,setFilter1]=useState([])
 const[alert ,setAlert]=useState("")
-const [found , setFound]=useState(false)
+// const [found , setFound]=useState(false)
 const[recipie , setRecipie]=useState("")
 
-const {data}=useFetch('https://recipefood-json-server.liara.run/recipes')
+const {data}=useFetch('http://localhost:3000/recipes')
  
 let elemenRef=useRef(null)
 
@@ -27,6 +27,7 @@ useEffect(()=>{
   
   if(elemenRef.current.value==="" ){
         setFilter1(recipie)   
+        console.log(recipie)
     }
 
 },[data])
@@ -41,21 +42,14 @@ function changeHandeler(e){
     console.log(filter1)
     const newFilter2=data.some((item)=>item.title.toLowerCase().includes(newSearch.toLowerCase()))
  
-//  if(elemenRef.current.value==="" ){
-//     setFilter1(data)   
-// }
+
  if(newFilter.length===0){
 setFilter1([])
-    // setFound(true)
-    // setTimeout(()=>{
-    //   setFound(false)
-    // }
-    // ,5000)
-
+  
   }
 else{
     setFilter1(newFilter )
-    console.log("push")
+    
 }}
 let navigate=useNavigate()
 
@@ -82,8 +76,8 @@ let navigate=useNavigate()
            
                 {/* {found && <Nomatch/>} */}
                 {  filter1.length>0 &&<NewProduct1  product={filter1}/>  }
-{/*               
-             {filter1.length===0 && <Nomatch/>} */}
+              
+             {filter1.length===0 && <Nomatch/>}
                 </div>
                 
              
