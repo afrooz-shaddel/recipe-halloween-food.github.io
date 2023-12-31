@@ -60,6 +60,7 @@
    margin-bottom: 3rem;
    font-weight: bold;
    color: #fe5d42;
+   color: #198754;;
    font-size: 2rem;
    font-family: "Archivo Black";
 }
@@ -237,6 +238,7 @@ li{list-style-type: none;}
     background-color: transparent;
     background-color: #ff5722;
     background-color: #fe5d42;
+  
     border: 1px snow solid;
     color: white;
 }

@@ -83,9 +83,10 @@
     }
     
     .createButton button{
-        background-color:  #E76F51;
-        background-color: #fe5d42;
-        border:1px solid #fff;
+       background-color:  #E76F51;
+       background-color: #fe5d42;
+       background-color: #fe5d42ba;
+       border:1px solid #E76F51;
        display: block;
        height: 3rem;
        color: #fff;
@@ -93,9 +94,15 @@
        width: 7rem;
        height: 2.3rem;
        border-radius: 1rem;
-       border: 1px solid orange;
-      
-    } 
+       transition: all 0.3s ease-in-out;
+       -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+       -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+} 
+    .createButton button:hover{
+        background-color: #fe5d42;
+    }
     
     .imageIcon{
         width: 4.3rem;
