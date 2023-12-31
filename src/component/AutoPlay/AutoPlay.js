@@ -33,9 +33,10 @@ export default function AutoPlay() {
       <Swiper
        pagination={true} 
        modules={[ Autoplay]} 
-       autoplay={true}
+       
        slidesPerView={5}
        spaceBetween={20}
+       autoplay={{ delay: 3000, disableOnInteraction: false }}
     
      
        data-swiper-autoplay="2000"

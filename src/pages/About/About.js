@@ -61,6 +61,7 @@ export default function About(){
         slidesPerView={1}
         spaceBetween={30}
         data-swiper-autoplay="2000"
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         centeredSlides= {true}
        centeredSlidesBounds= {true}
         pagination={{
@@ -88,7 +89,7 @@ export default function About(){
 
         modules={[Pagination ,  Autoplay]}
     
-        autoplay={true}
+        // autoplay={true}
         className="mySwiper"
       >
         <SwiperSlide><div className='cardintroduction'>
