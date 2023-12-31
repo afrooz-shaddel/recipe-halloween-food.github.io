@@ -54,13 +54,13 @@ a{
 
 li , ul{list-style-type: none;}
 
-.darkMode {
+.darkMode  {
   background-color: #3e2949f0;
   color: #fff;
 }
 
 
-.lightMode {
+.lightMode  {
   background-color: #c7cbe4;
 }
 

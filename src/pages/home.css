@@ -215,3 +215,14 @@
 
 }
 
+
+.darkMode .homeHeaderPicture {
+  background-color: #3e2949f0;
+  color: #fff;
+}
+
+
+.lightMode .homeHeaderPicture {
+  background-color: #c7cbe4;
+}
+

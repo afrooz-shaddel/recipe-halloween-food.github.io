@@ -39,13 +39,15 @@
 }
 
 .darkMode   {
-    background-color: #af00ff17;
+    background-color: #3e2949f0;
+   
     border: none;
     box-shadow: 2px 1px 1px beige;
 }
 
 .lightMode  {
-    background-color:#de879f4a;
+    background-color:#c7cbe4;
+    
     
 }
 
