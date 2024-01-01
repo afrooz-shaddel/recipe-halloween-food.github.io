@@ -62,7 +62,11 @@ text-align: center;
     /* background-image: linear-gradient(90deg , #fd556b , #ff8e80); */
     /* background-image: linear-gradient(90deg , #C5EEE2 , #f9D4F4); */
     background-image: linear-gradient(90deg , #f4c4ec , #f38181);
-}
+    background-image:linear-gradient(90deg ,#198754 ,#0fab63c9 );
+    background-image:linear-gradient(rgba(0, 0, 0, 0.15) ,#006939c9 );
+};
+/* background-color: ;
+background-color: #0fab6380; */
 
 .darkMode .productWrapper{ box-shadow:  2px 2px 5px rgba(255, 255, 255, 0.15)}
 
@@ -84,7 +88,7 @@ text-align: center;
  -o-transform: scale(1.1);
 }
 .productWrapper button:hover{
-    background-color:salmon ;
+    background-color:rgb(106, 24, 14) ;
     transition: all 300ms ease-in-out;
     color: #fff;
 }
@@ -92,7 +96,7 @@ text-align: center;
  .productWrapper p{
     margin-top: 1rem;
 } 
-.moreLink{
+.moreLink1{
     text-decoration: none;
     color: #fff;
     width: 8rem;
@@ -112,6 +116,7 @@ text-align: center;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
     display: block;
+   background-color:#0fab6380;;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
     
 }
@@ -128,21 +133,24 @@ text-align: center;
     font-size: 1.3rem;
 }
 
-.darkMode .moreLink {
+.darkMode .moreLink1 {
     background-color: #af00ff17;
     border: none;
     box-shadow: 2px 1px 1px beige;
 }
 
-.lightMode .moreLink {
+.lightMode .moreLink1 {
     background-color:#de879f4a;
     background-color:#f3818190;
+    background-color:#006939c9 ;
+    background-color: #00693975;
+    background-color: #0fab6380;
     
 }
 
 
-.moreLink:hover{
-    background-color:#ff8e80;
+.moreLink1:hover{
+    background-color:#006939c9 ;
     color: white;
  }
  

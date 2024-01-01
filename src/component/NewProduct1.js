@@ -58,7 +58,7 @@ export default function NewProduct1({product ,color}){
     <h2 className='productWrapper-title'>{title}</h2>
  <p className='productWrapper-time'>CookingTime: {cookingTime}</p>
 
-    <Link  className='moreLink' to={`/recipes/${id}`} onClick={()=>setShow(false)}   >show recipe</Link>
+    <Link  className='moreLink1' to={`/recipes/${id}`} onClick={()=>setShow(false)}   >show recipe</Link>
   
 
 
