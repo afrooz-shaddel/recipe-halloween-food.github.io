@@ -52,12 +52,12 @@ useEffect(()=>{
           
 
          
-             <div data-aos="fade-left">
+             {/* <div data-aos="fade-left">
              <Link to="/search1"   className="searchBox"   >
         
              <BsFillSearchHeartFill  className="searchBox-icon"   />
          </Link>
-         </div>
+         </div> */}
        
             
           </div>}
