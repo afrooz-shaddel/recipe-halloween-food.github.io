@@ -117,10 +117,15 @@ let categoryItem="";
         
         <div className='searchcategory' >
              
-             <div className="search1"> <input type="text"  placeholder="Search"  onKeyUp={searchHandeler}
+             {/* <div className="search1"> <input type="text"  placeholder="Search"  onKeyUp={searchHandeler}
                 className="searchInput1" />     <BsFillSearchHeartFill className="search-bs1" 
                
-             />  </div>
+             />  </div> */}
+             {/* <div className='inputSearch'>
+             
+             <input type="text" placeholder='Type here...' onKeyUp={searchHandeler}/>
+            <label htmlFor=""> <FaSearch/> </label>
+           </div> */}
 
 
          
@@ -129,7 +134,11 @@ let categoryItem="";
 
 
 
-
+<div className='inputSearch'>
+             
+             <input type="text" placeholder='Type here...' onKeyUp={searchHandeler}/>
+            <label htmlFor=""> <FaSearch/> </label>
+           </div>
              
              <div  className='categorywrapper'  >   <span><BiSolidCategory className='svgCategory'/>Categories</span> 
              <ul onClick={clickHandeler}  className='categorylist' >
@@ -139,17 +148,13 @@ let categoryItem="";
              </ul>
              </div>
              <div className='mobilea' >
-                <div className='mobilename1'>
+                {/* <div className='mobilename1'>
              <p className='mobilename'>Filter& Search</p>
-             </div>
+             </div> */}
               <div className='mobilSearch-category'>
                
-             <div className='inputSearch'>
-             
-             <input type="text" placeholder='Type here...' onKeyUp={searchHandeler}/>
-            <label htmlFor=""> <FaSearch/> </label>
-           </div>
-             <div className='mobilCategory' onClick={()=>{
+            
+             {/* <div className='mobilCategory' onClick={()=>{
                 setFilter(true)
              }}><span> <MdCategory  className='svgCategory' />Filter</span>
             
@@ -157,9 +162,9 @@ let categoryItem="";
 
            
            
-             </div>
-             {filter &&<Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  query1={query} categoy={categoryItem} />
-            }
+             </div> */}
+             <Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  query1={query} categoy={categoryItem} />
+            
              </div>
              </div>
         </div>

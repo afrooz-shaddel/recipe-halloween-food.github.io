@@ -1,14 +1,14 @@
 .mobilecategoryitem{
-    padding: 2rem 4rem;
+    /* padding: 2rem 4rem;
     border-radius: 10px;
-    border: 4px dotted #198754;
-    -webkit-border-radius: 10px;
+    border: 4px dotted #198754; */
+    /* -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    position: relative;
+    -o-border-radius: 10px; */
+    /* position: relative;
     animation: dropTop 1s linear;
-    width: 20rem;
+    width: 20rem; */
 }
 
 
@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
 }
 
 .search12{

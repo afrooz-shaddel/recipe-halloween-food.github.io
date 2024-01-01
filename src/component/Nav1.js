@@ -3,7 +3,7 @@ import './nav.css'
 
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState  , useContext} from "react";
-
+import { FiAlignLeft } from "react-icons/fi";
 import {contexData} from '../CreatContext2'
 import { MdFoodBank} from "react-icons/md"
 import { FaBars } from "react-icons/fa";
@@ -83,7 +83,7 @@ const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexD
              <button>create</button>
               </Link>
                 <button  className="btnBar"  onClick={()=>setIsOpen(!isOpen)}>
- {isOpen? <AiOutlineClose  className="hambergurmenu "/>: <FaBars  className="hambergurmenu"  /> }    
+ {isOpen? <AiOutlineClose  className="hambergurmenu "/>: <FiAlignLeft   className="hambergurmenu"  /> }    
                 </button>
               {/* <FaBars className="hambergurmenu"   /> */}
                

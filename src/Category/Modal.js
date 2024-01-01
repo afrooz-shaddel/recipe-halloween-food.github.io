@@ -8,9 +8,9 @@ export default  function Modal({allMenu , close ,filter , query1 ,category}){
    console.log(allMenu )
     return(
         <div className="mobilecategoryitem"   >
-           <RxCross2  className="cross"  onClick={()=>close(false)}/>
-           <span><BiSolidCategory />Categories</span>
-           <ul  onClick={filter}>
+           {/* <RxCross2  className="cross"  onClick={()=>close(false)}/> */}
+           {/* <span><BiSolidCategory />Categories</span> */}
+           <ul   onClick={filter}>
          <Menu  allMenu={allMenu} menuFilter={filter}   Query={query1} category1={category}/>
          </ul> 
        
