@@ -119,12 +119,10 @@ const[open ,setOpen]=useState(false)
        
     <Cart/> 
 
-    <Menu    allMenu={category} filter1={filterMenu}  data1={recipie}/>
+
 
     <div className="linkPicture">
-      <Link rel="stylesheet" to="/search" >
-    <p>What can you make for Halloween?</p>
-</Link>
+       <p></p>
     </div>
 
 

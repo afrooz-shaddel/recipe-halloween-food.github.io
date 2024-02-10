@@ -10,9 +10,9 @@ let [menu , setMenu]=useState("All")
 
         <ul className='menu' >
             {allMenu.map(item=>(<li  key={item} className={item.toLowerCase()==menu.toLowerCase()?'menuItem active1':"menuItem"} onClick={()=>{setMenu(item)
-            menuFilter}}  ><Link to={`/product/${item}`}>
+            menuFilter}}  >
             {item}
-            </Link>
+           
                 
                 </li>))}
        
