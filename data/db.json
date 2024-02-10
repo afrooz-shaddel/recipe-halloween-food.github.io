@@ -1,0 +1,102 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Cocktail",
+      "ingredients": [
+        "1 sugar",
+        "1 food coloring",
+        "200g Tofu",
+        "3000ml almound"
+      ],
+      "method": "1.Pre-heat the oven to 200c/3c/gas 5. ",
+      "cookingTime": "45 minute",
+      "img": "/picture2/drink1.jpg",
+      "type": "drink"
+    },
+    {
+      "id": "2",
+      "title": "Paella-m",
+      "ingredients": [
+        "1  onion",
+        " bell pepper",
+        " garlic",
+        "tomatoes",
+        "parsley"
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/sweet3.jpg",
+      "type": "sweets"
+    },
+    {
+      "id": "3",
+      "title": "Bacalao",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "55 minute",
+      "img": "/picture2/food.webp",
+      "type": "lunch"
+    },
+    {
+      "id": "4",
+      "title": "Bacalao-bi",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "55 minute",
+      "img": "/picture2/sweet1.jpg",
+      "type": "sweets"
+    },
+    {
+      "id": "5",
+      "title": "drunk-ghost",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "55 minute",
+      "img": "/picture2/Halloween+Garnishes+-+Frankenstein+640.jpg",
+      "type": "drink"
+    },
+    {
+      "id": "6",
+      "title": "Bento",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/food2.jpg",
+      "type": "lunch"
+    }
+   
+  ]
+}

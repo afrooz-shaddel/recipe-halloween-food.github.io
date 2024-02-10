@@ -1,0 +1,324 @@
+@import "../fonts/fonts.css";
+
+
+     .nav2{
+        width: 100%;
+       
+        display: -webkit-box;
+       
+        display: -ms-flexbox;
+       
+        display: flex;
+     
+        -webkit-box-align: center;
+     
+            -ms-flex-align: center;
+     
+                align-items: center;
+      
+       
+        -webkit-box-pack: justify;
+      
+       
+            -ms-flex-pack: justify;
+      
+       
+                justify-content: space-between;
+      
+      
+      
+      
+    }
+    
+    .nav{
+     
+       
+       max-width: 1300px;
+       margin: 0 auto ;
+       -webkit-box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+               box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+     
+      
+    }
+    
+    .onBlur{
+        -webkit-filter:blur(7px);
+                filter:blur(7px)
+    }
+    .offBlur{
+        -webkit-filter:blur(0px);
+                filter:blur(0px)
+    }
+    
+    
+    .hambergurMenue{
+        color: rgb(7, 125, 17);
+        color: darkslateblue;
+        font-size: 2.5rem;
+        display: none;
+    }
+    .navItem{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        
+    }
+    
+    .createButton button{
+        font-family: "Archivo Black";
+        font-size: 1rem;
+    }
+    
+    
+    .createButton{
+       
+        font-size: 4rem;
+        color: #970b6b91;
+       
+       
+        cursor: pointer;
+        /* margin-left: 14rem; */
+        text-decoration: none;
+       
+    }
+    
+    .createButton button{
+       background-color:  #E76F51;
+       background-color: #fe5d42;
+       background-color: #fe5d42ba;
+       border:1px solid #E76F51;
+       display: block;
+       height: 3rem;
+       color: #fff;
+       text-transform: capitalize;
+       width: 7rem;
+       height: 2.3rem;
+       border-radius: 1rem;
+       transition: all 0.3s ease-in-out;
+       -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+       -ms-transition: all 0.3s ease-in-out;
+       -o-transition: all 0.3s ease-in-out;
+} 
+    .createButton button:hover{
+        background-color: #fe5d42;
+    }
+    
+    .imageIcon{
+        width: 4.3rem;
+    }
+    
+    
+    .searchBox{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        
+    }
+    
+    .searchBox label{
+        font-size: 1.2rem;
+    }
+    
+    .searchBox input{
+        outline: none;
+    }
+    
+    .foodLogo{
+     width:4rem;
+     height: 3rem;
+     display: block;
+    }
+    .logoText{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+      }
+    
+    
+    .foodLogo img{
+        width: 100%;
+        height: 100%;
+        /* background-color: #E76F51; */
+        border-radius: 50%; 
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    
+    
+    .logoText h3{
+        color: green;
+        font-family: "Roboto";
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 1.2rem;
+    }
+    
+    
+    
+    .BiChevronDown  {
+      font-size: 2.5rem;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        -webkit-transition: top 1.5s linear;
+        -o-transition: top 1.5s linear;
+        transition: top 1.5s linear;
+        position: fixed;
+        top:-50%;
+        left: 50%;
+        z-index: 2;}
+    
+        .BiChevronDown:hover{
+            border-radius: 50%;
+            background-color: rgba(179, 177, 175, 0.375);
+            width: 2rem;
+            height: 2rem;
+      
+        }
+    
+    .ma{
+        top:14%;}
+    
+        .md{
+            opacity: 0;
+            
+        }
+    
+        .linknav{
+           color: green;
+           font-weight: bold;
+           text-transform: capitalize;
+           text-decoration: none;
+           font-size: 1.2rem;
+           margin-top: 1.5rem;
+           transition: all 0.3s ease-in-out;
+           -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+           -ms-transition: all 0.3s ease-in-out;
+           -o-transition: all 0.3s ease-in-out;
+           margin-left: 4rem;
+}
+      .linknav:hover{
+          
+        color: rgb(30, 178, 30);   
+        
+   }
+    .btnBar{
+        background: none;
+        border: none;
+        outline: none;
+        display: none;
+    }
+    .hambergurmenu{
+        color: green;
+        font-size: 2rem;
+    }
+    .navMobile{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        .darkMode nav {
+            background-color: #3e2949f0;
+            color: #fff;
+            -webkit-box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+                    box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+          }
+          
+          
+          .lightMode nav{
+            background-color: #c7cbe4;
+          }
+
+       
+          @media screen and (max-width:928px) {
+         }
+         @media screen and (max-width:768px) {
+            .btnBar{display: flex;}
+           .navMobile{
+            flex-direction: column;
+            position: fixed;
+            top: 3.21rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: #c7cbe4;
+            width: 60%;
+            height: 0;
+            z-index: 99;
+            text-align: center;
+            background-color: #33302f;
+            background-color: #c7cbe4;
+            overflow: hidden;
+            box-shadow: 2px 2px 12px rgba(179, 177, 175, 0.375);
+            box-shadow: 2px 2px 12px rgb(99 65 211 / 38%);
+            transition: height 0.3s ease-in-out;
+            -webkit-transition: height 0.3s ease-in-out;
+            -moz-transition: height 0.3s ease-in-out;
+            -ms-transition: height 0.3s ease-in-out;
+            -o-transition: height 0.3s ease-in-out;
+}
+
+           .active{
+            height: 12rem;
+           }
+           .linknav{
+            margin-left: 0px;
+           }
+
+           /* .navMobile:nth-child(3){
+            margin-top: 2rem;
+           } */
+        }
+        @media screen and (max-width:570px) {
+               
+                /* .foodLogo{
+                    margin-left: 2rem;
+                } */
+                .createButton{
+                    margin-right: 2rem;
+                }
+        }
+    
+    @media screen and (max-width:480px) {
+        .nav2{
+            -webkit-box-pack:space-evenly;
+                -ms-flex-pack:space-evenly;
+                    justify-content:space-evenly;
+        }
+        .createButton button{
+            width: 5.5rem;
+            font-size:1rem;
+            height: 2.3rem;
+            
+        }
+        .navMobile{
+            width: 100%;
+        }
+    
+        /* .createButton{
+            margin-left: 8rem;
+        } */
+    
+    
+    }
+    @media screen and (max-width:406px) {
+        .createButton{
+            /* margin-left: 4rem; */
+        }}
+    @media screen and (max-width:370px) {
+        /* .createButton{
+            margin-left: 4rem; */
+        /* } */
+    }
+    
+         
+         
+        

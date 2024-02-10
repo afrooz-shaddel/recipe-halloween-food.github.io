@@ -1,0 +1,153 @@
+
+
+* , *::after , *::before{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face{
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Medium.ttf");
+}
+body{
+  height:100vh!important;
+  background-color: #c7cbe4!important;
+  font-family:"Roboto";
+  overflow-y: scroll;
+
+}
+
+
+
+
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+li , ul{list-style-type: none;}
+
+.darkMode  {
+  background-color: #3e2949f0;
+  color: #fff;
+}
+
+
+.lightMode  {
+  background-color: #c7cbe4;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  height: 2px;
+}
+::-webkit-scrollbar-track{
+  background: #e5e8ec;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-thumb{
+  background:transparent;
+  border-top: 60px solid rgb(235, 125, 15);
+ 
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+
+.searchlight{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  right: 1rem ;
+  top: 5rem;
+  z-index: 999;
+}
+.searchBox{
+  margin-top: 1rem;
+  font-size: 3.2rem;
+  text-decoration: none;
+}
+
+.searchBox-icon{
+  color: orangered;
+  color: #fe5d42;
+  color: #fe5d42ba;
+}
+
+
+.toggleBtn{
+  width: 3rem;
+  height: 3rem;
+  z-index: 999;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 12px #35dca069;
+          box-shadow: 2px 2px 12px #35dca069;
+ border: none;
+  /* box-shadow: 2px 2px 4px #eee; */
+}
+
+.toggleBtn svg {
+  display: block;
+  width: 40%;
+  height: 40%;
+  margin: auto;
+  
+}
+
+
+@media screen and (max-width:406px) {
+  .toggleBtn{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .searchBox{
+  
+    font-size: 2.2rem;
+   
+  }
+
+
+}

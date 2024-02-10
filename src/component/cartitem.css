@@ -1,0 +1,47 @@
+.heart{
+color: white;
+font-size: 2.5rem;
+/* position: absolute; */
+/* right: 1rem; */
+ right: 2.5rem; 
+
+ }
+.heartred{
+    color: red;
+} 
+.inkpicture img{
+    /* position: relative; */
+} 
+.linkpicture {
+    position: relative;
+}
+
+.heartbtn{
+    outline: none;
+    background-color: transparent;
+position: absolute !important;
+
+right: 2rem;
+top: 0.5rem; 
+    /* border: 2px solid red; */
+    border: none;
+    z-index: 99;
+
+}
+
+.linkpictur img{
+    /* position: relative!important; */
+}
+.heartbtn svg{
+    color: white;
+    font-size: 2rem;
+    
+ 
+}
+.heartbtn:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

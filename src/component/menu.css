@@ -1,0 +1,85 @@
+/* /* @font-face{
+    font-family: "Robto";
+    src: url("./fonts/Roboto/Roboto-Regular.ttf");
+} */
+@font-face{
+    font-family: "Archivo Black";
+    src: url("../fonts/Archivo/Archivo-Black.ttf"); 
+}
+@import '../fonts/fonts.css';
+.menu{
+    font-size: 1rem;
+    font-family:"Archivo Black";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* margin-top: 2rem; */
+}
+
+ .menuItem{
+    padding:0.3rem 1rem;
+    cursor: pointer;
+    color:rgb(62, 61, 61);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.active1{
+    /* background-color: #ff673e; */
+    border-bottom: 4px solid #ff673e ;
+    /* -webkit-box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2); */
+}
+
+
+.menuItem:hover{
+    background-color:#f3967d;
+    color: #fff;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.darkMode .active1 {
+    /* background-color: #af00ff17; */
+    background-image: -webkit-gradient(linear , left top, right top , from(#fd556b) , to(#ff8e80));
+    background-image: -o-linear-gradient(left , #fd556b , #ff8e80);
+    background-image: linear-gradient(90deg , #fd556b , #ff8e80);
+    background-image: -webkit-gradient(linear , left top, right top , from(#bf92f1) , to(#e4b3fa));
+    background-image: -o-linear-gradient(left , #bf92f1 , #e4b3fa);
+    background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa);
+    background-color: #af00ff17;
+}
+
+.darkMode .menuItem {
+    color: #fff;
+}
+
+.lightMode .menuItem {
+   color: black;
+    
+}
+
+@media screen and (max-width:718px) {
+    .menu{
+        flex-direction: row;
+    }}
+
+
+@media screen and (max-width:406px) {
+    .menuItem{
+        padding:0.3rem 0.5rem;
+    
+        font-weight: 300;
+        font-size: 1.2rem;
+    }}

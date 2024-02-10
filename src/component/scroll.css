@@ -1,0 +1,62 @@
+/* .btn{
+
+font-size: 5rem;
+color: brown;
+cursor: pointer;
+position: fixed;
+
+color: aqua;
+
+right: 1rem;
+bottom: 2rem;
+
+}
+
+
+.btnarrow{
+    color: 	#F9812A;
+    font-size: 2rem;
+    transition: all ease-in-out 200ms;
+    z-index: 1000;
+    position: relative;
+
+} */
+
+
+.btn{
+
+    font-size: 5rem;
+    color: brown;
+    cursor: pointer;
+    position: fixed;
+    
+    color: aqua;
+    
+    right: 1rem;
+    bottom: 2rem;
+    
+    }
+    
+    
+    .btnarrow{
+        color: 	#F9812A;
+        font-size: 2rem;
+        -webkit-transition: all ease-in-out 200ms;
+        -o-transition: all ease-in-out 200ms;
+        transition: all ease-in-out 200ms;
+        z-index: 1000;
+        position: relative;
+    
+    }
+    
+    .btnarrow:hover{
+      
+        color: #EF7215;
+       
+    }
+
+.btnarrow:hover{
+  
+    color: #EF7215;
+   
+}

@@ -1,0 +1,374 @@
+
+@import "../fonts/fonts.css";
+
+
+.Create{
+   
+   
+    
+    width: 81%;
+    max-width: 1200px;
+  
+   height: 600px;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+
+    margin: 3rem auto;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.itemIngredients{
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+
+.createForm{
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(22px);
+            backdrop-filter: blur(22px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    
+}
+
+
+.createForm__title{
+   margin-bottom: 3rem;
+   font-weight: bold;
+   color: #fe5d42;
+   color: #198754;;
+   font-size: 2rem;
+   font-family: "Archivo Black";
+}
+.formInput input , .formInput select{
+
+ 
+  border: 2px solid #fff;
+  background-color: transparent;
+  height: 45px;
+  
+  margin-bottom: 0.5rem;
+  font-family: "Roboto";
+  
+
+  
+}
+.formInput input:focus , .formInput select:focus, .formInput input:active , .formInput select:active {
+    outline: none;
+}
+
+
+
+
+
+.formInput{
+ 
+    display: -webkit-box;
+ 
+    display: -ms-flexbox;
+ 
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+}
+.formInput input::-webkit-input-placeholder{
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: capitalize;
+    
+}
+.formInput input::-moz-placeholder{
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: capitalize;
+    
+}
+.formInput input:-ms-input-placeholder{
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: capitalize;
+    
+}
+.formInput input::-ms-input-placeholder{
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: capitalize;
+    
+}
+.formInput input::placeholder{
+    color: #FFF;
+    font-size: 1rem;
+    text-transform: capitalize;
+    
+}
+.formInput select{
+    height: 3rem;
+}
+.formInput select{
+    color: black;
+ }
+ .formInput select option{
+    color: black;
+ }
+
+ .formInput select:first-of-type{
+    color: #FFF;
+ }
+
+
+
+.btnRecipe{
+ border: none;
+ height: 45px;
+ width: 50%;
+ background-color: #fe5d42;
+ color: #fff;
+ display: block;
+ font-size: 1rem;
+ transition: all 0.3s ease-in-out;
+ -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+}
+.btnRecipe:hover{
+  background-color:  #ff7b00; 
+  color: black;
+}
+
+.ingredientList span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 0 !important;
+}
+ul{
+    padding-left: 0!important;
+}
+
+.formDiv{
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+.ingredientList{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.ingredientList li{
+   margin: 0 0.5rem;
+}
+
+
+li{list-style-type: none;}
+
+
+.successMassege{
+    width: 15rem;
+    height: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgb(74 135 78);
+    color: #fff;
+    margin: 2rem auto;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+}
+.formIngredient{
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.addbtn{
+    position: absolute;
+    right: 0;
+    height: 45px;
+    /* border: none; */
+    width: 2.5rem
+    ;
+   
+    background-color: transparent;
+    background-color: #ff5722;
+    background-color: #fe5d42;
+  
+    border: 1px snow solid;
+    color: white;
+}
+
+
+.login-img{
+   width: 40%;
+    
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    background-color: #fff;
+    
+    
+
+}
+.login-img img{
+ 
+    -o-object-fit: cover;
+ 
+       object-fit: cover;
+    /* width: 250px;
+    height: 250px; */
+    width: 100%;
+    height: 100%;
+}
+.ingredientList{
+    width: 50%;
+}
+
+.circle{
+    width: 000px;
+    height: 700px;
+    position: fixed;
+      z-index: -0.5;
+    border-radius: 50%;
+    left: -9rem;
+    top: 54%;
+    background-image: -webkit-gradient(linear , left top, right top , from(#94a3c2) , to(#596888));
+    background-image: -o-linear-gradient(left , #94a3c2 , #596888);
+    background-image: linear-gradient(to right , #94a3c2 , #596888);
+    -webkit-transform: translateY(-38%);
+        -ms-transform: translateY(-38%);
+            transform: translateY(-38%);
+}
+
+@media screen and (max-width:928px) {
+    .login-img{
+        display: none;
+    }
+    .createForm{
+        width: 100%;
+    }
+    .formInput{
+width: 70%;
+    }
+
+    .ingredientList{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:768px) {
+   
+    .createForm{
+        width: 100%;
+    }
+   
+
+    .formInput input , .formInput select {
+        width: 100%;
+    }
+
+    /* .btnRecipe{
+        width: 100%;
+    } */
+
+
+
+}
+@media screen and (max-width:600px) {
+    .formInput{
+width: 70%;
+    }
+    
+
+
+
+}
+
+@media screen and (max-width:490px) {
+    .formInput , .ingredientList{
+width: 95%;
+    }
+    .Create{
+        height: 470px;
+    }
+.Create{
+    margin-top: 6rem;
+}
+
+
+}
+@media screen and (max-width:390px) {
+    .formInput{
+width: 95%;
+    }
+    .Create{
+        height: 470px;
+    }
+    .createForm__title {
+        font-size: 1.5rem;
+    }
+    .btnRecipe{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+    .formIngredient input{
+       
+    }
+
+
+
+}
