@@ -122,7 +122,37 @@ const[open ,setOpen]=useState(false)
 
 
     <div className="linkPicture">
-       <p></p>
+      <div  className="linkPictureWrapper" >
+        <div  className="linkPictureWrapper-right">
+        <h1>Halloween recipes and ideas</h1>
+       <p>Whether you're planning your Halloween party food, looking to bake a scary showstopper, or wanting to cast a spooky spell on your favourite family dinner, our Halloween food ideas are ghoulishly great and freakishly fun! There are tasty ideas for using up pumpkin too, so there's less waste from your pumpkin carving</p>
+        </div>
+        <div className="linkPictureWrapper-left">
+          <div className="linkPictureWrapper-leftTop">
+          <div>
+            <img src="\iconlink\diagram.svg" alt="" />
+            <p>Variety</p>
+          </div>
+          <div>
+            <img src="\iconlink\home-wifi.svg" alt="" />
+            <p>Easy</p>
+          </div>
+          </div>
+          <div  className="linkPictureWrapper-leftBottom">
+          <div>
+            <img src="\iconlink\menu-board-badge.svg" alt="" />
+            <p>Variety</p>
+          </div>
+          <div>
+            <img src="\iconlink\user.svg" alt="" />
+            <p>Variety</p>
+          </div>
+          </div>
+         
+
+        </div>
+      </div>
+     
     </div>
 
 

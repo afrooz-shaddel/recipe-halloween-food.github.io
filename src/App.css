@@ -56,6 +56,7 @@ li , ul{list-style-type: none;}
 
 .darkMode  {
   background-color: #3e2949f0;
+  background-color: #3e2949f0;
   color: #fff;
 }
 
@@ -99,10 +100,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: fixed;
+  /* position: fixed;
   right: 1rem ;
   top: 5rem;
-  z-index: 999;
+  z-index: 999; */
 }
 .searchBox{
   margin-top: 1rem;
@@ -118,14 +119,22 @@ html {
 
 
 .toggleBtn{
-  width: 3rem;
-  height: 3rem;
-  z-index: 999;
-  border-radius: 50%;
-  -webkit-box-shadow: 2px 2px 12px #35dca069;
-          box-shadow: 2px 2px 12px #35dca069;
- border: none;
-  /* box-shadow: 2px 2px 4px #eee; */
+  width: 2.3rem;
+  height: 2.3rem;
+  /*z-index: 999;
+  *//*border-radius: 50%;
+  *//*-webkit-box-shadow: 2px 2px 12px #35dca069;
+  box-shadow: 2px 2px 12px #35dca069;
+  */border: none;
+  /*box-shadow: 2px 2px 4px #eee;
+  */margin-right: 1rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
+  /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff; */
 }
 
 .toggleBtn svg {

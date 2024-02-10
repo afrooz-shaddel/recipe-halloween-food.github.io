@@ -48,12 +48,17 @@
 }
 
 .tranding-slide{
-  width: 25rem;
+  width: 45rem;
   height: 25rem;
   position: relative;
+  border-radius:2rem;
+  -webkit-border-radius:2rem;
+  -moz-border-radius:2rem;
+  -ms-border-radius:2rem;
+  -o-border-radius:2rem;
 }
 .tranding-slide .tranding-slide-img img{
-    width: 25rem ;
+    width: 45rem ;
     height: 25rem ;
     border-radius:2rem ;
     -webkit-border-radius:2rem ;

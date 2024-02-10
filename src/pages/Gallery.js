@@ -5,15 +5,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow} from 'swiper/modules';
 
+import 'swiper/css/autoplay';
 import './gallery.css';
 import Header from '../component/Header/Header';
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard , Autoplay } from 'swiper/modules';
+import {  Mousewheel, Keyboard , Autoplay } from 'swiper/modules';
 import { CiStar } from "react-icons/ci";
 
 // import { useState } from 'react';
@@ -42,13 +42,16 @@ export default  function Gallery(){
                 <div className='container1'>
                   <Swiper
                     cssMode={true}
-                    navigation={true}
+               
                     mousewheel={true}
                     keyboard={true}
                     loop={true}
                     centeredSlides={true}
                     effect='coverflow'
                     data-swiper-autoplay="2000"
+                    
+   autoplay={{ delay: 3000, disableOnInteraction: false }}
+   
                     coverflowEffect={{
                     rotate:0,
                     stretch: 0,
@@ -60,7 +63,7 @@ export default  function Gallery(){
                     }}
                     grabCursor={true}
                     slidesPerView='auto'
-                    modules={[Navigation,EffectCoverflow, Mousewheel, Keyboard ,Pagination , Autoplay]}
+                    modules={[EffectCoverflow, Mousewheel, Keyboard  , Autoplay]}
                     className="mySwiper  tranding-slider" >
                    
                        {img1.map(item=>(

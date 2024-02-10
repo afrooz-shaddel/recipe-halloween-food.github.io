@@ -43,25 +43,7 @@ useEffect(()=>{
     <ScrollToTop/>
     <BrowserRouter>
 
-    { showDark && <div   className="searchlight" >
-          <div data-aos="fade-left">
-            <button   className="toggleBtn" onClick={()=>{theme=="light"?setTheme("dark")  :setTheme("light") }}>
-                 {theme=="light" ?<MdDarkMode/> :<CiLight/>}
-        
-            </button>
-            </div>
-          
-
-         
-             {/* <div data-aos="fade-left">
-             <Link to="/search1"   className="searchBox"   >
-        
-             <BsFillSearchHeartFill  className="searchBox-icon"   />
-         </Link>
-         </div> */}
-       
-            
-          </div>}
+  
 
    
    

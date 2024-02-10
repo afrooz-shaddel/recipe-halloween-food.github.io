@@ -33,7 +33,7 @@
     .nav{
      
        
-       max-width: 1300px;
+       max-width: 1600px;
        margin: 0 auto ;
        -webkit-box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
                box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
@@ -79,30 +79,53 @@
         cursor: pointer;
         /* margin-left: 14rem; */
         text-decoration: none;
-       
+        margin-right: 2rem;
+        box-shadow: 2px 2px 12px rgb(99 65 211 / 38%);
+        box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
+        /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff; */
     }
-    
+    .createButton svg{
+        color: rgb(236, 21, 21);
+        font-weight: bolder;
+        color:  #E76F51;
+        font-size: 1.5rem;
+    }
     .createButton button{
-       background-color:  #E76F51;
+       /*background-color:  #E76F51;
        background-color: #fe5d42;
        background-color: #fe5d42ba;
        border:1px solid #E76F51;
-       display: block;
+       */
+       /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff;
+       box-shadow: 2px 2px 12px rgb(99 65 211 / 38%); */
        height: 3rem;
+       display: block;
+       border-radius:4px ;
        color: #fff;
        text-transform: capitalize;
        width: 7rem;
        height: 2.3rem;
-       border-radius: 1rem;
+       border-radius: 10px;
        transition: all 0.3s ease-in-out;
        -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
        -ms-transition: all 0.3s ease-in-out;
        -o-transition: all 0.3s ease-in-out;
+       width: 2.2rem;
+       height: 2.2rem;
+       border: none;
+       -webkit-border-radius:4px ;
+       -moz-border-radius:4px ;
+       -ms-border-radius:4px ;
+       -o-border-radius:4px ;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
 } 
-    .createButton button:hover{
+    /* .createButton button:hover{
         background-color: #fe5d42;
-    }
+    } */
     
     .imageIcon{
         width: 4.3rem;
@@ -123,11 +146,15 @@
     .searchBox input{
         outline: none;
     }
-    
+    .moonDark{
+        display: flex;
+
+    }
     .foodLogo{
      width:4rem;
      height: 3rem;
      display: block;
+     margin-right: 0.25rem;
     }
     .logoText{
         display: -webkit-box;
@@ -137,6 +164,7 @@
             -ms-flex-align: center;
                 align-items: center;
         text-decoration: none;
+        margin-left: 2rem;
       }
     
     
@@ -149,6 +177,7 @@
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
+        
 }
     
     
