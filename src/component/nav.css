@@ -311,9 +311,9 @@
                 /* .foodLogo{
                     margin-left: 2rem;
                 } */
-                .createButton{
+                /* .createButton{
                     margin-right: 2rem;
-                }
+                } */
         }
     
     @media screen and (max-width:480px) {
@@ -322,12 +322,12 @@
                 -ms-flex-pack:space-evenly;
                     justify-content:space-evenly;
         }
-        .createButton button{
+        /* .createButton button{
             width: 5.5rem;
             font-size:1rem;
             height: 2.3rem;
             
-        }
+        } */
         .navMobile{
             width: 100%;
         }
@@ -339,9 +339,7 @@
     
     }
     @media screen and (max-width:406px) {
-        .createButton{
-            /* margin-left: 4rem; */
-        }}
+    }
     @media screen and (max-width:370px) {
         /* .createButton{
             margin-left: 4rem; */

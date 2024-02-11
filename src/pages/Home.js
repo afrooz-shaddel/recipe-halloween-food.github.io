@@ -19,6 +19,7 @@ import Typewriter from "typewriter-effect";
 import ScrollToTop from '../component/ScrollToTop'
 import Loader from "../component/Loader";
 import AutoPlay from "../component/AutoPlay/AutoPlay";
+import Newest from "../component/Newest";
 
 export default function Home(){
  
@@ -158,6 +159,8 @@ const[open ,setOpen]=useState(false)
 
 
 <AutoPlay/>
+
+<Newest/>
         
         </>
    
