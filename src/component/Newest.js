@@ -3,7 +3,8 @@ import { useState , useEffect } from 'react';
 import NewProduct from './NewProduct';
 import { useFetch } from "../hook/useFetch";
 import {  Autoplay } from 'swiper/modules';
-
+import { useNavigate } from 'react-router-dom';
+import  {Link} from 'react-router-dom';
 import 'swiper/css';
 
 import 'swiper/css/autoplay';
@@ -14,7 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Newest(){
     const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
     const[recipie , setRecipie]=useState("")
-
+    let navigate=useNavigate()
 let newData=[...data];
 console.log(newData.reverse().splice(0,1))
    
@@ -22,6 +23,14 @@ console.log(newData.reverse().splice(0,1))
     return(
    <div>
       <Header  item="N E W R E C I P E"/>
+
+      <div className='btnWrapperNew'>
+       New Recipe
+       
+        <Link rel="stylesheet" to="/search" >
+        <button className='btnNew' > All  </button>
+</Link>
+      </div>
      <Swiper
     pagination={true} 
     modules={[ Autoplay]} 

@@ -38,6 +38,7 @@ const [showDark , setShowDark]=useState(false);
                         <div  className="foodLogo">
                         <img src="\gift\New folder\images__2_-removebg-preview (1).png" alt=""  />
                         
+                        
                         </div>
                         <h3>Food</h3>
                     
