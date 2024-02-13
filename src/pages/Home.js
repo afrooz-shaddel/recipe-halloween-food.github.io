@@ -92,7 +92,16 @@ const[open ,setOpen]=useState(false)
     
       <div  className="homeHeaderPicture">
     
-     
+      <div className="pulse">
+<img src="\gift\[removal.ai]_a267accc-b9dd-496b-a31b-b06428a46897-young-beautiful-female-chef-portrait-in-kitchen-bt0m92.png" alt=""/>
+    
+    <div className="circle2"   style={{animationDelay:"0s"}}></div>
+    <div className="circle2" style={{animationDelay:"1s"}}></div>
+    <div className="circle2" style={{animationDelay:"2s"} }></div>
+    <div className="circle2" style={{animationDelay:"3s"}}></div>
+    <div className="circle2" style={{animationDelay:"4s"}}></div>
+    <div className="circle2" style={{animationDelay:"5s"}}></div>
+</div>
        {/* <img src="\icon\1 (1).jpg" alt="" /> */}
       <div className="headerType"> 
       
@@ -113,6 +122,7 @@ const[open ,setOpen]=useState(false)
           />
       
       </div> 
+      {/* <AutoPlay/> */}
      
     </div>
          
@@ -158,7 +168,7 @@ const[open ,setOpen]=useState(false)
 
 
 
-<AutoPlay/>
+
 
 <Newest/>
         

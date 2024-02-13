@@ -37,6 +37,8 @@
        margin: 0 auto ;
        -webkit-box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
                box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+               box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.03);
+               
      
       
     }
@@ -184,9 +186,12 @@
     .logoText h3{
         color: green;
         font-family: "Roboto";
-        font-size: 1.2rem;
-        font-weight: bold;
+        font-size: 1.6rem;
+        font-weight: bolder;
         margin-top: 1.2rem;
+      /* color: #E76F51;; */
+      font-weight: 2rem;
+        font-family: 'GreatVibes-Regular';;
     }
     
     
@@ -293,6 +298,13 @@
             -moz-transition: height 0.3s ease-in-out;
             -ms-transition: height 0.3s ease-in-out;
             -o-transition: height 0.3s ease-in-out;
+            margin-right: 1rem;
+}
+.btnBar{
+    margin-right: 1rem;
+}
+.logoText{
+    margin-left: 1rem;
 }
 
            .active{
@@ -317,11 +329,11 @@
         }
     
     @media screen and (max-width:480px) {
-        .nav2{
+        /* .nav2{
             -webkit-box-pack:space-evenly;
                 -ms-flex-pack:space-evenly;
                     justify-content:space-evenly;
-        }
+        } */
         /* .createButton button{
             width: 5.5rem;
             font-size:1rem;

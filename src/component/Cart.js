@@ -6,8 +6,14 @@ import Header from '../component/Header/Header';
 import CartItem from './CartItem';
 import { useFetch } from "../hook/useFetch";
 import Menu from "./Menu";
+import {useLocalStorage} from "usehooks-ts";
 
 export default function Cart(){
+  let [like , setLike]=useLocalStorage('like' ,false)
+
+  function clickHeart(){
+    setLike( like=>!like)
+  }
     useEffect(() => {
         AOS.init({  duration : 2000});
       }, [])
@@ -46,7 +52,7 @@ export default function Cart(){
          <div className='cartWrapper '>
        
         {cart.map(item=>(
-          <CartItem product={item} key={item.id}/>
+          <CartItem product={item} key={item.id} clicked={clickHeart} like={like}/>
         ))}
     
       

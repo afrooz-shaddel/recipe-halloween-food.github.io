@@ -22,9 +22,17 @@ export default function AutoPlay() {
   "/remove/images (4).png",
   "/remove/images (8).png",
   "/remove/images (9).png",
+  "/remove/New folder (2)/there-is-glass-orange-juice-with-pumpkins-it-generative-ai_900396-38403.png" ,
+"/remove/images (3).png",
+"/remove/images (8).png",
+"/remove/images (9).png",
+,"/remove/New folder (2)/pngtree-pizza-with-olives-and-sausage-spider-for-halloween-party-png-image_10301020.png"
+,"/remove/New folder (2)/106223985.png",
   "/remove/New folder (2)/images (7).png",
 "/remove/New folder (2)/there-is-glass-orange-juice-with-pumpkins-it-generative-ai_900396-38403.png" ,
 "/remove/images (3).png",
+"/remove/images (8).png",
+"/remove/images (9).png",
 ,"/remove/New folder (2)/pngtree-pizza-with-olives-and-sausage-spider-for-halloween-party-png-image_10301020.png"
 ,"/remove/New folder (2)/106223985.png"
 ]
@@ -34,8 +42,8 @@ export default function AutoPlay() {
        pagination={true} 
        modules={[ Autoplay]} 
        
-       slidesPerView={5}
-       spaceBetween={20}
+       slidesPerView={8}
+       spaceBetween={2}
        autoplay={{ delay: 3000, disableOnInteraction: false }}
     
      

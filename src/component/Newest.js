@@ -4,6 +4,7 @@ import NewProduct from './NewProduct';
 import { useFetch } from "../hook/useFetch";
 import {  Autoplay } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from "react-icons/fa6";
 import  {Link} from 'react-router-dom';
 import 'swiper/css';
 
@@ -24,11 +25,11 @@ console.log(newData.reverse().splice(0,1))
    <div>
       <Header  item="N E W R E C I P E"/>
 
-      <div className='btnWrapperNew'>
-       New Recipe
+      <div className='btnWrapperNew' >
+     
        
         <Link rel="stylesheet" to="/search" >
-        <button className='btnNew' > All  </button>
+        <p className='btnNew' ><FaArrowLeft/> All Recipes </p>
 </Link>
       </div>
      <Swiper

@@ -35,12 +35,8 @@ const [showDark , setShowDark]=useState(false);
             
                 <Link to='/'  className="logoText">
                  
-                        <div  className="foodLogo">
-                        <img src="\gift\New folder\images__2_-removebg-preview (1).png" alt=""  />
-                        
-                        
-                        </div>
-                        <h3>Food</h3>
+                      
+                        <h3>Recipes Food</h3>
                     
                    
                     
@@ -90,12 +86,7 @@ const [showDark , setShowDark]=useState(false);
           
 
          
-             {/* <div data-aos="fade-left">
-             <Link to="/search1"   className="searchBox"   >
-        
-             <BsFillSearchHeartFill  className="searchBox-icon"   />
-         </Link>
-         </div> */}
+           
        
             
           </div>
@@ -104,12 +95,13 @@ const [showDark , setShowDark]=useState(false);
              
              <button> < AiOutlineSlack/> </button>
               </Link>
-                <button  className="btnBar"  onClick={()=>setIsOpen(!isOpen)}>
- {isOpen? <AiOutlineClose  className="hambergurmenu "/>: <FiAlignLeft   className="hambergurmenu"  /> }    
-                </button>
+                
               {/* <FaBars className="hambergurmenu"   /> */}
                
               </div>
+              <button  className="btnBar"  onClick={()=>setIsOpen(!isOpen)}>
+ {isOpen? <AiOutlineClose  className="hambergurmenu "/>: <FiAlignLeft   className="hambergurmenu"  /> }    
+                </button>
               </div>
          
             {/* </div> */}
