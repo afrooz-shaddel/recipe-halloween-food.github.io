@@ -17,8 +17,8 @@ const[alert ,setAlert]=useState("")
 // const [found , setFound]=useState(false)
 const[recipie , setRecipie]=useState("")
 
-const {data}=useFetch('https://recipefood-json-server.liara.run/recipes')
- 
+// const {data}=useFetch('https://recipefood-json-server.liara.run/recipes')
+const {data}=useFetch('http://localhost:3000/recipes')
 let elemenRef=useRef(null)
 
  

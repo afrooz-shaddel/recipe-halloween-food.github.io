@@ -18,7 +18,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 
 export default function Searchend(){
-    const {data}=useFetch('https://recipefood-json-server.liara.run/recipes')
+    const {data}=useFetch('http://localhost:3000/recipes')
 
     let category2= new Set(data.map(item=>(item.type)));
     let category21=["All" ,...category2] 

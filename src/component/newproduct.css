@@ -5,6 +5,7 @@
    height: 15rem;
    /* margin: auto; */
    width: 100%;
+   color: #f2a22a;
 }
 .picture__product{
 width: 10rem;
@@ -59,13 +60,16 @@ text-align: center;
 }
 
 .lightMode .productWrapper {
-    background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa);
+    /* background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa); */
     /* background-image: linear-gradient(90deg , #fd556b , #ff8e80); */
     /* background-image: linear-gradient(90deg , #C5EEE2 , #f9D4F4); */
-    background-image: linear-gradient(90deg , #f4c4ec , #f38181);
+    /* background-image: linear-gradient(90deg , #f4c4ec , #f38181);
     background-image:linear-gradient(90deg ,#198754 ,#0fab63c9 );
     background-image:linear-gradient(rgba(0, 0, 0, 0.15) ,#006939c9 );
-    background-image:linear-gradient(#0fab6380 ,#0fab6380 );
+    background-image:linear-gradient(#0fab6380 ,#0fab6380 ); */
+    background-color: #f5f5f7;
+    background-color: #68e89626;
+    color:black;
 };
 /* background-color: ;
 background-color: #0fab6380; */
@@ -97,6 +101,7 @@ background-color: #0fab6380; */
 
  .productWrapper p{
     margin-top: 1rem;
+    color: black;
 } 
 .moreLink1{
     text-decoration: none;
@@ -130,6 +135,7 @@ background-color: #0fab6380; */
     color: #fff;
     
     padding-top: 0.75rem;
+    color: black;
 }
 .productWrapper-title{
     font-family: "Roboto";

@@ -97,6 +97,101 @@
       "img": "/picture2/food2.jpg",
       "type": "lunch"
     }
+
+    ,
+    {
+      "id": "7",
+      "title": "Bento",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/food2.jpg",
+      "type": "lunch"
+    }
+
+
+    ,
+    {
+      "id": "8",
+      "title": "Bento",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/food2.jpg",
+      "type": "lunch"
+    }
+
+    ,
+    {
+      "id": "9",
+      "title": "Bento",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/food2.jpg",
+      "type": "lunch"
+    }
+
+    ,
+    {
+      "id": "10",
+      "title": "Bento",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/food2.jpg",
+      "type": "lunch"
+    }
+    ,
+    {
+      "id": "11",
+      "title": "Bento",
+      "ingredients": [
+        "1 pound bacalao",
+        " 2 tayotas",
+        " medium red onion ",
+        " cloves garlic",
+        " bell pepper",
+        "large tomato",
+        " egg "
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/picture2/food2.jpg",
+      "type": "lunch"
+    }
    
   ]
 }
