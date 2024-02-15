@@ -1,3 +1,44 @@
+.MassageWrapper{
+    display: flex;
+    height: fit-content;
+    /* max-width: 1400px; */
+    /* justify-content: space-between; */
+    /* box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.03); */
+justify-content: space-around;
+    /* background-image: url(../../holloween/1.jpg); */
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+   margin-top: 3rem;
+   /* max-width: 97%; */
+   max-width: 1600px;
+   /* margin-right: auto;
+   margin-left: auto; */
+border-top-right-radius: 0.75rem;
+border-top-left-radius: 0.75rem;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+      ),
+      url(../../holloween/1.jpg), lightgray 50% / cover no-repeat;
+    
+}
+
+.MassageContent h3{
+    color: #fff;
+    font-size: 1.8rem;
+    font-family: 'GreatVibes-Regular';;
+    margin-top: 1rem;
+
+}
+
+.MassageContent span{
+    font-family: 'GreatVibes-Regular';;
+    color: #198754;
+}
+
+
 .tooltip-section{
     display: flex;
     justify-content: center;
@@ -11,8 +52,9 @@
 
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.1); */
     margin-top: 2rem;
+    margin-right: 3rem;
     
 }
 
@@ -135,6 +177,119 @@
 .tooltip-section .tooltip-item:nth-child(5):hover span , .tooltip-section .tooltip-item:nth-child(5):hover .tooltip-text , .tooltip-section .tooltip-item:nth-child(5):hover .tooltip-text::before{
     background-color: #DE463B;
 }
+.formMassageRight{
+    display: flex;
+    flex-direction: column;
+}
+.formMassageLeft{
+    display: flex;
+    flex-direction: column;
+}
+
+.MassageContent form{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 4rem;
+}
+
+.MassageContent h3{
+    margin-left: 4rem;
+}
+.MassageContent{
+    width: 50%;
+}
+/* .formMassageRight input{
+ width: 100%;
+} */
+.formMassageRight {
+    width: 60%;
+}
+
+.formMassageRight input {
+    color: #fff;
+    background-color: transparent;
+  padding:0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border: 1px solid #717171;
+}
+
+.formMassageRight input::placeholder {
+   color:#fff;
+
+}
+.formMassageLeft {
+    max-width: 50%;
+}
+
+.formMassageLeft textarea {
+    border: 1px solid #717171;
+    color: #fff;
+ width: 18.7rem;
+ height: 10.2rem;
+  margin-right: 0.75rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  text-align: right;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  background-color: transparent;
+}
+
+.formMassageLeft textarea::placeholder{
+    color: #fff;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+.formMassageLeft button {
+    width: 11rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    margin-right: 0.75rem;
+background-color: transparent;
+color: #fff;
+border: 1px solid #717171;
+margin-bottom: 1rem;
+  }
+
+ 
+
+
+
+@media screen and (max-width:1200px) {
+    .MassageContent form{
+       
+        margin-left: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width:950px) {
+    .MassageContent form{
+       
+       /* flex-direction: column; */
+       justify-content: center;
+    }
+    .MassageContent{
+        width: 80%;
+    }
+    .MassageWrapper{
+        flex-direction: column;
+    }
+    .contactwrapper{
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+    }
+
+}
 
 
 @media screen and (max-width:768px) {
@@ -143,6 +298,31 @@
        flex-wrap: wrap;
        width: 100%;
      /* flex-direction: column; */
+    }
+
+    .MassageContent{
+        width: 95%;
+    }
+
+
+
+}
+
+@media screen and (max-width:670px) {
+    .MassageContent{
+        width: auto;
+    }
+
+   
+
+    .MassageContent form{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formMassageRight input{
+        width: 18.7rem;
+        height: 2.5rem;
     }
 
 
@@ -165,7 +345,7 @@
     }
 
 }
-.darkMode .contactwrapper {
+.darkMode .MassageWrapper {
     background-color: #3e2949f0;
     color: #fff;
     -webkit-box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
@@ -173,6 +353,6 @@
   }
   
   
-  .lightMode .contactwrapper{
+  .lightMode .MassageWrapper{
     background-color: #c7cbe4;
   }

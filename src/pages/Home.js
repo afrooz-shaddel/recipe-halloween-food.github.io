@@ -89,8 +89,28 @@ const[open ,setOpen]=useState(false)
 
     return(
       <>
+         
+         {/* <div className="headerType"> 
+      
+      <Typewriter
+          onInit={Typewriter=>{
+            Typewriter.typeString('The Best Recipes')
+            .start()
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Halloween food')
+            .start()
+            .pauseFor(2000)
+          }}
+          options={{
+            loop: true
+          }}
+          
+          />
+      
+      </div>  */}
     
-      <div  className="homeHeaderPicture">
+      <div  className="homeHeaderPicture1">
     
       <div className="pulse">
 <img src="\gift\[removal.ai]_a267accc-b9dd-496b-a31b-b06428a46897-young-beautiful-female-chef-portrait-in-kitchen-bt0m92.png" alt=""/>
@@ -102,7 +122,7 @@ const[open ,setOpen]=useState(false)
     <div className="circle2" style={{animationDelay:"4s"}}></div>
     <div className="circle2" style={{animationDelay:"5s"}}></div>
 </div>
-       {/* <img src="\icon\1 (1).jpg" alt="" /> */}
+       
       <div className="headerType"> 
       
       <Typewriter
@@ -121,8 +141,10 @@ const[open ,setOpen]=useState(false)
           
           />
       
-      </div> 
-      {/* <AutoPlay/> */}
+      </div>  
+      {/* <p className="name">from <br/>
+      Carolina Garofani </p> */}
+    
      
     </div>
          
