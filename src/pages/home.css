@@ -1,25 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-/* .bg-Header{
-    /* background-image: url('../holloween/suchi/sushi-pieces-chopsticks-sushi-flying-air-generative-ai-sushi-pieces-chopsticks-sushi-flying-air-generative-272763631.webp'); */
-    /* background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
-    /* width: 35rem;
-    height: 35rem;
-    animation: biani 4.5s linear infinite alternate;
-    box-shadow: 0 0px 20px rgba(36, 39, 37, 0.3);
-    margin-top: 4rem;
-    margin-right: 4rem;
-} */ */
-/* .style1parallax{
-    background-image: url(../holloween/result\ \(12\).png);
-    background-size: cover;
-}
-.style1parallax1{
-    background-image: url(../holloween/result15.png);
-    background-size: cover;
-} */
+
 .homeBackGround{
     margin-top: 4rem;
     padding-top: 5rem;
@@ -74,7 +55,7 @@
 }
 .homeBackgroundLeft h1 span{
     color: #ff8243;
-    /* color: #0d0d25; */
+   
    
 }
 
@@ -86,15 +67,7 @@
     margin-bottom: 25px;
    
 }
-/* .homeBackgroundLeft {
-    color: #0d0d25;
-    font-size: 40px;
-/* line-height: 108px; */
-/* text-transform: capitalize;
-margin-bottom: 25px;
-font-weight: 900;
-}  */
-/* */
+
 
 
 
@@ -120,12 +93,7 @@ font-weight: 900;
     color: #0d0d25;
     background:none;
     font-size: 20px;
-    /* font-family: monospace; */
-    /*font-weight: var(--weight-bold);
-    font-weight: bold;
-    text-transform: uppercase;
-    /*letter-spacing: var(--letterSpacing-5);
-    /* */max-width: max-content; 
+
     border: 3px solid  #ff8243;
     padding: 10px 45px;
     overflow: hidden;
@@ -196,8 +164,7 @@ font-weight: 900;
 
 .homeWrapper{
  
-  /* max-width: 1300px; */
-  /* height: 100vh; */
+
   background-color: aliceblue;
   margin: 5rem auto;
   background-image: -webkit-gradient(linear,left top, right top,from(#d57589) ,to(#ffc7a3));
@@ -210,13 +177,13 @@ font-weight: 900;
 
 
 .darkMode .homeWrapper {
-  /* background-color: #af00ff17; */
+ 
   background-image: -webkit-gradient(linear , left top, right top , from(#561f26) , to(#af00ff17));
   background-image: -o-linear-gradient(left , #561f26 , #af00ff17);
   background-image: linear-gradient(90deg , #561f26 , #af00ff17);
   background-color: #af00ff17;
 }
-/* homeHeaderPicture */
+
 
 .homeHeaderPicture1{
  /* position: relative; */
@@ -258,12 +225,6 @@ font-weight: 900;
   
 
 }
-/* .name{
-  font-size: 2.5rem;
-  font-family: "Roboto";
-  margin-top: 5rem;
-  margin-right: 8rem;
-} */
 
 
 .headerType span{
@@ -276,7 +237,7 @@ font-weight: 900;
 }
 
 .linkPicture{
-  /* background-image: url(../holloween/halloween-potluck-1050x525.jpg); */
+
   background-image: url(../holloween/la-tendencia-halloween-fantasia-candyland-novedad-pastel-goteo-en-purpura-violeta-colorido-tema-spiderweb-parte-ajuste-de-la-tabla-pp5pda.jpg);
   background-image: url(../holloween/Scary-cheeseburgers-5444b7f5-b214-4f05-a94c-b01178bf7b76-0-1024x512.gif);
   background: linear-gradient(
@@ -316,13 +277,7 @@ font-weight: 900;
   /* left: 5%; */
   
 }
-/* .linkPictureWrapper-right{
-  flex-basis: 70%;
-}
-.linkPictureWrapper-left{
-  flex-basis: 30%;
-  margin-left: 5rem;
-} */
+
 
 .linkPictureWrapper-right h1 {
   /* position: absolute; */
@@ -577,9 +532,7 @@ to{
   width: 150px;
   height: 150px;
 }
-/* .headerType{
-  font-size: 2.5rem;
-} */
+
 }
 
 @media screen and (max-width:447px) {
@@ -626,19 +579,7 @@ font-size: 41px;
 
 
 }
-@media screen and (max-width:328px) {
-   
-  /* .headerType {
-  font-size: 2.8rem;
-  font-weight:bolder;
 
-  
-   
-  } */
-
-
-
-}
 
 
 .darkMode .homeHeaderPicture {
