@@ -446,6 +446,10 @@ to{
     height: fit-content;
     justify-content: center;
    }
+
+   .homeBackgroundLeft{
+ margin-top: -8rem;
+  }
 .pulse{
   justify-content: center;
 }
@@ -458,7 +462,9 @@ to{
 }
 
 @media screen and (max-width:550px) {
-   
+  .homeBackgroundLeft {
+    margin-top: -13rem;
+     }
   .linkPicture p{
   font-size: 2rem;
   }
