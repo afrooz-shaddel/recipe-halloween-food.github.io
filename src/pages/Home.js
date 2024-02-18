@@ -139,7 +139,7 @@ const[open ,setOpen]=useState(false)
 The Best Recipes<br></br>
                              <span>suchi</span>  food </h1>
 </div>
-<div data-aos="fade-up" data-aos-duration="9000" className="desWrapper"  data-aos-delay="900">
+<div data-aos="fade-up" data-aos-duration="7000" className="desWrapper"  data-aos-delay="700">
               
 <p  className="desHome" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus omnis pariatur dolorem blanditiis in, officiis molestias aperiam reprehenderit, quasi expedita nam, accusantium animi quis. Officia quidem iusto cumque .</p>
 

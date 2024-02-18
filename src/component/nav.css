@@ -93,13 +93,7 @@
         font-size: 1.5rem;
     }
     .createButton button{
-       /*background-color:  #E76F51;
-       background-color: #fe5d42;
-       background-color: #fe5d42ba;
-       border:1px solid #E76F51;
-       */
-       /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff;
-       box-shadow: 2px 2px 12px rgb(99 65 211 / 38%); */
+     
        height: 3rem;
        display: block;
        border-radius:4px ;
@@ -125,9 +119,7 @@
        align-items: center;
        box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
 } 
-    /* .createButton button:hover{
-        background-color: #fe5d42;
-    } */
+   
     
     .imageIcon{
         width: 4.3rem;
@@ -173,7 +165,7 @@
     .foodLogo img{
         width: 100%;
         height: 100%;
-        /* background-color: #E76F51; */
+       
         border-radius: 50%; 
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -189,7 +181,7 @@
         font-size: 1.6rem;
         font-weight: bolder;
         margin-top: 1.2rem;
-      /* color: #E76F51;; */
+     
       font-weight: 2rem;
         font-family: 'GreatVibes-Regular';;
     }
@@ -318,48 +310,25 @@
             margin-left: 0px;
            }
 
-           /* .navMobile:nth-child(3){
-            margin-top: 2rem;
-           } */
+           
         }
         @media screen and (max-width:570px) {
-               
-                /* .foodLogo{
-                    margin-left: 2rem;
-                } */
-                /* .createButton{
-                    margin-right: 2rem;
-                } */
+              
         }
     
     @media screen and (max-width:480px) {
-        /* .nav2{
-            -webkit-box-pack:space-evenly;
-                -ms-flex-pack:space-evenly;
-                    justify-content:space-evenly;
-        } */
-        /* .createButton button{
-            width: 5.5rem;
-            font-size:1rem;
-            height: 2.3rem;
-            
-        } */
+      
         .navMobile{
             width: 100%;
         }
     
-        /* .createButton{
-            margin-left: 8rem;
-        } */
-    
+     
     
     }
     @media screen and (max-width:406px) {
     }
     @media screen and (max-width:370px) {
-        /* .createButton{
-            margin-left: 4rem; */
-        /* } */
+       
     }
     
          
