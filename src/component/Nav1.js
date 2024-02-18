@@ -35,8 +35,8 @@ const [showDark , setShowDark]=useState(false);
             
                 <Link to='/'  className="logoText">
                  
-                      
-                        <h3>Recipes Food</h3>
+                      <img src="\logopng\result (2).png"  className="foodLogo" alt="" />
+                        {/* <h3>Recipes Food</h3> */}
                     
                    
                     

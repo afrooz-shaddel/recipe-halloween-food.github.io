@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import {ProviserItem} from './CreatContext2'
-
+import 'bootstrap/dist/css/bootstrap.css'
 import 'aos/dist/aos.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

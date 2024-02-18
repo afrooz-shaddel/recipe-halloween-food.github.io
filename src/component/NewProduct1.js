@@ -1,5 +1,5 @@
 import './newproduct.css'
-
+import { FaStar } from "react-icons/fa6";
 import Search1 from '../pages/Search1';
 import {Link} from 'react-router-dom';
 import { useEffect , useContext , useState } from 'react';
@@ -40,7 +40,7 @@ export default function NewProduct1({product ,color}){
 <div className='wrapperProduct container'   >
 {!product.length && <p>..loading</p>}
 {product.length>0  && product!==undefined ?
- product.map(({id , title ,cookingTime , img="/product/default3.jfif" })=>{
+ product.map(({id , title ,cookingTime ,type, img="/product/default3.jfif" })=>{
   
   return<div   key={id}>
  <div className='productWrapper'  data-aos="fade-up"   >
@@ -54,8 +54,13 @@ export default function NewProduct1({product ,color}){
 
  <div className='picture'>
     <img  className='picture__product' src={img} alt="" />   </div>
- 
+    {/* <p>{type}</p> */}
+    <div className='starType'>
+    <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/>
+    </div>
     <h2 className='productWrapper-title'>{title}</h2>
+
+   
  <p className='productWrapper-time'>CookingTime: {cookingTime}</p>
 
     <Link  className='moreLink1' to={`/recipes/${id}`} onClick={()=>setShow(false)}   >show recipe</Link>

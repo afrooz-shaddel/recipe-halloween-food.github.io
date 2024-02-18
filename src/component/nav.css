@@ -153,8 +153,8 @@
 
     }
     .foodLogo{
-     width:4rem;
-     height: 3rem;
+     width:5rem;
+     height: 5rem;
      display: block;
      margin-right: 0.25rem;
     }
@@ -259,16 +259,20 @@
         justify-content: space-evenly;
         align-items: center;
     }
-        .darkMode nav {
+        .darkMode .nav {
             background-color: #3e2949f0;
+            background-color: #212529;
             color: #fff;
-            -webkit-box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
-                    box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+          
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+
+
           }
           
           
           .lightMode nav{
             background-color: #c7cbe4;
+            background-color: #ebe3dc;
           }
 
        

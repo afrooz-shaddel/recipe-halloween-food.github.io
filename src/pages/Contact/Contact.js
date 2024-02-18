@@ -10,7 +10,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa6";
 export default function Contact(){
     const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexData);
-console.log(theme)
+
 let [name , setName]=useState("")
 let [email , setEmail]=useState("")
 let [phone , setPhone]=useState("")

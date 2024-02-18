@@ -1,6 +1,6 @@
 import './searchend.css'
 import { useEffect, useState } from 'react';
-
+import { IoIosArrowDown } from "react-icons/io";
 import NewProduct1 from './component/NewProduct1';
 import { useFetch } from './hook/useFetch';
 import { BsFillSearchHeartFill} from "react-icons/bs";
@@ -27,12 +27,28 @@ export default function Searchend(){
    let[search , setSearch]=useState("")
    let[query , setQuery]=useState({})
    const[filter , setFilter]=useState(false)
+   const[menu , setMenu]=useState(false)
  let[searchParams , setSearchParams]=useSearchParams()
 
+ const [currentPage, setCurrentPage] = useState(1);
+ const [paginatedTodos, setPaginatedTodos] = useState([]);
+
+ let pageSize = 4;
+  let pagesNumbers;
+ useEffect(()=>{
+    let endIndex = pageSize * currentPage;
+    let startIndex = endIndex - pageSize;
+    let allShownTodos = data.slice(startIndex, endIndex);
+    setPaginatedTodos(allShownTodos);
+ },[data])
+
+function categoryList(){
+  setMenu(!menu)
+}
 
 
     useEffect(()=>{
-   setProduct(data)
+   setProduct(paginatedTodos)
    let query={};
    const categoryItem=searchParams.get("categoryItem")
    const search=searchParams.get("search")
@@ -40,7 +56,7 @@ export default function Searchend(){
    if(search) query.search=search
      if(categoryItem) query.categoryItem=categoryItem
      setQuery(query)
-    },[data])
+    },[paginatedTodos])
 
     useEffect(()=>{
         setSearchParams(query)
@@ -63,117 +79,108 @@ let categoryItem="";
      setQuery(query=>({...query,search:event.target.value.toLowerCase().trim()}) )
     
           
-    //     if(!dataSearch){
-    //        setProduct([])
-            
-    //     }else{
-            
-    //         let item=data.filter(item=>item.title.toLowerCase().includes(search))
-    //    setProduct(item)
-    //     }
+ 
 
         SearchCate()
         
     }
+    useEffect(() => {
+        let endIndex = pageSize * currentPage;
+        let startIndex = endIndex - pageSize;
+        let allShownTodos = data.slice(startIndex, endIndex);
+        setPaginatedTodos(allShownTodos);
+      }, [currentPage]);
+    
+      const changePaginate = (newPage) => {
+        setCurrentPage(newPage);
+      };
 
     
     function clickHandeler(event){
     categoryItem=event.target.innerHTML.toLowerCase()
     setQuery(query=>({...query , categoryItem}))
    
-    //    if(categoryItem==="all"){
-    //     setProduct(data)
-    //    }else{
-    //   let data1=data.filter(item=>item.type===categoryItem)
-    //   console.log(data1)
-    //  setProduct(data1)
-    //    }
+  
     SearchCate()
     }
 
     function SearchCate(){
-        // if(search){
-            // let dataSearch=!!data.find(item=>item.title.toLowerCase().includes(search))
-           
-        //    if(!dataSearch){
-        //     setProduct([])
-        //    }
-        //    else{
-            // if( search.length && categoryItem){
-               
-            let data2=data.filter(item=> item.title.toLowerCase().includes(search.toLowerCase()))
         
-            setProduct(data2)
+               
+            let data2=paginatedTodos.filter(item=> item.title.toLowerCase().includes(search.toLowerCase()))
+            // let data2=paginatedTodos.filter(item=> console.log(item.title.toLowerCase().includes(search.toLowerCase())))
+           setProduct(data2)
+
+           console.log(product)
             
 
-           
+        
 
     }
-  
+
+   
+    const pagesCount = Math.ceil(data.length / pageSize);
+    pagesNumbers = Array.from(Array(pagesCount).keys());
 
 
     return(
         <div  className='search2'  >
         
         <div className='searchcategory' >
-             
-             {/* <div className="search1"> <input type="text"  placeholder="Search"  onKeyUp={searchHandeler}
-                className="searchInput1" />     <BsFillSearchHeartFill className="search-bs1" 
-               
-             />  </div> */}
-             {/* <div className='inputSearch'>
-             
-             <input type="text" placeholder='Type here...' onKeyUp={searchHandeler}/>
-            <label htmlFor=""> <FaSearch/> </label>
-           </div> */}
-
-
-         
-              
-
-
-
-
-<div className='inputSearch'>
+            
+           <div className='inputSearch'>
              
              <input type="text" placeholder='Type here...' onKeyUp={searchHandeler}/>
             <label htmlFor=""> <FaSearch/> </label>
            </div>
              
-             <div  className='categorywrapper'  >   <span><BiSolidCategory className='svgCategory'/>Categories</span> 
-             <ul onClick={clickHandeler}  className='categorylist' >
-                <Menu allMenu={category21}  query1={query} categoy={categoryItem}/>
+             <div  className='categorywrapper'  >   <span  onClick={categoryList} >    Categories  <IoIosArrowDown  /> </span> 
+            {menu &&  <ul onClick={clickHandeler}  className='categorylist' >
+                <Menu allMenu={category21}  query1={query} categoy={categoryItem} close1={categoryList}/>
 
-                {/* {category.map(item=> <li className={ item.type.toLowerCase()===query.categoryItem?'selected':null}>{item.type}</li>       )} */}
-             </ul>
+               
+             </ul>}
              </div>
              <div className='mobilea' >
-                {/* <div className='mobilename1'>
-             <p className='mobilename'>Filter& Search</p>
-             </div> */}
+              
               <div className='mobilSearch-category'>
                
             
-             {/* <div className='mobilCategory' onClick={()=>{
-                setFilter(true)
-             }}><span> <MdCategory  className='svgCategory' />Filter</span>
-            
-           
 
-           
-           
-             </div> */}
-             <Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  query1={query} categoy={categoryItem} />
+        
+             <Modal    allMenu={category21}  close={setFilter}  filter={clickHandeler}  query1={query} categoy={categoryItem} close1={categoryList} />
             
              </div>
+             
              </div>
         </div>
 
         <div>
             
-       {product!==undefined && product.length? <NewProduct1  product={product} />:<p>no match</p>}   
+       {data!==undefined && data.length? <NewProduct1  product={product} />:<p>no match</p>}   
 
         </div>
+
+
+        <nav className="d-flex justify-content-center">
+        <ul className="pagination" aria-current="page">
+          {pagesNumbers.map((pageNumber) => (
+            <li
+              style={{ cursor: "pointer" }}
+              className={
+                pageNumber + 1 === currentPage
+                  ? "page-item active"
+                  : "page-item"
+              }
+              key={pageNumber + 1}
+              onClick={() => changePaginate(pageNumber + 1)}
+            >
+              <span className="page-link">{pageNumber + 1}</span>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
 
 
         </div>

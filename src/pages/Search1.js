@@ -63,8 +63,11 @@ let navigate=useNavigate()
             </div>
         
             <ScrollToTop/>
+
   
         <div  className="search">
+
+      
         <BsFillSearchHeartFill  className="search-bs" />
                 <input type="text"
                   ref={elemenRef} 

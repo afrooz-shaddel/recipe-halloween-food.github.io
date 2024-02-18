@@ -44,7 +44,7 @@ return(
     <>
       
     <div className='homeWrapper'>
-      
+
     <div>
     <Menu   allMenu={category} filter1={filterMenu} />
  </div>
@@ -52,7 +52,11 @@ return(
 <div>
 
      <NewProduct1  color={color2}   product={recipie}/>
+
+
 </div>}
+
+
 </div>
 </>
 

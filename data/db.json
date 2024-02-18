@@ -191,7 +191,36 @@
       "cookingTime": "30 minute",
       "img": "/picture2/food2.jpg",
       "type": "lunch"
-    }
+    },
+
+    {"id": "12",
+    "title": "Cocktail",
+    "ingredients": [
+      "1 sugar",
+      "1 food coloring",
+      "200g Tofu",
+      "3000ml almound"
+    ],
+    "method": "1.Pre-heat the oven to 200c/3c/gas 5. ",
+    "cookingTime": "45 minute",
+    "img": "/picture2/drink1.jpg",
+    "type": "drink"
+  },
+  {
+    "id": "13",
+    "title": "Paella-m",
+    "ingredients": [
+      "1  onion",
+      " bell pepper",
+      " garlic",
+      "tomatoes",
+      "parsley"
+    ],
+    "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+    "cookingTime": "30 minute",
+    "img": "/picture2/sweet3.jpg",
+    "type": "sweets"
+  }
    
   ]
 }

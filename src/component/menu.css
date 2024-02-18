@@ -22,8 +22,15 @@
         -ms-flex-pack: center;
             justify-content: center;
             flex-wrap: wrap;
-            /* margin-top: 2rem; */
+            background-color: #ebe3dc;
+    width: 13rem;
+    position: absolute;
+    z-index: 99;
+    bottom: -13rem;
+    left: 2rem;
 }
+
+            /* margin-top: 2rem; */
 
  .menuItem{
     padding:0.3rem 1rem;
@@ -69,12 +76,22 @@
    color: black;
     
 }
+@media screen and (max-width:768px) {}
+    /* .menu{
+        right: -2rem;
+    }} */
 
 @media screen and (max-width:718px) {
     .menu{
-        flex-direction: row;
+        flex-direction: column;
+        left: -2rem;
     }}
-
+    @media screen and (max-width:590px) {
+        .menu{
+            width: 10rem;
+        }
+     
+       }
 
 @media screen and (max-width:406px) {
     .menuItem{

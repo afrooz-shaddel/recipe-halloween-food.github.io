@@ -123,25 +123,46 @@ const[open ,setOpen]=useState(false)
     <div className="circle2" style={{animationDelay:"5s"}}></div>
 </div>
        
-      <div className="headerType"> 
       
-      <Typewriter
-          onInit={Typewriter=>{
-            Typewriter.typeString('The Best Recipes')
-            .start()
-            .pauseFor(2000)
-            .deleteAll()
-            .typeString('Halloween food')
-            .start()
-            .pauseFor(2000)
-          }}
-          options={{
-            loop: true
-          }}
+       
+<div className='homeBackGround'>
+            <div className='homeBackgroundRight'> 
+              <div className='bg-Header'></div>
+            
+            </div>
+         
+            <div className='homeBackgroundLeft'>
+         
+<div data-aos="fade-up"data-aos-duration="6000"   data-aos-delay="600">
+              
+<h1 >
+The Best Recipes<br></br>
+                             <span>suchi</span>  food </h1>
+</div>
+<div data-aos="fade-up" data-aos-duration="9000" className="desWrapper"  data-aos-delay="900">
+              
+<p  className="desHome" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus omnis pariatur dolorem blanditiis in, officiis molestias aperiam reprehenderit, quasi expedita nam, accusantium animi quis. Officia quidem iusto cumque .</p>
+
+</div>
+                   
+<div data-aos="fade-up" data-aos-duration="9000"   data-aos-delay="1200">
+              
+              
+              <button className="btn5">view our Recipe</button>
+              </div>                      
+  
+           
+           
+                             </div>
           
-          />
-      
-      </div>  
+
+       
+         
+        </div>
+     
+     
+
+
       {/* <p className="name">from <br/>
       Carolina Garofani </p> */}
     

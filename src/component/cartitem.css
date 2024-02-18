@@ -15,6 +15,11 @@ font-size: 2.5rem;
 } 
 .linkpicture {
     position: relative;
+    transition: all ease-in 200ms;
+    -webkit-transition: all ease-in 200ms;
+    -moz-transition: all ease-in 200ms;
+    -ms-transition: all ease-in 200ms;
+    -o-transition: all ease-in 200ms;
 }
 
 .heartbtn{
@@ -73,4 +78,12 @@ top: 0.5rem;
 .btnLinkProduct a{
     text-decoration: none;
     color: black;
+}
+
+.linkpicture:hover img{
+    transform: translateY(0.6rem);
+    -webkit-transform: translateY(0.6rem);
+    -moz-transform: translateY(0.6rem);
+    -ms-transform: translateY(0.6rem);
+    -o-transform: translateY(0.6rem);
 }
