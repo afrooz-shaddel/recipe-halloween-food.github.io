@@ -182,6 +182,9 @@
   background-image: -o-linear-gradient(left , #561f26 , #af00ff17);
   background-image: linear-gradient(90deg , #561f26 , #af00ff17);
   background-color: #af00ff17;
+
+
+
 }
 
 
@@ -588,6 +591,16 @@ font-size: 41px;
 .darkMode .homeHeaderPicture {
   background-color: #3e2949f0;
   color: #fff;
+
+
+}
+
+.darkMode .homeBackgroundLeft h1{
+  color: white;
+}
+
+.darkMode .desHome{
+  color: white;
 }
 
 

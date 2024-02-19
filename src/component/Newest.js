@@ -18,8 +18,7 @@ export default function Newest(){
     const[recipie , setRecipie]=useState("")
     let navigate=useNavigate()
 let newData=[...data];
-console.log(newData.reverse().splice(0,1))
-   
+
     
     return(
    <div>

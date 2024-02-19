@@ -145,7 +145,7 @@ The Best Recipes<br></br>
 
 </div>
                    
-<div data-aos="fade-up" data-aos-duration="8000"   data-aos-delay="900">
+<div data-aos="fade-up" data-aos-duration="8000"   data-aos-delay="800">
               
               
               <button className="btn5">view our Recipe</button>
