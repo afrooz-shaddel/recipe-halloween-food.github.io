@@ -68,10 +68,12 @@
   } 
    .categorywrapper span{
     color: #fe5d42;
+    color: #ff8243;
     font-family: "Roboto Medium";
     font-size: 1.2rem;
     position: relative;
     display: flex;
+    align-items: center;
    }
 
   
@@ -156,29 +158,30 @@
 }
 
 .inputSearch{
-  max-width:18rem;
+ width:18rem;
   background-color: #fff;
   height: 2.7rem;
   width: 100%;
-  /* margin-bottom: 2rem; */
-/* margin-right: 3rem; */
-
-  /*-webkit-border-radius:50% ;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  */display: flex;
-  justify-content: space-between;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+  margin-right: 3rem;
+  -webkit-border-radius:50% ;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+  display: flex;
+   justify-content: space-between;
   align-items: center;
-  position: relative;
-  overflow: hidden;
-
+  position: relative;  
+   overflow: hidden;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
+  -webkit-border-radius: 3rem;
+  max-width: 25rem;
 }
 .active > .page-link {
   z-index: 3;
@@ -191,14 +194,14 @@
   color: #198754 !important;
 }
 .inputSearch input{
-  width:100%;
+  width:18rem;
   background-color:transparent;
   border: none;
 background-color: #fff;
 height: 100%;
 position: relative;
 outline: none;
-padding-left: 14px;
+/* padding-left: 14px; */
 }
 
   .inputSearch label{
@@ -252,11 +255,11 @@ padding-left: 14px;
          justify-content: center;
          align-items: center;
         text-align: center;
-        box-shadow: 0 0 19px rgba(168, 172, 185, 0.3);
-         border: 1px solid #ebe3dc;
+        box-shadow: 0 0 5px rgba(168, 172, 185, 0.3);
+         /* border: 1px solid #ebe3dc; */
        
         margin: 3rem auto;
-         padding:2rem 14rem;
+         padding:2rem 16rem;
        
 
    }
@@ -265,9 +268,58 @@ padding-left: 14px;
    flex-direction:column;
    width: 100%;
    }
+
+   .searchImgBack1 , .searchImgBack2{
+    width: 246px;
+    height: 412px;
+    position: absolute;
+   
+    z-index: 1;
+    animation: move 5s linear infinite;
+}
+.searchImgBack1{
+  top: 50rem;
+  left: 1rem;
+}
+.searchImgBack2{
+  top: 50rem;
+  right: 1rem;
+}
+
+
+
+@keyframes move{
+  0% , 100%{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+50%{
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  -moz-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  -o-transform: translateY(30px);
+}
+}
+
+
+
+
+
+
    @media screen and (max-width:1100px) {
    
-  
+    .searchImgBack1{
+      top: 5rem;
+      left: 1rem;
+    }
+    .searchImgBack2{
+      top: 50rem;
+      right: 1rem;
+    }
     .searchcategory{
      padding: 2rem 12rem;
     }
@@ -277,7 +329,7 @@ padding-left: 14px;
    
   
     .searchcategory{
-     padding: 2rem 7rem;
+     padding: 2rem 5rem;
     }
   }
   
@@ -312,7 +364,14 @@ padding-left: 14px;
      .mobilCategory{
       display: block;
      }
-
+     .searchImgBack1{
+      top: 3rem;
+      left: 1rem;
+    }
+    .searchImgBack2{
+      top: 65rem;
+      right: 1rem;
+    }
     
   
   }
@@ -343,7 +402,9 @@ padding-left: 14px;
 }
 @media screen and (max-width:590px) {
   .searchcategory {
-  padding: 1rem 4rem;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   }
 }
 @media screen and (max-width:520px) {
@@ -353,11 +414,12 @@ padding-left: 14px;
 }
 @media screen and (max-width:450px) {
   .searchcategory {
-    padding: 1rem 2rem;
+    padding: 1rem 0.5rem;
+   
     }
   
   .inputSearch {
-    max-width: 10rem;
+    max-width: 12rem;
 }
 }
 
@@ -368,8 +430,24 @@ padding-left: 14px;
  
 
   .inputSearch {
-    max-width: 8rem;
-}
+    max-width: 11rem;
 }
 
+@media screen and (max-width:401px) {
+  .searchcategory{
+    justify-content:flex-start;
+  }
+
+  .searchImgBack1{
+    top: 5rem;
+    left: 2rem;
+  }
+  .searchImgBack2{
+    top: 65rem;
+    right: 0rem;
+  }
+  
+
+}
+}
 

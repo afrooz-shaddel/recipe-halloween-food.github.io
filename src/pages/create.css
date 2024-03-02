@@ -1,10 +1,36 @@
 
 @import "../fonts/fonts.css";
 
+.searchImgBack3{
+    width: 900px;
+    height: 600px;
+    position: absolute;
+   top: 5rem;
+   left: 4rem;
+    z-index: 1;
+    animation: move 5s linear infinite;
+}
 
+@keyframes move{
+    0% , 100%{
+      transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+  }
+  50%{
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -moz-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    -o-transform: translateY(30px);
+  }
+  }
+  
 .Create{
    
-   
+ 
     
     width: 81%;
     max-width: 1200px;
@@ -24,6 +50,7 @@
     border: 5px solid #fff;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 0;
 }
 .itemIngredients{
     color: #fff;
@@ -33,6 +60,7 @@
 
 
 .createForm{
+    z-index: 8;
     width: 60%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
@@ -149,6 +177,7 @@
  height: 45px;
  width: 50%;
  background-color: #fe5d42;
+ background-color: #E76F51;
  color: #fff;
  display: block;
  font-size: 1rem;
@@ -238,6 +267,7 @@ li{list-style-type: none;}
     background-color: transparent;
     background-color: #ff5722;
     background-color: #fe5d42;
+    background-color: #E76F51;
   
     border: 1px snow solid;
     color: white;
@@ -264,6 +294,17 @@ li{list-style-type: none;}
     
 
 }
+/* .login-img{ */
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.15) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../holloween/new/fresh-beautiful-sushi-setup-with-salmon-maki-and-misterious-ingredients-ai-generated-photo.jpeg), lightgray 50% / cover no-repeat;
+} */
 .login-img img{
  
     -o-object-fit: cover;
@@ -294,6 +335,29 @@ li{list-style-type: none;}
             transform: translateY(-38%);
 }
 
+@media screen and (max-width:1150px) {
+    .login-img{
+        display: none;
+    }
+    .createForm{
+        width: 100%;
+    }
+    .formInput{
+width: 70%;
+    }
+
+    .ingredientList{
+        width: 70%;
+    }
+
+    .searchImgBack3{
+      width: 1700;
+       top: 4rem;
+       left: 3rem;
+        
+    }
+}
+
 @media screen and (max-width:928px) {
     .login-img{
         display: none;
@@ -308,6 +372,18 @@ width: 70%;
     .ingredientList{
         width: 70%;
     }
+}
+
+@media screen and (max-width:868px) {
+   
+    .searchImgBack3{
+      width: 500px;
+        top: 4rem;
+        left: 5rem;
+         
+     }
+
+
 }
 
 @media screen and (max-width:768px) {
@@ -337,6 +413,19 @@ width: 70%;
 
 
 }
+@media screen and (max-width:590px) {
+   
+    .searchImgBack3{
+        width: 400px;
+          top: 5rem;
+          left: 5rem;
+           
+       }
+  
+
+
+}
+
 
 @media screen and (max-width:490px) {
     .formInput , .ingredientList{
@@ -348,6 +437,14 @@ width: 95%;
 .Create{
     margin-top: 6rem;
 }
+
+.searchImgBack3{
+    width: 300px;
+      top: 7rem;
+      left: 3rem;
+       
+   }
+
 
 
 }

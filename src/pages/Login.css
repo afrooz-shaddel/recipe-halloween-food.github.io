@@ -1,0 +1,36 @@
+.loginbtn{
+    background-color: green;
+}
+
+.loginWrapper{
+    max-width: 25rem;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* -webkit-animation: dropTop 1s linear;
+    animation: dropTop 1s linear; */
+    max-width: 25rem;
+    background-color: #fff;
+    margin: 5rem auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-family: "Roboto";
+    border-radius: 1rem;
+    /*background: linear-gradient(        0deg,        rgba(0, 0, 0, 0.65) 0%,        rgba(0, 0, 0, 0.65) 100%      ),      url(../holloween/new/chopsticks.jpg), lightgray 50% ;
+    */background-size: cover;
+    background-position: center;
+    color: white;
+    color: black;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    background-color: #fff;
+    height: fit-content;
+}

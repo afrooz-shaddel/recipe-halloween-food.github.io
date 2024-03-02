@@ -1,20 +1,32 @@
 
 
 .cartWrapper{
-    margin-top: 4rem;
+    margin-top: 23rem;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    
-    justify-content: center;
-
+    flex-grow: 1;
+    justify-content: space-around;
+    /* background: url(../holloween/delicious-sushi-set-1083419.jpg); */
+margin-bottom: 2rem;
    }
 
   
-   
+  .offercart{
+    font-size: 2.1rem;
+    font-size: "Archivo";
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .offercartlorem{
+    max-width: 25rem;
+    text-align: justify;
+    margin: 0rem auto;
+    /* margin-right: 37rem; */
+  } 
 .linkpicture{
     width: 28rem;
     height: 22rem;
@@ -39,6 +51,12 @@
     -ms-border-radius:20px;
     -o-border-radius:20px;
 }
+.topNotch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .linkpicture-dis{
     width: 10rem;
     margin: 0.4rem auto;
@@ -56,6 +74,22 @@
 .right{
     margin-right:2rem ;
 }
+@media screen and (max-width:1280px) {
+   
+    .offercartlorem{
+        /* margin-right: 30rem; */
+    }
+
+
+}
+@media screen and (max-width:1198px) {
+   
+    .offercartlorem{
+        /* margin-right: 25rem; */
+    }
+
+
+}
 
 @media screen and (max-width:1100px) {
    
@@ -66,11 +100,15 @@
 
 }
 
+@media screen and (max-width:1120px){
+
+}
+
 @media screen and (max-width:1100px) {
    
-    .cartWrapper{
+    /* .cartWrapper{
         justify-content: center;
-    }
+    } */
     .linkpicture{
        
         margin-top: 2rem;
@@ -89,6 +127,21 @@
     margin-right: 0;
    }
   
+
+}
+@media screen and (max-width:436px) {
+   
+    .offercartlorem{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .linkpicture{
+       
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    
+
 
 }
 

@@ -11,6 +11,7 @@ import {MdDarkMode} from "react-icons/md";
 import AOS from 'aos';
 import Recipes  from './pages/Recipes';
 import Search1 from './pages/Search1';
+import Otp from './pages/Otp';
 import { useContext } from 'react';
 import {contexData} from './CreatContext2';
 import Allrecipes from './pages/Allrecipes';
@@ -22,6 +23,9 @@ import ScrollToTop from './component/ScrollToTop'
 import NotFound from './pages/NotFound';
 import Searchend from './Searchend';
 import Product from './Product/Product';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import  {ToastContainer} from 'react-toastify';
 export default function App(){
 
 const {theme , setTheme , color2 ,setColor2}=useContext(contexData);
@@ -40,6 +44,7 @@ useEffect(()=>{
 
   return(
     <div className={theme=='dark' ? 'App darkMode':'App lightMode'} > 
+    <ToastContainer theme='colored'></ToastContainer>
     <ScrollToTop/>
     <BrowserRouter>
 
@@ -55,7 +60,7 @@ useEffect(()=>{
      <Routes>
       <Route   path='/'      element={< Home/>  } />
       <Route  path='/create'   element={  <Create/>}/>
-      <Route  path='/gallery'   element={  <Gallery/>}/>
+     
       <Route  path='/allrecipes'   element={  <Allrecipes/>}/>
       <Route  path='/search1'   element={  <Search1/>}/>
       <Route  path='/recipes/:id'   element={  <Recipes/>}/>
@@ -63,7 +68,10 @@ useEffect(()=>{
       <Route  path='/contact'   element={  <Contact/>}/>
       <Route  path='/about'   element={  <About/>}/>
       <Route path='/search'   element={<Searchend/>}/>
+      <Route path='/login'   element={<Login/>}/>
+      <Route path='/register'   element={<Register/>}/>
       <Route  path='/*'   element={  <NotFound/>}/>
+      <Route path='/otp'  element={<Otp/>}/>
      </Routes>
 
    <Contact/>

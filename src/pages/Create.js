@@ -20,7 +20,7 @@ import ScrollToTop from '../component/ScrollToTop';
     let [ingredients  ,setIngredients ]=useState([])
     let [valid ,setValid]=useState(false)
     const {postData , data  , error}=useFetch('http://localhost:3000/recipes' , 'POST')
-    let options=["please select"  , "drink" , "sweets" , "lunch"]
+    let options=["please select"  , "chicken" , "salmon" , "rice"]
 let exceptThisSymbols=["e" , "E" , "+" , "-" , "."]
   function submitHandeler(e){
     e.preventDefault();
@@ -134,14 +134,16 @@ else{
 
             </form>
             <div className='login-img'>
-              <img src="\nw\halloween-foods-scaled.jpg" alt=""   />
+              <img src="\create\fresh-beautiful-sushi-setup-with-salmon-maki-and-misterious-ingredients-ai-generated-photo.jpeg" alt=""   />
      
             </div> 
            
        
 
-           
         </div>
+        <img src="\shape\images (12).png" className='searchImgBack3' alt="" />
+<img src="" alt="" />
+           
         </>
     )
 }

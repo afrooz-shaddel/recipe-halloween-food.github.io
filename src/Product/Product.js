@@ -6,10 +6,10 @@ export default function Product(){
 let {type}=useParams();
 let [recipie , setRecipie]=useState([])
 
-const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
 
 
-    let md=data.filter(item=>item.type==type)
+    let md=data.filter(item=>item.type.toLowerCase()==type.toLowerCase())
 
     return(
         <div>

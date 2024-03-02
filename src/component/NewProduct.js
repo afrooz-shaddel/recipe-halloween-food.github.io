@@ -9,6 +9,7 @@ import ScrollToTop from './ScrollToTop';
 import Loader from './Loader';
 import { GoHeartFill } from "react-icons/go";
 import AOS from 'aos';
+import { FaStar } from "react-icons/fa6";
 
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
@@ -23,11 +24,11 @@ import 'swiper/css/autoplay';
 // import required modules
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-export default function NewProduct1({product ,color}){
-   const {theme , setTheme , color2 ,setColor2 ,show , setShow}=useContext(contexData);
-   let img=["/product/default3.jfif" ,"/product/sweet5.png" , "/product/sweet2.jfif" ]
-  let index=Math.floor(Math.random()*img.length)
-  let item=img[index]
+export default function NewProduct1({product}){
+//    const {theme , setTheme , color2 ,setColor2 ,show , setShow}=useContext(contexData);
+//    let img=["/product/default3.jfif" ,"/product/sweet5.png" , "/product/sweet2.jfif" ]
+//   let index=Math.floor(Math.random()*img.length)
+//   let item=img[index]
   let [like , setLike]=useState(false)
 
   function likeHandeler(id){
@@ -41,6 +42,7 @@ export default function NewProduct1({product ,color}){
    })
     
   }
+  
 
   useEffect(() => {
    AOS.init({  duration : 2000});
@@ -55,8 +57,8 @@ export default function NewProduct1({product ,color}){
         
         
         
-     <div   key={product.id}  className='po'>
- <div className='productWrapper'  data-aos="fade-up"   >
+//      <div   key={product.id}  className='po'>
+//  <div className='productWrapper'  data-aos="fade-up"   >
    
 
 
@@ -65,24 +67,52 @@ export default function NewProduct1({product ,color}){
 
  
 
- <div className='picture'>
-    <img  className='picture__product' src={product.img} alt="" />   </div>
+//  <div className='picture'>
+//     <img  className='picture__product' src={product.img} alt="" />   </div>
  
-    <h2 className='productWrapper-title'>{product.title}</h2>
- <p className='productWrapper-time'>CookingTime: {product.cookingTime}</p>
+//     <h2 className='productWrapper-title'>{product.title}</h2>
+//     <p className='productWrapper-time'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nulla praesentium vero ut temporibus. Necessitatibus. </p>
 
-    <Link  className='moreLink1' to={`/recipes/${product.id}`} onClick={()=>setShow(false)}   >show recipe</Link>
+//     <Link  className='moreLink1' to={`/recipes/${product.id}`} onClick={()=>setShow(false)}   >show recipe</Link>
   
 
 
- </div>
+//  </div>
+
+
+// </div>
+
+        
+        
+<div   key={product.id}>
+<div className='productWrapper'  data-aos="fade-up"   >
+  
+
+
+
+
+
+
+
+<div className='picture'>
+   <img  className='picture__product' src={product.img} alt="" />   </div>
+   {/* <p>{type}</p> */}
+   <div className='starType'>
+   <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/>
+   </div>
+   <h2 className='productWrapper-title'>{product.title}</h2>
+
+   <p className='productWrapper-time'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi nulla praesentium vero ut temporibus. Necessitatibus. </p>
+<p className='productWrapper-time'></p>
+
+   <Link  className='moreLink1' to={`/recipes/${product.id}`} onClick={()=>setShow(false)}   >show recipe</Link>
+ 
 
 
 </div>
 
-        
-        
-        
+
+</div>
         
         
         
@@ -100,6 +130,7 @@ export default function NewProduct1({product ,color}){
 
 
   
+
 
 
 

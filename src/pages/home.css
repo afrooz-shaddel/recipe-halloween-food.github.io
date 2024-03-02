@@ -204,6 +204,7 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
+ margin-bottom: 4rem;
 }
 .homeHeaderPicture img{
 
@@ -245,7 +246,7 @@
       rgba(0, 0, 0, 0.65) 0%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url(../holloween/Scary-cheeseburgers-5444b7f5-b214-4f05-a94c-b01178bf7b76-0-1024x512.gif), lightgray 50% / cover no-repeat;
+    url(../holloween/new/chopsticks.jpg), lightgray 50% / cover no-repeat;
   
   
   width: 100%;
@@ -253,7 +254,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 4rem;
+  margin-bottom: 4rem;
  background-attachment: fixed;
  
  justify-content: center;

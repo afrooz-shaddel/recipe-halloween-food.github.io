@@ -7,18 +7,28 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaRegStar } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
 import {  Autoplay } from 'swiper/modules';
 import 'swiper/css/autoplay';
-
+import { FaYoutube } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { CiInstagram } from "react-icons/ci";
+import { LuUser2 } from "react-icons/lu";
 
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import Counter from '../../component/Counter/Counter';
 
 export default function About(){
+  let chef=[{id:1 , title: "Gorden Ramsay" , img:"/chef2/c1.jpg"},
+  {id:2 , title:  "Aarti Sequeira", img:"/chef2/c2.jpg"},
+  {id:3 , title: "Anjum Anand" , img:"/chef2/c3.jpg"},
+  {id:4 , title: "Samia Ahad " , img:"/chef2/c4.jpg"},
+  {id:5, title:  "Connie Achurra", img:"/chef2/c5.jpg"},
+]
   
     useEffect(() => {
         AOS.init({  duration : 2000});
@@ -30,8 +40,37 @@ export default function About(){
            
 
            <div className='aboutWrapper'>
+           
             <div className='about'>
-                <div className='about-picture   ' data-aos="fade-up"  data-aos-duration="3000"><img src="\tinified (1)\manchester-grill.webp" alt="" /></div>
+            <div className='about-top'>
+                <div className='about-picture   ' data-aos="fade-up"  data-aos-duration="3000"><img src="\gift\[removal.ai]_a267accc-b9dd-496b-a31b-b06428a46897-young-beautiful-female-chef-portrait-in-kitchen-bt0m92.png" alt="" /> </div>
+                <div className='backgroundblack'>
+                   <img  src="\about\Frame-402077.jpg" alt="" />
+                   <div className='clockWrapper'>
+                    <div className='clockfirst'>
+                    <div className='clock'></div>
+                    <div className='clockfirst-text'>
+                    <p className='clock-number'><Counter number={550} /></p>
+                    <span className='clock-text'>Recipe</span>
+                    </div>
+                    
+                    </div>
+                    
+                    <div className='userfirst'>
+                      <span><LuUser2/></span>
+                      <div className='userfirst-text'>
+                      <p className='clock-number'><Counter number={650} /></p>
+                      <span className='clock-text'>user</span>
+                      </div>
+                      
+                    </div>
+                   </div>
+                   
+                   </div>
+                </div>
+
+
+
                 <div className='about-text margin' data-aos="fade-down"  data-aos-duration="3000"><p >It is the spooky time of the year again. At any time, a trick-or-treater can knock on the door; you can catch the pumpkin smells, and do not forget to be careful against the monster appearing on any corner because it is Halloween!
 
                 Halloween first started as a Memorial held for the deceased and is believed to be created in Ireland. The holiday was called “All Hallow’s Eve,” which turned into Halloween later. It is now celebrated in the USA with children treat-or-tricking on the streets with various funny costumes, families and friends gathering up, playing games, and eating traditional Halloween foods</p></div>
@@ -39,7 +78,7 @@ export default function About(){
            
 
 
-           <div className='about about1'>
+           {/* <div className='about about1'>
                
                 <div className='about-text '  data-aos="fade-up"><p>It is the spooky time of the year again. At any time, a trick-or-treater can knock on the door; you can catch the pumpkin smells, and do not forget to be careful against the monster appearing on any corner because it is Halloween!
 
@@ -47,19 +86,19 @@ export default function About(){
                  Halloween first started as a Memorial held for the deceased and is believed to be created in Ireland. The holiday was called “All Hallow’s Eve,” which turned into Halloween later. It is now celebrated in the USA with children treat-or-tricking on the streets with various funny costumes, families and friends gathering up, playing games, and eating traditional Halloween foods</p></div>
           
           
-                 <div className='about-picture margin' data-aos="fade-down"><img src="\tinified (1)\56993.jpg" alt="" /></div>
+                 <div className='about-picture margin' data-aos="fade-down"><img src="\about\images (51).jpg" alt="" /></div>
           
-            </div>
+            </div> */}
             
 
            </div>
 
-
+           {/* <div className='container' > */}
     
            <Swiper data-aos="fade-down"
-           style={{paddingLeft:"20px" , paddingRight:"20px"}}
-        slidesPerView={1}
-        spaceBetween={30}
+        
+        slidesPerView={4}
+        spaceBetween={5}
         data-swiper-autoplay="2000"
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         centeredSlides= {true}
@@ -72,122 +111,62 @@ export default function About(){
             slidesPerView: 1,
             spaceBetween: 10,
           },
+
         
-          650: {
+          714: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 5,
           },
-          900: {
+         1054: {
             slidesPerView: 3,
-            spaceBetween: 60,
+            spaceBetween: 5,
           },
-          1220: {
+          1100: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+          },
+          1300: {
             slidesPerView: 4,
-            spaceBetween: 60,
+            spaceBetween: 5,
           },
-        }}
+        }
+      }
 
         modules={[Pagination ,  Autoplay]}
     
-        // autoplay={true}
+        
         className="mySwiper"
       >
-        <SwiperSlide><div className='cardintroduction'>
-              <div className='imageintroduction'>
-              <img src="\tinified (1)\download (3).jpg" alt="" />
+       {chef.map(item=> <SwiperSlide><div className='cardintroduction'>
+              <div className='imageintroduction' >
+              <img src={item.img} alt="" />
               </div>
-              <p className='nameintroduction'> Gorden Ramsay</p>
-              <p className='nameintroduction'>chef of holloween food</p>
+              <div className='text'>  <p className='nameintroduction'> {item.title}</p>
+            
               <div className='starintroduction'>
-              <FaStar /><FaStar /><FaStar />
-              <FaRegStar/> <FaRegStar/>
-              </div>
+                <ul className='starintroduction-list'>
+                  <li className='starintroduction-item'> <FaYoutube/></li>
+                  <li className='starintroduction-item'> <FaFacebookF/></li>
+                  <li className='starintroduction-item'>  <CiInstagram/></li>
+                </ul>
+             
 
-           
 
-
-            </div></SwiperSlide>
-        <SwiperSlide>
-        <div className='cardintroduction'>
-              <div className='imageintroduction'>
-              <img src="\tinified (1)\download (56).jpg" alt="" />
-              </div>
-              <p className='nameintroduction'> Aarti Sequeira</p>
-              <p className='nameintroduction'>chef of holloween food</p>
-              <div className='starintroduction'>
-              <FaStar /><FaStar /><FaStar />
-              <FaRegStar/> <FaRegStar/>
-              </div>
+              </div></div>
+            
 
            
 
 
             </div>
-        </SwiperSlide>
-        <SwiperSlide><div className='cardintroduction'>
-              <div className='imageintroduction'>
-              <img src="\tinified (1)\cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zNF9waG90b19vZl9ibGFja193b21hbl9jaGVmX2Nvb2tpbmdfaW5fdGhlX2tpdF9jZmQwMWViNS1mOThlLTQzMTYtYWZlNC03MTZhNGM4ZjNkYmNfMS5qcGc-2.webp" alt="" />
-              </div>
-              <p className='nameintroduction'>  Amit Puri</p>
-              <p className='nameintroduction'>chef of holloween food</p>
-              <div className='starintroduction'>
-              <FaStar /><FaStar /><FaStar />
-              <FaRegStar/> <FaRegStar/>
-              </div>
-
-           
-
-
-            </div></SwiperSlide>
-        <SwiperSlide><div className='cardintroduction'>
-              <div className='imageintroduction'>
-              <img src="\tinified (1)\images (3).jpg" alt="" />
-              </div>
-              <p className='nameintroduction'> Anjum Anand</p>
-              <p className='nameintroduction'>chef of holloween food</p>
-              <div className='starintroduction'>
-              <FaStar /><FaStar /><FaStar />
-              <FaRegStar/> <FaRegStar/>
-              </div>
-
-           
-
-
-            </div></SwiperSlide>
-            <SwiperSlide><div className='cardintroduction'>
-              <div className='imageintroduction'>
-              <img src="\tinified (1)\images (4).jpg" alt="" />
-              </div>
-              <p className='nameintroduction'>Samia Ahad   </p>
-              <p className='nameintroduction'>chef of holloween food</p>
-              <div className='starintroduction'>
-              <FaStar /><FaStar /><FaStar />
-              <FaRegStar/> <FaRegStar/>
-              </div>
-
-           
-
-
-            </div></SwiperSlide>
-
-            <SwiperSlide><div className='cardintroduction'>
-              <div className='imageintroduction'>
-              <img src="\tinified (1)\3775416-1453273301-2.jpg" alt="" />
-              </div>
-              <p className='nameintroduction'> Connie Achurra</p>
-              <p className='nameintroduction'>chef of holloween food</p>
-              <div className='starintroduction'>
-              <FaStar /><FaStar /><FaStar />
-              <FaRegStar/> <FaRegStar/>
-              </div>
-
-           
-
-
-            </div></SwiperSlide>
+            </SwiperSlide>
+         
+            
+            ) }
+      
        
       </Swiper>
-
+      {/* </div> */}
 
 </div>
 

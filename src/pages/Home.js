@@ -4,6 +4,7 @@ import Search1 from "./Search1";
 import Cart from "../component/Cart";
 import { useNavigate  , Link} from "react-router-dom";
 import  './home.css';
+
 // import { CiLight } from "react-icons/ci";
 import Menu from "../component/Menu";
 // import {MdDarkMode} from "react-icons/md";
@@ -18,7 +19,7 @@ import Typewriter from "typewriter-effect";
 
 import ScrollToTop from '../component/ScrollToTop'
 import Loader from "../component/Loader";
-import AutoPlay from "../component/AutoPlay/AutoPlay";
+
 import Newest from "../component/Newest";
 
 export default function Home(){
@@ -145,7 +146,7 @@ The Best Recipes<br></br>
 
 </div>
                    
-<div data-aos="fade-up" data-aos-duration="8000"   data-aos-delay="800">
+<div data-aos="fade-up" data-aos-duration="7000"   data-aos-delay="700">
               
               
               <button className="btn5">view our Recipe</button>

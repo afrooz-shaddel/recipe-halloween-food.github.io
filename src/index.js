@@ -7,6 +7,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {ProviserItem} from './CreatContext2'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'aos/dist/aos.css';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

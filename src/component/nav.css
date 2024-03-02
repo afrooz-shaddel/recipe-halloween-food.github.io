@@ -1,6 +1,8 @@
 @import "../fonts/fonts.css";
 
-
+.Link{
+    color: #0d0d25;
+}
      .nav2{
         width: 100%;
        
@@ -24,6 +26,7 @@
       
        
                 justify-content: space-between;
+                color: #212529;
       
       
       
@@ -38,7 +41,7 @@
        -webkit-box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
                box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
                box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.03);
-               
+          color: #0d0d25;     
      
       
     }
@@ -56,6 +59,7 @@
     .hambergurMenue{
         color: rgb(7, 125, 17);
         color: darkslateblue;
+        color: #ffffff;
         font-size: 2.5rem;
         display: none;
     }
@@ -72,7 +76,7 @@
     }
     
     
-    .createButton{
+    /* .createButton{
        
         font-size: 4rem;
         color: #970b6b91;
@@ -80,35 +84,36 @@
        
         cursor: pointer;
         /* margin-left: 14rem; */
-        text-decoration: none;
+        /* text-decoration: none;
         margin-right: 2rem;
         box-shadow: 2px 2px 12px rgb(99 65 211 / 38%);
-        box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
+        box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff */
         /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff; */
-    }
-    .createButton svg{
+    /* } */ 
+    
+    .createButton1 svg{
         color: rgb(236, 21, 21);
         font-weight: bolder;
         color:  #E76F51;
         font-size: 1.5rem;
     }
-    .createButton button{
-     
-       height: 3rem;
+    .createButton1 {
+     margin-right: 2rem;
+       /* height: 3rem;
        display: block;
        border-radius:4px ;
-       color: #fff;
-       text-transform: capitalize;
-       width: 7rem;
-       height: 2.3rem;
+       color: #fff; */
+       /* text-transform: capitalize; */
+       /* width: 7rem;
+       height: 2.3rem; */
        border-radius: 10px;
-       transition: all 0.3s ease-in-out;
+       /* transition: all 0.3s ease-in-out;
        -webkit-transition: all 0.3s ease-in-out;
        -moz-transition: all 0.3s ease-in-out;
        -ms-transition: all 0.3s ease-in-out;
-       -o-transition: all 0.3s ease-in-out;
-       width: 2.2rem;
-       height: 2.2rem;
+       -o-transition: all 0.3s ease-in-out; */
+       /* width: 2.2rem;
+       height: 2.2rem; */
        border: none;
        -webkit-border-radius:4px ;
        -moz-border-radius:4px ;
@@ -117,6 +122,12 @@
        display: flex;
        justify-content: center;
        align-items: center;
+       width: 2.3rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border: none;
+       height: 2.2rem;
        box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
 } 
    
@@ -142,6 +153,7 @@
     }
     .moonDark{
         display: flex;
+        align-items: center;
 
     }
     .foodLogo{
@@ -218,7 +230,7 @@
         }
     
         .linknav{
-           color: green;
+           color: #0d0d25;
            font-weight: bold;
            text-transform: capitalize;
            text-decoration: none;
@@ -244,6 +256,7 @@
     }
     .hambergurmenu{
         color: green;
+        color: #ffffff;
         font-size: 2rem;
     }
     .navMobile{
@@ -257,6 +270,12 @@
             color: #fff;
           
             box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+
+
+          }
+
+          .darkMode .linknav {
+          color: #dadada;
 
 
           }

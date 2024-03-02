@@ -1,0 +1,74 @@
+.otpForm{
+    width: 20rem;
+    height: 12rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    transition: all 200ms ease-in-out;
+    transform: scale(1.5rem);
+    -webkit-transform: scale(1.5rem);
+    -moz-transform: scale(1.5rem);
+    -ms-transform: scale(1.5rem);
+    -o-transform: scale(1.5rem);
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    z-index: 200;
+}
+
+.otpForm-phoneinput{
+    /*height: 2.6rem;
+    */border: none;
+    background-color: rgba(243, 244, 246, 0.299) ;
+    background-color: rgb(243 244 246 / 1);
+    margin-bottom: 1.5rem;
+    width: 15rem;
+    height: 2.7rem;
+    border-radius: 0.5rem     ;
+    -webkit-border-radius: 0.5rem     ;
+    -moz-border-radius: 0.5rem     ;
+    -ms-border-radius: 0.5rem     ;
+    -o-border-radius: 0.5rem     ;
+}
+
+.otpForm-phoneinput::placeholder{
+    padding-left: 0.75rem;
+  
+}
+.otpForm-btn{
+    height: 2.3rem;
+    width: 15rem;
+    height: 2.5rem;
+    border: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(46 213 115 / 1);
+    border-radius: 0.75rem     ;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.75rem;
+    -ms-border-radius: 0.75rem;
+    -o-border-radius: 0.75rem;
+    color: #fff;
+}
+
+.otpForm-btn2{
+    background-color:transparent ;
+    border: none;
+    color: red;
+    margin-top: 1rem;
+    width: 15rem;
+}

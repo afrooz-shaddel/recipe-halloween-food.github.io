@@ -3,7 +3,7 @@
     justify-content:flex-end;
     align-items: center;
     margin-top: 5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     flex-direction: row-reverse;
     padding-right: 4rem;
     padding-left: 4rem;
@@ -25,3 +25,15 @@
     text-align: left;
 }
 
+.darkMode .btnNew {
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+
+    .productWrapper{
+        margin-right: auto;
+       margin-left: auto;}
+    
+    
+}

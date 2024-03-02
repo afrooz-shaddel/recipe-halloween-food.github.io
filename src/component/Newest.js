@@ -6,7 +6,7 @@ import {  Autoplay } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa6";
 import  {Link} from 'react-router-dom';
-import 'swiper/css';
+// import 'swiper/css';
 
 import 'swiper/css/autoplay';
 import Header from './Header/Header';
@@ -14,7 +14,9 @@ import Header from './Header/Header';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Newest(){
-    const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+    // const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+    const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
+   
     const[recipie , setRecipie]=useState("")
     let navigate=useNavigate()
 let newData=[...data];
@@ -35,25 +37,26 @@ let newData=[...data];
     pagination={true} 
     modules={[ Autoplay]} 
     
-    slidesPerView={4}
-    // spaceBetween={10}
-    autoplay={{ delay: 3000, disableOnInteraction: false }}
+    slidesPerView={3}
+    spaceBetween={5}
+    autoplay={{ delay: 1500, disableOnInteraction: false }}
     data-swiper-autoplay="2000"
     
     breakpoints={{
-
+     
         1100:{
             slidesPerView:3,
-            spaceBetween:20
+            spaceBetween:5
           },
         900:{
           slidesPerView:2,
-          spaceBetween:20
+          spaceBetween:5
         },
-        800:{
+        714:{
           slidesPerView:2,
-          spaceBetween:10
+          spaceBetween:5
         },
+      
         600:{
           slidesPerView:1,
           spaceBetween:10
@@ -87,7 +90,7 @@ let newData=[...data];
     
     
     
-    <SwiperSlide > <NewProduct product={item}/>       </SwiperSlide> )}
+    <SwiperSlide key={item.id}> <NewProduct product={item}/>       </SwiperSlide> )}
    
         
         

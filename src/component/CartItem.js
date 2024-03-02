@@ -3,18 +3,16 @@ import {useLocalStorage} from "usehooks-ts";
 
 import { CiHeart } from "react-icons/ci";
 import { IoHeart } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFetch } from "../hook/useFetch";
 import Menu from "./Menu";
 
 import { Link } from "react-router-dom";
 import { click } from "@testing-library/user-event/dist/click";
 export default  function CartItem({product  ,allMenu , menuFilter , data1  }){
-    const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+    const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
     const[recipie , setRecipie]=useState("");
-    let [id , setId]=useLocalStorage("id", product.id)
-    let [like , setLike]=useLocalStorage("like" ,false)
-    
+    let [productData , setProductData]=useLocalStorage("product" ,product)
     let [menu , setMenu]=useState("All")  
     function filterMenu(type){
         if(type==="All"){
@@ -25,32 +23,46 @@ export default  function CartItem({product  ,allMenu , menuFilter , data1  }){
         }
        let filterProduct=data.filter(item =>item.type===type);
        setRecipie(filterProduct)
-      console.log(recipie )
+     
        }
-       function clickHeart(id){
-      const stored=localStorage.getItem("id")
-console.log(stored)
+
+ 
+   useEffect(()=>{
+  
+   },[])
+     
+       function clickHeart1(id){
+
+console.log(productData)
+
        }
     
        let category2= new Set(data.map(item=>(item.type)));
        let category=["All" ,...category2] 
+    // {console.log(product.like)}
+    return(<>{product.map(item=><div className="linkpicture10 " data-aos="fade-up" key={item.id} >
+    <div   className="linkpictureImg10 ">
+      <span></span>
+    <img src={item.src} alt="" />
     
-    return(
-        <div className="linkpicture " data-aos="fade-up"  >
-        <img src={product.src} alt="" />
-        <button className="heartbtn">
-        <IoHeart color={like?'red':''}   onClick={()=>clickHeart(id)}/>
-        </button>
-        <div style={{display:"flex"  , justifyContent:"center" , alignItems:"center"}}>
-       
-   
-        </div>
+    </div>
+    <div className="bac2"></div>
+ 
+  
+  <button className="heartbtn1">
+  
+  <IoHeart color={item.like?'red':''  } onClick={()=>clickHeart1(item.id)}  />
+  </button>
+<p className="picturedate">1403/11/25</p>
+<p className="picturetitlefood">FOOD, FLAVOUR</p>
+<h3 className="picturelorem">Flavour so good you’ll try to eat with your eyes.</h3>
+  
+ <button className="btnLinkProduct"><Link  to={`/product/${item.type}`}>{item.type}</Link></button>
+
+
+
+    </div>)}
         
-       <button className="btnLinkProduct"><Link  to={`/product/${product.type}`}>{product.type}</Link></button>
-
-
-    
-          </div>
-    )
+    </>)
 }   
 

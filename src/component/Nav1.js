@@ -2,17 +2,21 @@ import { NavLink } from "react-router-dom"
 import './nav.css'
 import { AiOutlineSlack } from "react-icons/ai";
 import { SiCreatereactapp } from "react-icons/si";
+import { CiUser } from "react-icons/ci";
 import { Link } from 'react-router-dom'
 import { useEffect, useRef, useState  , useContext} from "react";
 import { FiAlignLeft } from "react-icons/fi";
 import {contexData} from '../CreatContext2'
 import { MdFoodBank} from "react-icons/md"
 import { FaBars } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import {MdDarkMode} from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import {BiChevronDown} from "react-icons/bi";
 import { IoCreate } from "react-icons/io5";
+import Register from "../pages/Register";
+import Otp from "../pages/Otp";
 // import {IoFastFoodOutline} from 'react-icons/io'
 import Search1 from "../pages/Search1";
 
@@ -23,7 +27,10 @@ export default function Nav1(){
 let [showButton , setShowButton]=useState(false)
 const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexData);
 const [showDark , setShowDark]=useState(false);
-
+let [user1 , setUser1]=useState(false)
+function cli1(){
+    setUser1(true)
+}
     return(<>
         <BiChevronDown className={show ?'BiChevronDown  ma ':'BiChevronDown md '}    onClick={()=>setShow(!show)} /> 
        
@@ -48,14 +55,16 @@ const [showDark , setShowDark]=useState(false);
 
                 <Link onClick={()=>{
                     setIsOpen(false)
-                }}   className="linknav"  to="/gallery" >
-                    <p>gallery</p>
+                }}   className="linknav"  to="/create" >
+                    <p>Create</p>
                 </Link>
                 {/* <Link onClick={()=>{
                     setIsOpen(false)
                 }} className="linknav" to="/allrecipes" >
                     <p>Recipes</p>
                 </Link> */}
+
+
 
                 <Link onClick={()=>{
                     setIsOpen(false)
@@ -90,15 +99,22 @@ const [showDark , setShowDark]=useState(false);
        
             
           </div>
-              <Link to="/create"  className="createButton"   >
+         
+              {/* <Link to="/register"  className="createButton"   > */}
         
              
-             <button> < AiOutlineSlack/> </button>
-              </Link>
-                
-              {/* <FaBars className="hambergurmenu"   /> */}
+             <button className="createButton1" onClick={()=>setUser1(true)}> < CiUser/>  </button>
                
-              </div>
+                {user1 && <Otp />}
+
+
+
+
+
+          </div>
+
+
+
               <button  className="btnBar"  onClick={()=>setIsOpen(!isOpen)}>
  {isOpen? <AiOutlineClose  className="hambergurmenu "/>: <FiAlignLeft   className="hambergurmenu"  /> }    
                 </button>

@@ -1,0 +1,183 @@
+.registerWrapper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    /* -webkit-animation: dropTop 1s linear;
+    animation: dropTop 1s linear; */
+    max-width: 25rem;
+    background-color: #fff;
+    margin: 5rem auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-family: "Roboto";
+    border-radius: 1rem;
+    /*background: linear-gradient(        0deg,        rgba(0, 0, 0, 0.65) 0%,        rgba(0, 0, 0, 0.65) 100%      ),      url(../holloween/new/chopsticks.jpg), lightgray 50% ;
+    */background-size: cover;
+    background-position: center;
+    color: white;
+    color: black;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+     /* width: 100vw;
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200; */
+      /* pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column; */
+     /* background: #00000055;
+    backdrop-filter: blur(3px); */
+    /* opacity: 0; */
+    /* transition: all 0.5s ease;
+    width: 100vw;
+    height: 100vh;  */
+    /* -webkit-transition: all 0.5s ease; 
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; */
+}
+
+ .modal_wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 200; */
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000055;
+    backdrop-filter: blur(3px);
+    /* opacity: 0; */
+    transition: all 0.5s ease;
+}
+
+.register-formWrapper{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.register-title{
+    color:#ff8243;
+    margin-right: 6rem;
+}
+
+
+.register{
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+
+.register-input{
+    height: 2.4rem;
+    border-radius: 0.4rem;
+    width: 17rem;
+    -webkit-border-radius: 0.4rem;
+
+    -moz-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    border: 2px solid #ff8243;
+    background-color: rgba(243, 244, 246, 1) ;
+    outline: none;
+    font-family: "Roboto";
+    color: black;
+    padding-left: 1rem;
+}
+
+.registerbtnwrapper{
+  
+    display: flex;
+    margin-top: 1rem;
+}
+
+
+.registerbtn,
+.registerlink
+,.registerbtnlogin{
+    width: 17rem;
+    height: 2.5rem;
+    background-color: red;
+    border-radius: 0.3rem;
+    color: white;
+    border: none;
+}
+.registerbtnlogin{
+    background-color: green;
+}
+
+.registerlink{
+    background-color: blue;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.registerbtn{
+    background-color: red;
+}
+
+.register-label span{
+   
+
+    color: red;
+}
+
+.loginbtnlink{
+    text-decoration: none;
+    color: #1520A6;
+    color: #ff8243;
+}
+
+/* .search12{ */
+    /* background-color: rgb(237, 233, 228); */
+    /* width: 100%;
+    height: auto;
+
+    -webkit-animation: dropTop 1s linear; */
+/* 
+            animation: dropTop 1s linear; */
+    /* bottom: 0;
+    position: fixed;
+
+    left: 0; */
+  
+/* } */
+@keyframes dropTop{
+    0%{
+                -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+                -moz-transform: translateY(-100%);
+                -ms-transform: translateY(-100%);
+                -o-transform: translateY(-100%);
+}
+    100%{
+        -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+    }
+}
+
+.register-form{
+
+}

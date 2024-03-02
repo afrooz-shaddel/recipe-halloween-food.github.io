@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { BsArrowUpCircle } from "react-icons/bs";
+import { IoIosArrowUp } from "react-icons/io";
 import './scroll.css'
 import AOS from 'aos';
 const ScrollToTop=()=>{
@@ -25,12 +26,12 @@ const scrollTop=()=>{
 }
 
 return(
-<div  className="btn"   data-aos="fade-up">
+<>
     
-    { showScroll && <BsArrowUpCircle onClick={scrollTop}  className="btnarrow"/>}</div> 
+    { showScroll && <div  className="btnScroll"   data-aos="fade-up" onClick={scrollTop} >  <IoIosArrowUp   className="btnarrow"/> </div> }
 
 
-
+    </>
 )
 
 }

@@ -1,4 +1,5 @@
 import { useState ,useEffect } from "react";
+import { toast } from "react-toastify";
 
 export function useFetch(url , method="GET"){
 
@@ -31,13 +32,16 @@ useEffect(()=>{
         }
 
         let json=await response.json()
+     
         setIsLoading(false)
          setError(null)
          setData(json)
+     
 
     }catch(err){
         setIsLoading(false)
          setError(err.message)
+        //  toast.error("fail" + err.message)
     }
     
    }
@@ -46,6 +50,7 @@ useEffect(()=>{
    }
    if(method==="POST" && options){
     dataFetch(options)
+    toast.success("success")
    }
   
   

@@ -126,7 +126,7 @@ let categoryItem="";
     return(
         <div  className='search2'  >
         
-        <div className='searchcategory' >
+        {/* <div className='searchcategory' >
             
            <div className='inputSearch'>
              
@@ -153,7 +153,7 @@ let categoryItem="";
              </div>
              
              </div>
-        </div>
+        </div> */}
 
         <div>
             
@@ -181,7 +181,8 @@ let categoryItem="";
         </ul>
       </nav>
 
-
+<img className='searchImgBack1'   src="\shape\shape-2.png" alt="" />
+<img src="\shape\shape-1.png" alt="" className='searchImgBack2'/>
 
         </div>
     )

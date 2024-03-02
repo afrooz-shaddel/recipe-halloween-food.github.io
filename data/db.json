@@ -11,8 +11,8 @@
       ],
       "method": "1.Pre-heat the oven to 200c/3c/gas 5. ",
       "cookingTime": "45 minute",
-      "img": "/picture2/drink1.jpg",
-      "type": "drink"
+      "img": "/auto/bigstock-Traditional-Japanese-Kitchen-451544387.jpg",
+      "type": "salmon"
     },
     {
       "id": "2",
@@ -26,8 +26,8 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/sweet3.jpg",
-      "type": "sweets"
+      "img": "/auto/c700x420_20181227132950.jpg",
+      "type": "salmon"
     },
     {
       "id": "3",
@@ -43,8 +43,8 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "55 minute",
-      "img": "/picture2/food.webp",
-      "type": "lunch"
+      "img": "/auto/delicious-sushi-set-1083419.jpg",
+      "type": "rice"
     },
     {
       "id": "4",
@@ -60,8 +60,8 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "55 minute",
-      "img": "/picture2/sweet1.jpg",
-      "type": "sweets"
+      "img": "/auto/different-types-japanese-sushi-rolls-2834909.jpg",
+      "type": "salmon"
     },
     {
       "id": "5",
@@ -77,8 +77,8 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "55 minute",
-      "img": "/picture2/Halloween+Garnishes+-+Frankenstein+640.jpg",
-      "type": "drink"
+      "img": "/auto/focused_308329878-stock-photo-top-view-delicious-sushi-served.jpg",
+      "type": "chicken"
     },
     {
       "id": "6",
@@ -94,14 +94,12 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/food2.jpg",
-      "type": "lunch"
-    }
-
-    ,
+      "img": "/auto/images (2).jpg",
+      "type": "rice"
+    },
     {
       "id": "7",
-      "title": "Bento",
+      "title": "Uramaki",
       "ingredients": [
         "1 pound bacalao",
         " 2 tayotas",
@@ -113,15 +111,12 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/food2.jpg",
-      "type": "lunch"
-    }
-
-
-    ,
+      "img": "/auto/images (232).jpg",
+      "type": "salmon"
+    },
     {
       "id": "8",
-      "title": "Bento",
+      "title": "Oshizushi",
       "ingredients": [
         "1 pound bacalao",
         " 2 tayotas",
@@ -133,14 +128,12 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/food2.jpg",
-      "type": "lunch"
-    }
-
-    ,
+      "img": "/auto/preview_sushi.jpg",
+      "type": "chicken"
+    },
     {
       "id": "9",
-      "title": "Bento",
+      "title": "Gunkan.",
       "ingredients": [
         "1 pound bacalao",
         " 2 tayotas",
@@ -152,14 +145,12 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/food2.jpg",
-      "type": "lunch"
-    }
-
-    ,
+      "img": "/auto/sushi-2853382_1280.jpg",
+      "type": "rice"
+    },
     {
       "id": "10",
-      "title": "Bento",
+      "title": "Inarizushi ",
       "ingredients": [
         "1 pound bacalao",
         " 2 tayotas",
@@ -171,13 +162,12 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/food2.jpg",
-      "type": "lunch"
-    }
-    ,
+      "img": "/auto/sushisettokio.jpg",
+      "type": "salmon"
+    },
     {
       "id": "11",
-      "title": "Bento",
+      "title": "Futomaki",
       "ingredients": [
         "1 pound bacalao",
         " 2 tayotas",
@@ -189,38 +179,89 @@
       ],
       "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
       "cookingTime": "30 minute",
-      "img": "/picture2/food2.jpg",
-      "type": "lunch"
+      "img": "/middle/images (1).jpg",
+      "type": "chicken"
     },
-
-    {"id": "12",
-    "title": "Cocktail",
-    "ingredients": [
-      "1 sugar",
-      "1 food coloring",
-      "200g Tofu",
-      "3000ml almound"
-    ],
-    "method": "1.Pre-heat the oven to 200c/3c/gas 5. ",
-    "cookingTime": "45 minute",
-    "img": "/picture2/drink1.jpg",
-    "type": "drink"
-  },
-  {
-    "id": "13",
-    "title": "Paella-m",
-    "ingredients": [
-      "1  onion",
-      " bell pepper",
-      " garlic",
-      "tomatoes",
-      "parsley"
-    ],
-    "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
-    "cookingTime": "30 minute",
-    "img": "/picture2/sweet3.jpg",
-    "type": "sweets"
-  }
-   
+    {
+      "id": "12",
+      "title": "California roll",
+      "ingredients": [
+        "1 sugar",
+        "1 food coloring",
+        "200g Tofu",
+        "3000ml almound"
+      ],
+      "method": "1.Pre-heat the oven to 200c/3c/gas 5. ",
+      "cookingTime": "45 minute",
+      "img": "/middle/images (5).jpg",
+      "type": "chicken"
+    },
+    {
+      "id": "13",
+      "title": "Sashimi",
+      "ingredients": [
+        "1  onion",
+        " bell pepper",
+        " garlic",
+        "tomatoes",
+        "parsley"
+      ],
+      "method": "Add olive oil to a skillet over medium heat. Add onion, bell peppers and garlic and sauté until onion is translucent. Add chopped tomato, bay leaf, paprika, saffron, salt and pepper. Stir and cook for 5 minutes.",
+      "cookingTime": "30 minute",
+      "img": "/middle/images (6).jpg",
+      "type": "chicken"
+    }
+    
+  ],
+  "user": [
+    {
+      "id": "1",
+      "userName": "afrooz880",
+      "password": "9111517013",
+      "fullName": "afrooz-shaddel",
+      "email": "afrooz880@gmail.com"
+    },
+    {
+      "userName": "dasvd",
+      "password": "vqc",
+      "fullName": "wvq",
+      "email": "afrooz880@gmail.com",
+      "id": "yQzduGu"
+    },
+    {
+      "userName": "dasvd",
+      "password": "vqc",
+      "fullName": "wvq",
+      "email": "afrooz880@gmail.com",
+      "id": "rsIvaEr"
+    },
+    {
+      "userName": "dasvd",
+      "password": "vqc",
+      "fullName": "wvq",
+      "email": "afrooz880@gmail.com",
+      "id": "nf0Q43w"
+    },
+    {
+      "userName": "dasvd",
+      "password": "vqc",
+      "fullName": "wvq",
+      "email": "afrooz880@gmail.com",
+      "id": "0_8go8F"
+    },
+    {
+      "userName": "dasvd",
+      "password": "vqc",
+      "fullName": "wvq",
+      "email": "afrooz880@gmail.com",
+      "id": "RYf5Ne7"
+    },
+    {
+      "userName": "dasvd",
+      "password": "vqc",
+      "fullName": "wvq",
+      "email": "afrooz880@gmail.com",
+      "id": "kIpRE24"
+    }
   ]
 }

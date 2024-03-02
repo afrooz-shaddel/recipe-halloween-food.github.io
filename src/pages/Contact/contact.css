@@ -1,4 +1,8 @@
 .MassageWrapper{
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0;
+    right: 0; */
     display: flex;
     height: fit-content;
     /* max-width: 1400px; */
@@ -7,9 +11,10 @@
 justify-content: space-around;
     /* background-image: url(../../holloween/1.jpg); */
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-   margin-top: 3rem;
+   margin-top: 4rem;
    /* max-width: 97%; */
    max-width: 1600px;
    /* margin-right: auto;
@@ -21,7 +26,7 @@ border-top-left-radius: 0.75rem;
         rgba(0, 0, 0, 0.65) 0%,
         rgba(0, 0, 0, 0.65) 100%
       ),
-      url(../../holloween/1.jpg), lightgray 50% / cover no-repeat;
+      url(../../holloween/focused_308329878-stock-photo-top-view-delicious-sushi-served.jpg), lightgray 50% / cover no-repeat;
     
 }
 
@@ -259,9 +264,59 @@ border: 1px solid #717171;
 margin-bottom: 1rem;
   }
 
- 
+ .footer-logo{
+    width: 12rem;
+ }
+ .footer-logo img{
+    width: 100%;
+ }
+.logofooterside{
+    display: flex;
+    align-items: center;
+    margin-top: -5rem;
+}
+.logofooterside-list span{
+    font-size: 1.5rem;
+    
+}
+.logofooterside-list {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 0.75rem;
+}
+.logofooterside-item{
+    width: 18rem;
+   text-align: right;
+   margin-left: -7rem;
 
+}
+.logofooterside-item1{
+    margin-left: 8rem;
+}
+.conectbtn:hover{
+  background-color: #198754;
+  color: #fff;
+}
 
+.logofooterside-li {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-left: 0.75rem;
+    font-weight: 500;
+    
+}
+.logofooterside-link{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #fff !important;
+    margin-top: 1.5rem;
+    margin-left: 0.75rem;
+    
+}
+a{
+    text-decoration: none!important;
+}
 
 @media screen and (max-width:1200px) {
     .MassageContent form{
@@ -337,11 +392,25 @@ margin-bottom: 1rem;
 }
 
 @media screen and (max-width:400px) {
-   
+   .logofooterside{
+flex-direction: column;
+   }
     .tooltip-item span{
         width: 45px;
         height: 50px;
         font-size: 20px;
+    }
+    .logofooterside-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logofooterside-item1{
+        margin-left: 0;
+    }
+    .logofooterside-item{
+        width: auto;
     }
 
 }
