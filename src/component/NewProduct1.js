@@ -9,13 +9,14 @@ import ScrollToTop from './ScrollToTop';
 import Loader from './Loader';
 import { GoHeartFill } from "react-icons/go";
 import AOS from 'aos';
+import Loder from '../Loder/Loder';
 export default function NewProduct1({product ,color}){
    const {theme , setTheme , color2 ,setColor2 ,show , setShow}=useContext(contexData);
    let img=["/product/default3.jfif" ,"/product/sweet5.png" , "/product/sweet2.jfif" ]
   let index=Math.floor(Math.random()*img.length)
   let item=img[index]
   let [like , setLike]=useState(false)
-
+let [load , setLoad]=useState(false)
   function likeHandeler(id){
    console.log(id)
    product.find(item=>{
@@ -53,8 +54,11 @@ export default function NewProduct1({product ,color}){
  
 
  <div className='picture'>
-    <img  className='picture__product' src={img} alt="" />   </div>
-    {/* <p>{type}</p> */}
+    <img  className='picture__product' src={img} alt="" onLoad={()=>setLoad(true)} />   </div>
+    
+    {
+      !load && <Loder/>
+    }
     <div className='starType'>
     <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/> <FaStar/>
     </div>

@@ -1,0 +1,33 @@
+.loder{
+    height:60rem;
+    width: 100%;
+    overflow: hidden;
+    background-color: #dadada;
+    display: block;
+}
+
+.loder::after{
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient( #dada ,#f2f2f2 ,#dada);
+    transform:rotate(120deg) ;
+    -webkit-transform:rotate(120deg) ;
+    -moz-transform:rotate(120deg) ;
+    -ms-transform:rotate(120deg) ;
+    -o-transform:rotate(120deg) ;
+    animation: animation infinite 2s;
+    -webkit-animation: animation infinite 2s;
+}
+
+@keyframes animation{
+    0%{
+        left: -100%;
+    }
+
+    100%{
+        left: 100%;
+    }
+}

@@ -1,6 +1,7 @@
+import './loder.css'
 export default function Loder(){
     return(
-        <div>
+        <div className="loder">
             
 
         </div>

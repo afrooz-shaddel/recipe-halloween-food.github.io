@@ -24,6 +24,7 @@ import NotFound from './pages/NotFound';
 import Searchend from './Searchend';
 import Product from './Product/Product';
 import Login from './pages/Login';
+import Loader from './component/Loader';
 import Register from './pages/Register';
 import  {ToastContainer} from 'react-toastify';
 export default function App(){
@@ -73,7 +74,7 @@ useEffect(()=>{
       <Route  path='/*'   element={  <NotFound/>}/>
       <Route path='/otp'  element={<Otp/>}/>
      </Routes>
-
+  
    <Contact/>
 
     </BrowserRouter>

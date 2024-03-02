@@ -1,10 +1,10 @@
 import './About.css'
 import Header from '../../component/Header/Header'
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaRegStar } from "react-icons/fa6";
+import { FaRegStar, FaSliders } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
 // Import Swiper styles
 // import 'swiper/css';
@@ -16,6 +16,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
 import { LuUser2 } from "react-icons/lu";
+import Loader from '../../component/Loader';
 
 
 // import required modules
@@ -29,7 +30,8 @@ export default function About(){
   {id:4 , title: "Samia Ahad " , img:"/chef2/c4.jpg"},
   {id:5, title:  "Connie Achurra", img:"/chef2/c5.jpg"},
 ]
-  
+
+ let [imgeLoad , setImageLoad]=useState(false)
     useEffect(() => {
         AOS.init({  duration : 2000});
       }, [])
@@ -139,7 +141,8 @@ export default function About(){
       >
        {chef.map(item=> <SwiperSlide><div className='cardintroduction'>
               <div className='imageintroduction' >
-              <img src={item.img} alt="" />
+              <img src={item.img} alt=""  onLoad={()=>setImageLoad(true)}/>
+              {!imgeLoad && <Loader/>}
               </div>
               <div className='text'>  <p className='nameintroduction'> {item.title}</p>
             
