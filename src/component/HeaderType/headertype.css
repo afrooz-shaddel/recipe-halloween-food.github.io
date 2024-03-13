@@ -62,3 +62,15 @@
     box-shadow: none;
     border-bottom: 2px solid bisque;
 }
+
+
+
+@media screen and (max-width:490px) {
+   
+    .headertypelist{
+    width: 13rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  
+}
