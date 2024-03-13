@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom"
+
 import './nav.css'
 import { AiOutlineSlack } from "react-icons/ai";
 import { SiCreatereactapp } from "react-icons/si";
 import { CiUser } from "react-icons/ci";
-import { Link } from 'react-router-dom'
+import { Link , useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState  , useContext} from "react";
 import { FiAlignLeft } from "react-icons/fi";
 import {contexData} from '../CreatContext2'
@@ -28,8 +28,9 @@ let [showButton , setShowButton]=useState(false)
 const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexData);
 const [showDark , setShowDark]=useState(false);
 let [user1 , setUser1]=useState(false)
+let navigate=useNavigate()
 function cli1(){
-    setUser1(true)
+   navigate("/register") 
 }
     return(<>
         <BiChevronDown className={show ?'BiChevronDown  ma ':'BiChevronDown md '}    onClick={()=>setShow(!show)} /> 
@@ -103,9 +104,9 @@ function cli1(){
               {/* <Link to="/register"  className="createButton"   > */}
         
              
-             <button className="createButton1" onClick={()=>setUser1(true)}> < CiUser/>  </button>
+             <button className="createButton1" onClick={cli1}> < CiUser/>  </button>
                
-                {user1 && <Otp />}
+               
 
 
 

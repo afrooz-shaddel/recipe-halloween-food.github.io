@@ -10,12 +10,14 @@ import { RxCross2 } from "react-icons/rx";
 import {SearchItem} from './Handeler';
 import { CategoriesItem1 } from './Handeler';
 import { useSearchParams } from 'react-router-dom';
-import Categories from './Category/Modal';
+// import Categories from './Category/Modal';
 import Menu from './component/Menu'
 import { MdCategory } from "react-icons/md";
-import Modal from './Category/Modal';
+// import Modal from '../src/component/Category/Modal'
 import { CiSearch } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import HeaderType1 from './component/HeaderType/HeaderType';
 
 export default function Searchend(){
     const {data}=useFetch('http://localhost:3000/recipes')
@@ -122,8 +124,16 @@ let categoryItem="";
     const pagesCount = Math.ceil(data.length / pageSize);
     pagesNumbers = Array.from(Array(pagesCount).keys());
 
-
+    let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
+{id:2 , title:"Recipes" ,to:"/search"}
+]
     return(
+
+      <>
+      
+  
+ <HeaderType1  links={LinksItem}  />
+     
         <div  className='search2'  >
         
         {/* <div className='searchcategory' >
@@ -185,5 +195,6 @@ let categoryItem="";
 <img src="\shape\shape-1.png" alt="" className='searchImgBack2'/>
 
         </div>
+        </>
     )
 }

@@ -17,6 +17,7 @@ const postData=(postData)=>{
     body:JSON.stringify(postData)
     
   })
+ 
 }
 
 useEffect(()=>{

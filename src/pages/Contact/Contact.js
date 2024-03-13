@@ -13,6 +13,7 @@ import { toast } from "react-toastify";
 import { MdPhoneInTalk } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
+import InputComponent from '../InputComponent/InputComponent';
 export default function Contact(){
     const {theme , setTheme , color2 ,setColor2 , show , setShow}=useContext(contexData);
 
@@ -48,12 +49,17 @@ setMassage("")
             <form action="" >
                 
               <div className='formMassageRight'>
-                <input type="text"  placeholder='Name' value={name} onChange={(e)=> setName(e.target.value)} />
-                <input type="number"  placeholder='Phone' value={phone} onChange={(e)=> setPhone(e.target.value)} />
-                <input type="email" placeholder='Email' value={email}onChange={(e)=> setEmail(e.target.value)} />
-                   
+
+              {/* <InputComponent    type="text" element="input" placeholder='Name' />
+              <InputComponent    type="number" element="input" placeholder="phone" /> */}
+                 <input type="text"  placeholder='Name' value={name} onChange={(e)=> setName(e.target.value)} /> 
+                 <input type="number"  placeholder='Phone' value={phone} onChange={(e)=> setPhone(e.target.value)} />
+                <input type="email" placeholder='Email' value={email}onChange={(e)=> setEmail(e.target.value)} /> 
+                {/* <InputComponent    type="email" element="input" placeholder='Email' /> */}
               </div>
+             
                <div className='formMassageLeft'>
+               {/* <InputComponent    type="text" placeholder='Massage' /> */}
                <textarea name="postContent" placeholder='Massage' value={massage} onChange={(e)=> setMassage(e.target.value)} />
                <button type='submit' className='conectbtn' onClick={submitContact}  >send</button>
 

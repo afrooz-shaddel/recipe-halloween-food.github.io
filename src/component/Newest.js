@@ -28,8 +28,9 @@ let newData=[...data];
 
       <div className='btnWrapperNew' >
      
-       
+      <p>...NewRecipes</p>
         <Link rel="stylesheet" to="/search" >
+          
         <p className='btnNew' ><FaArrowLeft/> All Recipes </p>
 </Link>
       </div>
@@ -43,17 +44,20 @@ let newData=[...data];
     data-swiper-autoplay="2000"
     
     breakpoints={{
-     
+      1300:{
+        slidesPerView:3,
+        spaceBetween:5
+      },
         1100:{
-            slidesPerView:3,
+            slidesPerView:2,
             spaceBetween:5
           },
         900:{
           slidesPerView:2,
           spaceBetween:5
         },
-        714:{
-          slidesPerView:2,
+       850:{
+          slidesPerView:1,
           spaceBetween:5
         },
       

@@ -1,7 +1,7 @@
 @import '../../fonts/fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 #about{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 .about{
     display: flex;
@@ -10,6 +10,34 @@
     margin-top: 6rem;
     margin-bottom: 4rem;
    
+}
+.about-date{
+    position: relative;
+    margin-bottom: -4rem;
+    margin-left: -4rem;
+}
+.about-date::before{
+    content: url(../../holloween/badge-2-bg.png);
+    position: absolute;
+    animation:move1 5s linear infinite ;
+    -webkit-animation:move1 5s linear infinite ;
+}
+
+@keyframes move1{
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+100%{
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+}
 }
 .about-top{
     display: flex;

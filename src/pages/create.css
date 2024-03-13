@@ -5,7 +5,7 @@
     width: 900px;
     height: 600px;
     position: absolute;
-   top: 5rem;
+   top: 16rem;
    left: 4rem;
     z-index: 1;
     animation: move 5s linear infinite;
@@ -92,7 +92,7 @@
    font-size: 2rem;
    font-family: "Archivo Black";
 }
-.formInput input , .formInput select{
+.formInput .inputElem , .formInput select{
 
  
   border: 2px solid #fff;
@@ -105,7 +105,7 @@
 
   
 }
-.formInput input:focus , .formInput select:focus, .formInput input:active , .formInput select:active {
+.formInput .inputElem:focus , .formInput select:focus, .formInput .inputElem:active , .formInput select:active {
     outline: none;
 }
 
@@ -126,31 +126,31 @@
             flex-direction: column;
     width: 50%;
 }
-.formInput input::-webkit-input-placeholder{
+.formInput .inputElem::-webkit-input-placeholder{
     color: #FFF;
     font-size: 1rem;
     text-transform: capitalize;
     
 }
-.formInput input::-moz-placeholder{
+.formInput .inputElem::-moz-placeholder{
     color: #FFF;
     font-size: 1rem;
     text-transform: capitalize;
     
 }
-.formInput input:-ms-input-placeholder{
+.formInput .inputElem:-ms-input-placeholder{
     color: #FFF;
     font-size: 1rem;
     text-transform: capitalize;
     
 }
-.formInput input::-ms-input-placeholder{
+.formInput .inputElem::-ms-input-placeholder{
     color: #FFF;
     font-size: 1rem;
     text-transform: capitalize;
     
 }
-.formInput input::placeholder{
+.formInput .inputElem::placeholder{
     color: #FFF;
     font-size: 1rem;
     text-transform: capitalize;
@@ -351,12 +351,13 @@ width: 70%;
     }
 
     .searchImgBack3{
-      width: 1700;
-       top: 4rem;
-       left: 3rem;
+        width: 800px;
+        top: 16rem;
+        left: 5rem;
         
     }
 }
+
 
 @media screen and (max-width:928px) {
     .login-img{
@@ -393,7 +394,7 @@ width: 70%;
     }
    
 
-    .formInput input , .formInput select {
+    .formInput .inputElem , .formInput select {
         width: 100%;
     }
 

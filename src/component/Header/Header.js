@@ -1,3 +1,4 @@
+
 import './header.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
@@ -12,8 +13,10 @@ export default function Header({item}){
          <div className='headertext'  data-aos="fade-up" >       
           {splitText.map((item ,index)=>(
                 <span  key={index}>{item}</span>
+                
 
         ))}
+        <img className='imgHeader' src="\icon\separator.svg" alt="" />
           </div>
         </>
     )

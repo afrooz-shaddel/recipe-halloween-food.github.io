@@ -20,13 +20,20 @@ justify-content: space-around;
    /* margin-right: auto;
    margin-left: auto; */
 border-top-right-radius: 0.75rem;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 border-top-left-radius: 0.75rem;
     background: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.65) 0%,
         rgba(0, 0, 0, 0.65) 100%
       ),
-      url(../../holloween/focused_308329878-stock-photo-top-view-delicious-sushi-served.jpg), lightgray 50% / cover no-repeat;
+      url(../../holloween/sushi-on-black-background-illustration-ai-generative-free-photo.jpg), lightgray 50% / cover no-repeat;
+      /* background: url(../../holloween/estamos-aqui-para-ustedes.jpg); */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     
 }
 

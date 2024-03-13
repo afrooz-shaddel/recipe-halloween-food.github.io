@@ -17,18 +17,22 @@ import { FaFacebookF } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
 import { LuUser2 } from "react-icons/lu";
 import Loader from '../../component/Loader';
-
+import HeaderType1 from '../../component/HeaderType/HeaderType';
 
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import Counter from '../../component/Counter/Counter';
 
+import { FaHome } from "react-icons/fa";
 export default function About(){
   let chef=[{id:1 , title: "Gorden Ramsay" , img:"/chef2/c1.jpg"},
   {id:2 , title:  "Aarti Sequeira", img:"/chef2/c2.jpg"},
   {id:3 , title: "Anjum Anand" , img:"/chef2/c3.jpg"},
   {id:4 , title: "Samia Ahad " , img:"/chef2/c4.jpg"},
   {id:5, title:  "Connie Achurra", img:"/chef2/c5.jpg"},
+]
+let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
+{id:2 , title:"About" ,to:"/about"}
 ]
 
  let [imgeLoad , setImageLoad]=useState(false)
@@ -38,13 +42,17 @@ export default function About(){
     
     return(
         <div id='about'>
-           <Header item="A B O U T U S"/>
+           {/* <Header item="A B O U T U S"/> */}
+           <HeaderType1  links={LinksItem}  />
            
 
            <div className='aboutWrapper'>
            
             <div className='about'>
             <div className='about-top'>
+              <div className='about-date' data-aos="fade-right"  data-aos-duration="5000" data-aos-delay="1000">
+                <img src="\shape\badge-2.png" alt="" />
+              </div>
                 <div className='about-picture   ' data-aos="fade-up"  data-aos-duration="3000"><img src="\gift\[removal.ai]_a267accc-b9dd-496b-a31b-b06428a46897-young-beautiful-female-chef-portrait-in-kitchen-bt0m92.png" alt="" /> </div>
                 <div className='backgroundblack'>
                    <img  src="\about\Frame-402077.jpg" alt="" />

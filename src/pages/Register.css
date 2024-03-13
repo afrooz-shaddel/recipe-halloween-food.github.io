@@ -1,8 +1,8 @@
 .registerWrapper{
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     z-index: 999;
     /* -webkit-animation: dropTop 1s linear;
     animation: dropTop 1s linear; */

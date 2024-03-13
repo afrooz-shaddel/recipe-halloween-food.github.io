@@ -10,6 +10,7 @@ import { BiChevronDown } from "react-icons/bi";
 // import NotFound from "./NotFound";
 import Nomatch from '../component/Nomatch'
 import AOS from "aos";
+// import HeaderType1 from "../HeaderType/HeaderType";
 export default function Search1(){
   
 const[filter1 ,setFilter1]=useState([])
@@ -56,6 +57,8 @@ let navigate=useNavigate()
 
     return(
         <>
+
+
     
         <div  className="search12">
             <div className="arrowClose"  onClick={()=>navigate("/")}>

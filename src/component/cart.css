@@ -120,6 +120,14 @@ margin-bottom: 2rem;
 
 
 }
+@media screen and (max-width:1023px) {
+   
+   .cartWrapper{
+    padding-left: 2rem;
+    padding-right: 2rem;
+   }
+ 
+ }
 @media screen and (max-width:930px) {
    
    .linkpicture{
@@ -129,6 +137,15 @@ margin-bottom: 2rem;
   
 
 }
+@media screen and (max-width:768px) {
+   
+    .cartWrapper{
+     justify-content: center;
+     flex-direction: column;
+    }
+   
+ 
+ }
 @media screen and (max-width:436px) {
    
     .offercartlorem{
