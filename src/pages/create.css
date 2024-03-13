@@ -294,24 +294,13 @@ li{list-style-type: none;}
     
 
 }
-/* .login-img{ */
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.15) 0%,
-        rgba(0, 0, 0, 0.2) 100%
-      ),
-      url(../holloween/new/fresh-beautiful-sushi-setup-with-salmon-maki-and-misterious-ingredients-ai-generated-photo.jpeg), lightgray 50% / cover no-repeat;
-} */
+
 .login-img img{
  
     -o-object-fit: cover;
  
        object-fit: cover;
-    /* width: 250px;
-    height: 250px; */
+
     width: 100%;
     height: 100%;
 }
@@ -398,9 +387,7 @@ width: 70%;
         width: 100%;
     }
 
-    /* .btnRecipe{
-        width: 100%;
-    } */
+
 
 
 

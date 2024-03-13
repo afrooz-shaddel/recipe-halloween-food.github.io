@@ -14,7 +14,7 @@ import Header from './Header/Header';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Newest(){
-    // const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+    
     const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
    
     const[recipie , setRecipie]=useState("")

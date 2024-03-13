@@ -79,20 +79,20 @@ let navigate=useNavigate()
       return true;
    }
     return(
-      // <div className='modal_wrapper'>
+
         <div className='loginWrapper'>
           <form action="" className='register-form'>
              <h2 className='register-title'>Login</h2>
              <div className='register-formWrapper'>
                 <div className='register'>
                    <label htmlFor="" className='register-labelusername'>UserName*</label>
-                   {/* <InputComponent  className="register-input"  type="text" element="input" /> */}
+                 
                    
                    <input className='register-input'value={userName}  onChange={(event)=>setUserName(event.target.value)} type="text" />
                 </div>
                 <div className='register'>
                    <label className='register-labelpassword' htmlFor="">Password*</label>
-                   {/* <InputComponent  className="register-input"  type="password" element="input" /> */}
+                 
                    <input className='register-input'value={password} onChange={(event)=>setPassword(event.target.value)} type="password"  />
                 </div>
 
@@ -109,6 +109,6 @@ let navigate=useNavigate()
           </form>
  
         </div>
-      //   </div>
+    
     )
 }

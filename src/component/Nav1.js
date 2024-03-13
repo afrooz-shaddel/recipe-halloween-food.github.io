@@ -1,26 +1,15 @@
 
 import './nav.css'
-import { AiOutlineSlack } from "react-icons/ai";
-import { SiCreatereactapp } from "react-icons/si";
+
 import { CiUser } from "react-icons/ci";
 import { Link , useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState  , useContext} from "react";
 import { FiAlignLeft } from "react-icons/fi";
 import {contexData} from '../CreatContext2'
-import { MdFoodBank} from "react-icons/md"
-import { FaBars } from "react-icons/fa";
-import { FaRegUser } from "react-icons/fa";
 import { CiLight } from "react-icons/ci";
 import {MdDarkMode} from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import {BiChevronDown} from "react-icons/bi";
-import { IoCreate } from "react-icons/io5";
-import Register from "../pages/Register";
-import Otp from "../pages/Otp";
-
-import Search1 from "../pages/Search1";
-
-import {IoReorderThree , IoCloseSharp , IoFastFoodOutline } from 'react-icons/io5'
 export default function Nav1(){
  
     let[isOpen , setIsOpen]=useState(false)

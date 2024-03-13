@@ -76,21 +76,7 @@
     }
     
     
-    /* .createButton{
-       
-        font-size: 4rem;
-        color: #970b6b91;
-       
-       
-        cursor: pointer;
-        /* margin-left: 14rem; */
-        /* text-decoration: none;
-        margin-right: 2rem;
-        box-shadow: 2px 2px 12px rgb(99 65 211 / 38%);
-        box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff */
-        /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff; */
-    /* } */ 
-    
+
     .createButton1 svg{
         color: rgb(236, 21, 21);
         font-weight: bolder;
@@ -99,21 +85,8 @@
     }
     .createButton1 {
      margin-right: 2rem;
-       /* height: 3rem;
-       display: block;
-       border-radius:4px ;
-       color: #fff; */
-       /* text-transform: capitalize; */
-       /* width: 7rem;
-       height: 2.3rem; */
        border-radius: 10px;
-       /* transition: all 0.3s ease-in-out;
-       -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-       -ms-transition: all 0.3s ease-in-out;
-       -o-transition: all 0.3s ease-in-out; */
-       /* width: 2.2rem;
-       height: 2.2rem; */
+   
        border: none;
        -webkit-border-radius:4px ;
        -moz-border-radius:4px ;

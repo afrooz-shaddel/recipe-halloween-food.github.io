@@ -12,7 +12,7 @@ import { click } from "@testing-library/user-event/dist/click";
 export default  function CartItem({product  ,allMenu , menuFilter , data1  }){
     const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
     const[recipie , setRecipie]=useState("");
-    let [productData , setProductData]=useLocalStorage("product" ,product)
+    // let [productData , setProductData]=useLocalStorage("product" ,product)
     let [menu , setMenu]=useState("All")  
     function filterMenu(type){
         if(type==="All"){

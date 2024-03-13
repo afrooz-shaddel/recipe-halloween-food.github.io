@@ -1,10 +1,10 @@
 @import "../fonts/fonts.css";
 
 .picture{
-   /*max-width: 15rem;
-   */height: 15rem;
-   /*margin: auto;
-   */width: 100%;
+   
+   height: 15rem;
+ 
+   width: 100%;
 
 }
 .picture__product{
@@ -32,7 +32,7 @@ align-items: center;
 flex-wrap: wrap;
 margin:3rem auto;
 margin-top: 1rem;
-/* text-align: center; */
+
 
 
 
@@ -90,13 +90,7 @@ border-radius: 30px;
 }
 
 .lightMode .productWrapper {
-    /* background-image: linear-gradient(90deg , #bf92f1 , #e4b3fa); */
-    /* background-image: linear-gradient(90deg , #fd556b , #ff8e80); */
-    /* background-image: linear-gradient(90deg , #C5EEE2 , #f9D4F4); */
-    /* background-image: linear-gradient(90deg , #f4c4ec , #f38181);
-    background-image:linear-gradient(90deg ,#198754 ,#0fab63c9 );
-    background-image:linear-gradient(rgba(0, 0, 0, 0.15) ,#006939c9 );
-    background-image:linear-gradient(#0fab6380 ,#0fab6380 ); */
+
     background-color: #f5f5f7;
     background-color: #68e89626;
     background: linear-gradient(145deg, #ececec, #fdfdfd);
@@ -106,10 +100,7 @@ border-radius: 30px;
  .darkMode .productWrapper p {
     color: #f5f5f7;
 }
-/* background-color: ;
-background-color: #0fab6380; */
-#0fab6380
-/* .darkMode .productWrapper{ box-shadow:  2px 2px 5px rgba(255, 255, 255, 0.15)} */
+
 .darkMode .starType {
     
     color: #fff;
@@ -141,14 +132,12 @@ background-color: #0fab6380; */
  .productWrapper p{
     margin-top: 1rem;
     color: black;
-    /* color: #f5f5f7; */
+  
 } 
 .moreLink1{
     text-decoration: none;
     color: #fff;
-    /* width: 8rem;
-    height: 2.4rem;  */
-  /* margin: 1rem auto; */
+   
     padding-top: 0.5rem;
     transition: all 0.3s ease-in-out;
     font-size: 1rem;
@@ -196,7 +185,7 @@ background-color: #0fab6380; */
 .darkMode .moreLink1 {
     background-color: #af00ff17;
     border: none;
-    /* box-shadow: 2px 1px 1px beige; */
+  
     box-shadow: none;
     color: #ececec;
 }
@@ -208,7 +197,7 @@ background-color: #0fab6380; */
     background-color: #00693975;
     background-color: #0fab6380;
     background: #f3f3f5;
-    /* box-shadow: 9px 9px 12px #b2b2b3, -9px -9px 12px #ffffff; */
+   
     
 }
 

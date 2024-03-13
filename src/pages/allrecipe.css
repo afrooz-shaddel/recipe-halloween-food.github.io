@@ -1,7 +1,7 @@
 .homeWrapper{
  
     max-width: 1400px;
-    /* height: 100vh; */
+  
     background-color: aliceblue;
     margin: 2rem auto;
     background-image: -webkit-gradient(linear,left top, right top,from(#d57589) ,to(#ffc7a3));

@@ -121,20 +121,17 @@ html {
 .toggleBtn{
   width: 2.3rem;
   height: 2.3rem;
-  /*z-index: 999;
-  *//*border-radius: 50%;
-  *//*-webkit-box-shadow: 2px 2px 12px #35dca069;
-  box-shadow: 2px 2px 12px #35dca069;
-  */border: none;
-  /*box-shadow: 2px 2px 4px #eee;
-  */margin-right: 1rem;
+ 
+  border: none;
+  
+  margin-right: 1rem;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   box-shadow: inset 6px 6px 7px #dadada, inset -6px -6px 7px #ffffff
-  /* box-shadow: inset 5px 5px 12px #e2e2e2, inset -5px -5px 12px #ffffff; */
+  
 }
 
 .toggleBtn svg {

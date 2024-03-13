@@ -18,16 +18,14 @@
     margin-left: 8rem;
     margin-top: 4rem;
     box-shadow:   (  0 0 #0000,0 0 #0000), (0 0 #0000, 0 0 #0000),  0 1px 60px rgba(0, 0, 0, 5%);
-    /*border-top: 2px solid bisque;
-    */box-shadow:   0 0 19px rgba(168, 172, 185, 0.3);
+
+    box-shadow:   0 0 19px rgba(168, 172, 185, 0.3);
     -webkit-border-radius:1rem ;
     -moz-border-radius:1rem ;
     -ms-border-radius:1rem ;
     -o-border-radius:1rem ;
     padding-right: 2rem;
-    /* border-top: 2px solid black; */
-    
-    /* border-bottom: 2px solid black; */
+
 }
 
 .headertypelink{

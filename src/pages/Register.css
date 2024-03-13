@@ -1,11 +1,7 @@
 .registerWrapper{
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; */
+  
     z-index: 999;
-    /* -webkit-animation: dropTop 1s linear;
-    animation: dropTop 1s linear; */
+
     max-width: 25rem;
     background-color: #fff;
     margin: 5rem auto;
@@ -15,8 +11,8 @@
     padding-right: 4rem;
     font-family: "Roboto";
     border-radius: 1rem;
-    /*background: linear-gradient(        0deg,        rgba(0, 0, 0, 0.65) 0%,        rgba(0, 0, 0, 0.65) 100%      ),      url(../holloween/new/chopsticks.jpg), lightgray 50% ;
-    */background-size: cover;
+    
+    background-size: cover;
     background-position: center;
     color: white;
     color: black;
@@ -25,27 +21,7 @@
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
     -webkit-border-radius: 1rem;
-     /* width: 100vw;
-    height: 100vh; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 200; */
-      /* pointer-events: none;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column; */
-     /* background: #00000055;
-    backdrop-filter: blur(3px); */
-    /* opacity: 0; */
-    /* transition: all 0.5s ease;
-    width: 100vw;
-    height: 100vh;  */
-    /* -webkit-transition: all 0.5s ease; 
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease; */
+   
 }
 
  .modal_wrapper {
@@ -150,20 +126,7 @@
     color: #ff8243;
 }
 
-/* .search12{ */
-    /* background-color: rgb(237, 233, 228); */
-    /* width: 100%;
-    height: auto;
 
-    -webkit-animation: dropTop 1s linear; */
-/* 
-            animation: dropTop 1s linear; */
-    /* bottom: 0;
-    position: fixed;
-
-    left: 0; */
-  
-/* } */
 @keyframes dropTop{
     0%{
                 -webkit-transform: translateY(-100%);

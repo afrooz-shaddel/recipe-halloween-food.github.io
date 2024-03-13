@@ -5,7 +5,7 @@
   
     text-align: center;
     margin-top: 1rem;
-    /* box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.2); */
+    
 }
 
 .picture1{
@@ -17,11 +17,7 @@
   width: 100%;
   object-fit: cover;
   }
-  /* .picture__product1{
-      width: 15rem;
-      height: 10rem;
-      object-fit: cover;
-  } */
+ 
 
   .productWrapper-title1 {
     color: red;
