@@ -9,17 +9,12 @@ import Menu from "./Menu";
 import {useLocalStorage} from "usehooks-ts";
 
 export default function Cart(){
-  // let [like , setLike]=useLocalStorage('like' ,false)
 
-  // function clickHeart(){
-  //   setLike( like=>!like)
-  // }
     useEffect(() => {
         AOS.init({  duration : 2000});
       }, [])
       let cart=[        {id:1 , title:"Healthy Halloween" ,discription:"10 Easy and Healthy Treats!" , src:"/cart/New folder/2148224532.jpg" , type:"Chicken" , like:"false"},
       {id:2, title:"design food for kids" ,discription:"Easy Halloween Party Food Ideas" , src:"/cart/New folder/2148195563.jpg" , type:"Salmon", like:"false"},
-      // {id:3 , title:"Quick & Easy" ,discription:"Quick & Easy Halloween Treats", src:"/suchi2/images (9).png" ,type:"sweets", like:"false"},
       {id:3 , title:"Quick & Easy" ,discription:"Quick & Easy Halloween Treats", src:"/cart/New folder/13166.jpg" ,type:"Rice", like:"false"},
    
    
@@ -60,9 +55,9 @@ export default function Cart(){
       </div>
          <div className='cartWrapper '>
        
-        {/* {cart.map(item=>( */}
+    
           <CartItem product={cart}  />
-        {/* // ))} */}
+  
     
       
     

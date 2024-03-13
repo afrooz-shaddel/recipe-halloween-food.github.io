@@ -39,7 +39,7 @@ console.log(productData)
     
        let category2= new Set(data.map(item=>(item.type)));
        let category=["All" ,...category2] 
-    // {console.log(product.like)}
+    
     return(<>{product.map(item=><div className="linkpicture10 " data-aos="fade-up" key={item.id} >
     <div   className="linkpictureImg10 ">
       <span></span>
