@@ -6,7 +6,7 @@ import {useFetch} from '../hook/useFetch'
  import Toast from 'react-bootstrap/Toast';
 import { SpaRounded } from '@mui/icons-material';
 import ScrollToTop from '../component/ScrollToTop';
-// import InputComponent from './InputComponent/InputComponent';
+
 import HeaderType1 from '../component/HeaderType/HeaderType';
 import { FaHome } from "react-icons/fa";
  export default function Create(){
@@ -88,14 +88,14 @@ else{
                  <form  className='createForm'   onSubmit={submitHandeler} >
                  <p className='createForm__title' >Add New Recipe</p>
                 <div  className='formInput'>
-                {/* <InputComponent  placeholder="title" className="inputElem"  type="text" element="input" /> */}
+               
                       <input type="text" className="inputElem"  placeholder=" title" onChange={(e)=>setTitle(e.target.value)}  value={title}  />
 
                 </div>
              { submit && title.length===0 && <span className='textunder'>please Enter a title of food</span>}
        
                 <div  className='formInput'>
-                {/* <InputComponent  placeholder="method" className="inputElem"   type="text" element="input" /> */}
+               
                      <input type="text" className="inputElem"  placeholder=" method" onChange={(e)=>setMethod(e.target.value)}  value={method}  />   
                      
                 </div>
@@ -106,7 +106,7 @@ else{
                       value={cookingTime}/>
 
 
-{/* <InputComponent  placeholder="time"  className="inputElem"  type="number" element="input" /> */}
+
 
                     </div>
                     {submit && cookingTime.length===0  &&( <span className='textunder'>please Enter a  cookingTime of food</span>)}  
@@ -121,7 +121,7 @@ else{
            
             <div  className='formInput formIngredient'>
               
-            {/* <InputComponent   type="text" element="input" placeholder="ingredient"   /> */}
+            
                     <input type="text"  className="inputElem"  onChange={(e)=>setNewIngredient(e.target.value)} value={newIngredient} placeholder='ingredient'   />
                     <button  type='submit'  className='addbtn' onClick={submitbtnHandeler1}>Add</button>
                     

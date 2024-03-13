@@ -17,7 +17,7 @@ import {BiChevronDown} from "react-icons/bi";
 import { IoCreate } from "react-icons/io5";
 import Register from "../pages/Register";
 import Otp from "../pages/Otp";
-// import {IoFastFoodOutline} from 'react-icons/io'
+
 import Search1 from "../pages/Search1";
 
 import {IoReorderThree , IoCloseSharp , IoFastFoodOutline } from 'react-icons/io5'
@@ -36,7 +36,7 @@ function cli1(){
         <BiChevronDown className={show ?'BiChevronDown  ma ':'BiChevronDown md '}    onClick={()=>setShow(!show)} /> 
        
 <nav   className='nav'  style={{backgroundColor:theme}} >
-        {/* <div className="container"    > */}
+       
             <div className="nav2"  >
 
             
@@ -44,7 +44,7 @@ function cli1(){
                 <Link to='/'  className="logoText">
                  
                       <img src="\logopng\result (2).png"  className="foodLogo" alt="" />
-                        {/* <h3>Recipes Food</h3> */}
+                    
                     
                    
                     
@@ -59,12 +59,7 @@ function cli1(){
                 }}   className="linknav"  to="/create" >
                     <p>Create</p>
                 </Link>
-                {/* <Link onClick={()=>{
-                    setIsOpen(false)
-                }} className="linknav" to="/allrecipes" >
-                    <p>Recipes</p>
-                </Link> */}
-
+             
 
 
                 <Link onClick={()=>{
@@ -73,7 +68,7 @@ function cli1(){
                     <p>Recipes</p>
                 </Link>
 
-                {/* <Route path='/search'   element={<Searchend/>}/> */}
+         
 
 
 
@@ -101,7 +96,7 @@ function cli1(){
             
           </div>
          
-              {/* <Link to="/register"  className="createButton"   > */}
+           
         
              
              <button className="createButton1" onClick={cli1}> < CiUser/>  </button>
@@ -121,7 +116,7 @@ function cli1(){
                 </button>
               </div>
          
-            {/* </div> */}
+      
    
        
 

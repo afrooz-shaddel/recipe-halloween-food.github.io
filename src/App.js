@@ -1,6 +1,6 @@
 import  React , {useEffect , useState ,useMemo} from 'react';
 import {BrowserRouter ,Routes ,Route} from 'react-router-dom';
-import Gallery from './pages/Gallery';
+
 import Home from './pages/Home';
 import Create from './pages/Create';
 import { BsFillSearchHeartFill} from "react-icons/bs";

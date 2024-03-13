@@ -7,9 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { FaRegStar, FaSliders } from "react-icons/fa6";
 import { FaStar } from "react-icons/fa6";
 // Import Swiper styles
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
+
 import {  Autoplay } from 'swiper/modules';
 import 'swiper/css/autoplay';
 import { FaYoutube } from "react-icons/fa";
@@ -42,7 +40,7 @@ let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
     
     return(
         <div id='about'>
-           {/* <Header item="A B O U T U S"/> */}
+         
            <HeaderType1  links={LinksItem}  />
            
 
@@ -88,22 +86,12 @@ let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
            
 
 
-           {/* <div className='about about1'>
-               
-                <div className='about-text '  data-aos="fade-up"><p>It is the spooky time of the year again. At any time, a trick-or-treater can knock on the door; you can catch the pumpkin smells, and do not forget to be careful against the monster appearing on any corner because it is Halloween!
-
-                 
-                 Halloween first started as a Memorial held for the deceased and is believed to be created in Ireland. The holiday was called “All Hallow’s Eve,” which turned into Halloween later. It is now celebrated in the USA with children treat-or-tricking on the streets with various funny costumes, families and friends gathering up, playing games, and eating traditional Halloween foods</p></div>
-          
-          
-                 <div className='about-picture margin' data-aos="fade-down"><img src="\about\images (51).jpg" alt="" /></div>
-          
-            </div> */}
+       
             
 
            </div>
 
-           {/* <div className='container' > */}
+        
     
            <Swiper data-aos="fade-down"
         
@@ -177,7 +165,7 @@ let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
       
        
       </Swiper>
-      {/* </div> */}
+
 
 </div>
 

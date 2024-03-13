@@ -42,7 +42,7 @@ useEffect(()=>{
     }catch(err){
         setIsLoading(false)
          setError(err.message)
-        //  toast.error("fail" + err.message)
+      
     }
     
    }

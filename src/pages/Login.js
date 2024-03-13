@@ -16,17 +16,13 @@ let navigate=useNavigate()
    let resulte=true; 
    let errorMassage="please enter the valid in  "
    const {data ,  isLoading , error}=useFetch(url);
-   //
+  
    useEffect(()=>{
       let dataSaveLocal= JSON.parse(localStorage.getItem('user')) ;
     console.log(dataSaveLocal)
-   //   setUser(p)
+ 
      console.log(user)
-   //    if(dataSaveLocal){
-   //  setIsLogin(true)
-   //    }else{
-   //  setIsLogin(false)
-   //    }
+
       if(dataSaveLocal.userName ===userName && dataSaveLocal.password===password){
          setIsLogin(true)
          toast.success("tjanks")
@@ -55,11 +51,11 @@ let navigate=useNavigate()
          toast.warning(errorMassage)
         reset()
       }
-   //  })
+ 
  
 
    }
-// }
+
    function reset(){
       setUserName("")
       setPassword("")
