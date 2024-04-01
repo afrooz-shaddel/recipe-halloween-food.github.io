@@ -6,7 +6,7 @@ import {  Autoplay } from 'swiper/modules';
 import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft } from "react-icons/fa6";
 import  {Link} from 'react-router-dom';
-// import 'swiper/css';
+
 
 import 'swiper/css/autoplay';
 import Header from './Header/Header';

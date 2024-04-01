@@ -25,9 +25,9 @@ import Newest from "../component/Newest";
 export default function Home(){
  
 //  const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
- const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
+ const {data ,  isLoading , error}=useFetch('https://jsonploy-afroozs-projects.vercel.app/')
  const[recipie , setRecipie]=useState("")
-
+console.log(data)
 let navigate=useNavigate()
 
 const {theme , setTheme , color2 ,setColor2 ,show , setShow}=useContext(contexData);

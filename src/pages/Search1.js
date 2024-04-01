@@ -19,7 +19,7 @@ const[alert ,setAlert]=useState("")
 const[recipie , setRecipie]=useState("")
 
 // const {data}=useFetch('https://recipefood-json-server.liara.run/recipes')
-const {data}=useFetch('http://localhost:3000/recipes')
+const {data}=useFetch('https://jsonploy-afroozs-projects.vercel.app/')
 let elemenRef=useRef(null)
 
  

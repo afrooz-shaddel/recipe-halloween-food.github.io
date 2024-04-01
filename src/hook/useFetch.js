@@ -51,7 +51,7 @@ useEffect(()=>{
    }
    if(method==="POST" && options){
     dataFetch(options)
-    toast.success("success")
+    // toast.success("success")
    }
   
   

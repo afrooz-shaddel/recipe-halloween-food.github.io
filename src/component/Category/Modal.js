@@ -1,4 +1,4 @@
-import Menu from "../component/Menu";
+import Menu from "../Menu";
 import './modal.css';
 import { BiSolidCategory } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";

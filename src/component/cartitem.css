@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import "../fonts/fonts.css";
 .heart{
 color: white;
@@ -104,9 +105,9 @@ top: -18.5rem;
 .btnLinkProduct a{
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1.7rem;
     letter-spacing: 0.8px;
-    font-family: "Archivo" ;
+    font-family: 'Montserrat' , sans-serif;
 }
 .btnLinkProduct a:hover{
 

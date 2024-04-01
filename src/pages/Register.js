@@ -15,6 +15,7 @@ let [course , setCourse]=useState([])
 let[user2 , setUser2]=useState(false)
     let [email , setEmail]=useState("")
 let[registerData , setRegisterData]=useState([])
+const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
     let [error1 , setError1]=useState("")
     let [valid , setValid]=useState(true)
     let navigator=useNavigate();
@@ -54,50 +55,55 @@ let[registerData , setRegisterData]=useState([])
      
       return isproced;
     }
-    
-useEffect(()=>{
-   let newDataRegister={userName , password, fullName, email , course}
-   fetch('http://localhost:3000/user',{
-      method: 'POST',
-      body:JSON.stringify(newDataRegister),
+    let newDataRegister={userName , password, fullName, email , course}
+// useEffect(()=>{
+   
+//    fetch('http://localhost:3000/user',{
+//       method: 'POST',
+//       body:JSON.stringify(newDataRegister),
      
-      headers: {
-         'Content-Type': 'application/json',
-       },
-     }).then(res=>res.json())
-     .then(data=>{
-   
-      setRegisterData(prevState=>[...prevState , data])
-  console.log(data)
-      console.log(registerData)
-     })
-   
-  
+//       headers: {
+//          'Content-Type': 'application/json',
+//        },
+//      }).then(res=>res.json())
+//      .then(data=>{
 
-} ,[])
+//      })
+
+//   console.log(newDataRegister)
+
+// } ,[])
+// console.log(newDataRegister)
+
     function submitRegister(event){
      event.preventDefault();
 
 
   if(isvalid()){
-//    let newDataRegister={userName , password, fullName, email , course}
-//   fetch('http://localhost:3000/user',{
-//    method: 'POST',
-//    body:JSON.stringify(newDataRegister),
+ 
   
-//    headers: {
-//       'Content-Type': 'application/json',
-//     },
-//   }).then(res=>res.json())
-//   .then(data=>{
+   let newDataRegister={userName , password, fullName, email , course}
 
-//    setRegisterData(data)
-//    console.log(registerData)
-//    // console.log(data)
-//    login(registerData)
-//   })
-// login(registerData)
-   navigator("/")
+
+ 
+
+  fetch('http://localhost:3000/user',{
+   method: 'POST',
+   body:JSON.stringify(newDataRegister),
+  
+   headers: {
+      'Content-Type': 'application/json',
+    },
+  }).then(res=>res.json())
+  .then(data=>{
+   // if (res.error) {
+   //    throw new Error(res.error)
+   //  }
+ console.log(data)
+
+  
+  })
+
   }}
 
 

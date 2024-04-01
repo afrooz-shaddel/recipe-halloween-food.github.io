@@ -10,9 +10,10 @@ import {contexData} from '../CreatContext2';
 import { useContext, useState , useEffect} from "react";
 import PoletColor from "../component/PoletColor";
 export default function Allrecipes(){
-    const {data ,  isLoading , error}=useFetch(' http://localhost:3000/recipes')
+    // const {data ,  isLoading , error}=useFetch(' http://localhost:3000/recipes')
 
-    
+    const {data ,  isLoading , error}=useFetch('https://jsonploy-afroozs-projects.vercel.app/')
+    console.log(data)
 const[recipie , setRecipie]=useState("")
 useEffect(()=>{
        
@@ -26,6 +27,8 @@ useEffect(()=>{
  setRecipie(data)
  
 },[data])
+
+// console.log(recipie)
 function filterMenu(type){
     if(type==="All"){
       setRecipie(data)

@@ -397,6 +397,7 @@ to{
 }
 }
 @media screen and (max-width:1170px) {
+
    .pulse{
     justify-content: left;
    }
@@ -416,12 +417,19 @@ to{
     text-align: justify;
     margin-right: 1rem;
     }
+
+    .homeBackgroundLeft h1{
+      font-size: 80px;
+    }
 }
 @media screen and (max-width:1100px) {
    
   .linkPictureWrapper-right p {
     font-size: 1.1rem;
     max-width: 28rem;
+  }
+  .homeBackgroundLeft h1{
+    font-size: 60px;
   }
 }
 @media screen and (max-width:990px) {
@@ -450,6 +458,9 @@ to{
     height: fit-content;
     justify-content: center;
    }
+   .homeBackgroundLeft h1{
+    font-size: 80px;
+   }
 
    .homeBackgroundLeft{
  margin-top: -8rem;
@@ -464,22 +475,13 @@ to{
   }
   
 }
-
-@media screen and (max-width:550px) {
-  .homeBackgroundLeft {
-    margin-top: -13rem;
-     }
-  .linkPicture p{
-  font-size: 2rem;
-  }
-  .headerType {
-  
-
-    font-size: 3rem;
-   
-  }
-
+@media screen and (max-width:770px) {
+  .homeBackgroundLeft h1{
+    font-size: 64px;
+   }
 }
+
+
 
 
 
@@ -513,12 +515,14 @@ to{
     font-size: 55px;
       }
 }
+
+
 @media screen and (max-width:554px) {
   .homeBackgroundLeft h1 {
     font-size: 47px;
 }
   .linkPictureWrapper-right p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: fit-content;
   }
   .linkPicture{
@@ -539,6 +543,19 @@ to{
   width: 150px;
   height: 150px;
 }
+
+}
+@media screen and (max-width:550px) {
+  .homeBackgroundLeft {
+    margin-top: -13rem;
+     }
+  
+  .headerType {
+  
+
+    font-size: 3rem;
+   
+  }
 
 }
 

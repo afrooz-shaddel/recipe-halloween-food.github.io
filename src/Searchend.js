@@ -13,7 +13,7 @@ import { useSearchParams } from 'react-router-dom';
 // import Categories from './Category/Modal';
 import Menu from './component/Menu'
 import { MdCategory } from "react-icons/md";
-// import Modal from '../src/component/Category/Modal'
+import Modal from '../src/component/Category/Modal'
 import { CiSearch } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
@@ -136,7 +136,7 @@ let categoryItem="";
      
         <div  className='search2'  >
         
-        {/* <div className='searchcategory' >
+         <div className='searchcategory' >
             
            <div className='inputSearch'>
              
@@ -163,7 +163,7 @@ let categoryItem="";
              </div>
              
              </div>
-        </div> */}
+        </div> 
 
         <div>
             
@@ -172,7 +172,7 @@ let categoryItem="";
         </div>
 
 
-        <nav className="d-flex justify-content-center">
+        <nav className="d-flex justify-content-center pagination">
         <ul className="pagination" aria-current="page">
           {pagesNumbers.map((pageNumber) => (
             <li
@@ -191,8 +191,8 @@ let categoryItem="";
         </ul>
       </nav>
 
-<img className='searchImgBack1'   src="\shape\shape-2.png" alt="" />
-<img src="\shape\shape-1.png" alt="" className='searchImgBack2'/>
+{/* <img className='searchImgBack1'   src="\shape\shape-2.png" alt="" />
+<img src="\shape\shape-1.png" alt="" className='searchImgBack2'/> */}
 
         </div>
         </>

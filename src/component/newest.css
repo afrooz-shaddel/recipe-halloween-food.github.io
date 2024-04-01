@@ -12,7 +12,7 @@
 .btnNew{
     display: inline-block;
     width: 12rem;
-    height: 3rem;
+   
     border: none;
     color: #07724080;
     color: black;
@@ -37,3 +37,22 @@
     
     
 }
+@media screen and (max-width:540px) {
+
+    .btnWrapperNew{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    
+}
+@media screen and (max-width:400px) {
+
+    .btnWrapperNew{
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+    
+    
+}
+

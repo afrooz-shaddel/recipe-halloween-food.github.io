@@ -19,8 +19,7 @@ let [token , setToken]=useState(false)
 
 function login(data){
 setUser([...user ,data])
-// console.log(user)
-// console.log(data)
+
 setIsLogin(true)
 localStorage.setItem('user' , JSON.stringify(user))
 } 
@@ -28,7 +27,7 @@ localStorage.setItem('user' , JSON.stringify(user))
 useEffect(()=>{
 
   let dataSaveLocal= JSON.parse(localStorage.getItem('user')) ; 
-  console.log(dataSaveLocal)
+ 
 
   if(dataSaveLocal){
 setIsLogin(true)

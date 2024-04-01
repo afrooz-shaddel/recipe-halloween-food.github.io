@@ -33,14 +33,14 @@ border-top-left-radius: 0.75rem;
 
 .MassageContent h3{
     color: #fff;
-    font-size: 1.8rem;
-    font-family: 'GreatVibes-Regular';;
+    font-size: 1.4rem;
+    font-family: 'Roboto Medium';;
     margin-top: 1rem;
 
 }
 
 .MassageContent span{
-    font-family: 'GreatVibes-Regular';;
+    
     color: #198754;
 }
 
@@ -227,7 +227,7 @@ border-top-left-radius: 0.75rem;
 
 }
 .formMassageLeft {
-    max-width: 50%;
+    /* max-width: 50%; */
 }
 
 .formMassageLeft textarea {
@@ -284,7 +284,7 @@ margin-bottom: 1rem;
     margin-top: 0.75rem;
 }
 .logofooterside-item{
-    width: 18rem;
+    /* width: 18rem; */
    text-align: right;
    margin-left: -7rem;
 
@@ -316,24 +316,33 @@ margin-bottom: 1rem;
 a{
     text-decoration: none!important;
 }
-
-@media screen and (max-width:1200px) {
-    .MassageContent form{
-       
+@media screen and (max-width:1300px) {
+    .contactwrapper{
+        margin-right: 0;
+    }
+    .logofooterside-item1 {
         margin-left: 1rem;
     }
-    
+    .MassageContent form {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+   
 
 }
 
 @media screen and (max-width:950px) {
     .MassageContent form{
        
-       
+       margin-left: 0;
        justify-content: center;
     }
     .MassageContent{
-        width: 80%;
+        width: 95%;
     }
     .MassageWrapper{
         flex-direction: column;
@@ -341,6 +350,15 @@ a{
     .contactwrapper{
         margin-top: 0rem;
         margin-bottom: 1rem;
+    }
+
+    .logofooterside {
+       
+        margin-top: -2rem;
+    }
+
+    .formMassageRight{
+        width: 45%;
     }
 
 }
@@ -363,6 +381,10 @@ a{
 }
 
 @media screen and (max-width:670px) {
+
+    .MassageContent h3{
+        margin-left: 0;
+    }
     .MassageContent{
         width: auto;
     }
@@ -377,6 +399,19 @@ a{
     .formMassageRight input{
         width: 18.7rem;
         height: 2.5rem;
+    }
+    .logofooterside-item{
+        margin-left: 0;
+       
+    }
+    .logofooterside{
+        margin-top: 1rem;
+    }
+
+    .MassageContent form{
+        margin-left: 0;
+        margin-right: 0;
+        margin: auto;
     }
 
 

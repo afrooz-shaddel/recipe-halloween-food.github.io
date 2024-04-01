@@ -269,7 +269,8 @@
             position: fixed;
             top: 3.21rem;
             left: 0;
-            right: 0;
+            bottom: 0;
+            height: 100vh;
             margin: auto;
             background-color: #c7cbe4;
             width: 60%;
@@ -287,6 +288,7 @@
             -ms-transition: height 0.3s ease-in-out;
             -o-transition: height 0.3s ease-in-out;
             margin-right: 1rem;
+            /* height: 100vh; */
 }
 .btnBar{
     margin-right: 1rem;

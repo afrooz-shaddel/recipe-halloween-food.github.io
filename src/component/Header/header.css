@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 .headertext{
-    font-size: 2rem;
+    font-size: 1.4rem;
     text-align: center;
     margin-top: 2rem;
  justify-content: left;
@@ -13,7 +13,7 @@
    color:  hsl(38, 61%, 73%);
 
    margin-left: 0.2rem;
-   width: 3rem;
+   width: 2rem;
    font-weight: 900;
   
    display: inline-block;
