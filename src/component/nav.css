@@ -234,9 +234,10 @@
     }
     .navMobile{
         display: flex;
-        justify-content: space-evenly;
+        /* justify-content: space-evenly; */
         align-items: center;
     }
+
         .darkMode .nav {
             background-color: #3e2949f0;
             background-color: #212529;
@@ -246,11 +247,23 @@
 
 
           }
+          .navMobile{
+            display: none;
+          }
 
+          .navdata{
+            display: flex;
+        }
           .darkMode .linknav {
           color: #dadada;
+          color: rgb(255, 255, 255);
 
 
+          }
+          .darkMode .navMobile{
+            background-color: #212529;
+            color: #fff;
+           color:rgb(255, 255, 255) ; 
           }
           
           
@@ -261,34 +274,68 @@
 
        
           @media screen and (max-width:928px) {
+           
          }
          @media screen and (max-width:768px) {
+            
+            
             .btnBar{display: flex;}
            .navMobile{
+
+            display: flex;
             flex-direction: column;
             position: fixed;
-            top: 3.21rem;
+            top: 0;
             left: 0;
             bottom: 0;
-            height: 100vh;
-            margin: auto;
+            /*height: 100vh;
+            */margin: auto;
             background-color: #c7cbe4;
-            width: 60%;
+            width: 17rem;
             height: 0;
             z-index: 99;
             text-align: center;
             background-color: #33302f;
-            background-color: #c7cbe4;
+            background-color: #ebe3dc;
             overflow: hidden;
-            box-shadow: 2px 2px 12px rgba(179, 177, 175, 0.375);
-            box-shadow: 2px 2px 12px rgb(99 65 211 / 38%);
+            /* box-shadow: 2px 2px 12px rgba(179, 177, 175, 0.375); */
+            /* box-shadow: 2px 2px 12px rgb(99 65 211 / 38%); */
             transition: height 0.3s ease-in-out;
             -webkit-transition: height 0.3s ease-in-out;
             -moz-transition: height 0.3s ease-in-out;
             -ms-transition: height 0.3s ease-in-out;
             -o-transition: height 0.3s ease-in-out;
-            margin-right: 1rem;
-            /* height: 100vh; */
+           text-align: center;
+            
+}
+.navb{
+ border-bottom:  1px solid #fe5d42;
+
+text-align: center;
+ width: 6rem;
+
+right: 0;
+left: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80%;
+margin:1rem auto !important;
+
+} 
+.navb::after{
+   /* content: ""; 
+   width: 15rem;
+   height: 0.3rem;
+   background-color:red ;
+   position: absolute;
+   bottom: 5px;
+   right: 0;
+   left: 0;
+   margin-left:auto ;
+   margin-right: auto; */
+
+    
 }
 .btnBar{
     margin-right: 1rem;
@@ -297,14 +344,16 @@
     margin-left: 1rem;
 }
 
-           .active{
-            height: 12rem;
+           .active12{
+            height: 100vh;
            }
            .linknav{
             margin-left: 0px;
            }
 
-           
+           .navdata{
+            display: none;
+        }  
         }
         @media screen and (max-width:570px) {
               

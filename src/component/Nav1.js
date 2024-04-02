@@ -39,7 +39,7 @@ function cli1(){
                     
                    
                 </Link>
-                <div className={isOpen?'navMobile active':"navMobile"}>
+                <div className='navdata'>
 
                 
 
@@ -68,6 +68,41 @@ function cli1(){
                     <p>About</p>
                 </Link>
                 </div>
+
+
+                <div className={isOpen?'navMobile active12':"navMobile"}>
+
+                
+                <Link onClick={()=>{
+    setIsOpen(false)
+}}   className="linknav "  to="/create" >
+    <div>   <img src="\logopng\result (2).png"  className="foodLogo" alt="" /></div>
+</Link>
+<Link onClick={()=>{
+    setIsOpen(false)
+}}   className="linknav navb"  to="/create" >
+    <p>Create</p>
+</Link>
+
+
+
+<Link onClick={()=>{
+    setIsOpen(false)
+}} className="linknav navb" to='/search' >
+    <p>Recipes</p>
+</Link>
+
+
+
+
+
+
+<Link onClick={()=>{
+    setIsOpen(false)
+}} className="linknav navb" to="/about" >
+    <p>About</p>
+</Link>
+</div>
             
        <div className="moonDark">
                  <div   className="searchlight" >
