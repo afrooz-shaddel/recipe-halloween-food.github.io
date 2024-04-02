@@ -39,7 +39,7 @@ let newData=[...data];
     modules={[ Autoplay]} 
     
     slidesPerView={3}
-    spaceBetween={5}
+    spaceBetween={10}
     autoplay={{ delay: 1500, disableOnInteraction: false }}
     data-swiper-autoplay="2000"
     
@@ -56,11 +56,7 @@ let newData=[...data];
           slidesPerView:2,
           spaceBetween:5
         },
-       850:{
-          slidesPerView:1,
-          spaceBetween:5
-        },
-      
+    
         600:{
           slidesPerView:1,
           spaceBetween:10

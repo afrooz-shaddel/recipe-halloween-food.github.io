@@ -28,8 +28,15 @@
 .darkMode .btnNew {
     color: #fff;
 }
+@media screen and (max-width:1600px) {
 
-@media screen and (max-width:768px) {
+    .productWrapper{
+        margin-right: auto;
+       margin-left: auto;}
+    
+    
+}
+@media screen and (max-width:890px) {
 
     .productWrapper{
         margin-right: auto;

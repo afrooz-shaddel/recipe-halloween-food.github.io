@@ -137,8 +137,26 @@ const[open ,setOpen]=useState(false)
 <div data-aos="fade-up"data-aos-duration="6000"   data-aos-delay="600">
               
 <h1 >
-The Best Recipes<br></br>
-                             <span>suchi</span>  food </h1>
+The Best Recipes<br></br></h1>
+
+ <div className="headerType1"> 
+      
+      <Typewriter
+          onInit={Typewriter=>{
+            Typewriter.typeString('suchi  food ')
+            .start()
+            .pauseFor(2000)
+            .deleteAll()
+           
+          }}
+          options={{
+            loop: true
+          }}
+          
+          />
+      
+      </div>  
+                             {/* <span>suchi</span>  food </h1> */}
 </div>
 <div data-aos="fade-up" data-aos-duration="7000" className="desWrapper"  data-aos-delay="700">
               
