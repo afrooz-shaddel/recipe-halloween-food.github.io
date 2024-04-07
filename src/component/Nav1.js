@@ -10,6 +10,7 @@ import { CiLight } from "react-icons/ci";
 import {MdDarkMode} from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai";
 import {BiChevronDown} from "react-icons/bi";
+import { BsChatSquareHeart } from "react-icons/bs";
 export default function Nav1(){
  
     let[isOpen , setIsOpen]=useState(false)
@@ -125,7 +126,9 @@ function cli1(){
              
              <button className="createButton1" onClick={cli1}> < CiUser/>  </button>
                
-               
+               <button className="createButton1 between">
+                <BsChatSquareHeart/>
+               </button>
 
 
 

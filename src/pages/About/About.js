@@ -58,7 +58,7 @@ let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
                     <div className='clockfirst'>
                     <div className='clock'></div>
                     <div className='clockfirst-text'>
-                    <p className='clock-number'><Counter number={550} /></p>
+                    <p className='clock-number'><Counter number={1550} /></p>
                     <span className='clock-text'>Recipe</span>
                     </div>
                     
@@ -67,7 +67,7 @@ let LinksItem=[{id:1 , title:<FaHome/> ,to:"/"},
                     <div className='userfirst'>
                       <span><LuUser2/></span>
                       <div className='userfirst-text'>
-                      <p className='clock-number'><Counter number={650} /></p>
+                      <p className='clock-number'><Counter number={2250} /></p>
                       <span className='clock-text'>user</span>
                       </div>
                       

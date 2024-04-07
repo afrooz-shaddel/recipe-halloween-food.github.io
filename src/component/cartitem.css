@@ -156,7 +156,13 @@ top: -18.5rem;
     text-align: center;
 
 }
+.white{
+   color:white ;
+}
 
+.red{
+    color: red;
+}
 .bac2{
     background-image: url(../holloween/img-pattern.svg);
     background-position: center;

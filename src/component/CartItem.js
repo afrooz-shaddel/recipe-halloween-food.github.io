@@ -9,11 +9,17 @@ import Menu from "./Menu";
 
 import { Link } from "react-router-dom";
 import { click } from "@testing-library/user-event/dist/click";
-export default  function CartItem({product  ,allMenu , menuFilter , data1  }){
+export default  function CartItem({product }){
     const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
     const[recipie , setRecipie]=useState("");
-    // let [productData , setProductData]=useLocalStorage("product" ,product)
-    let [menu , setMenu]=useState("All")  
+// let [heart , setHeart]=useState(like)
+    let [menu , setMenu]=useState("All") 
+    let [product1 , setProduct1]=useLocalStorage('data' ,product)
+  
+   
+
+
+   
     function filterMenu(type){
         if(type==="All"){
           setRecipie(data)
@@ -27,20 +33,31 @@ export default  function CartItem({product  ,allMenu , menuFilter , data1  }){
        }
 
  
-   useEffect(()=>{
-  
-   },[])
+ 
      
-       function clickHeart1(id){
+      let [dataProduct , setDataProduct]=useLocalStorage('product10' ,product)
+       function likeHeart(id){
+       let newData=dataProduct.find(item=>item.id===id)
 
-console.log(productData)
+     + dataProduct.some(item=>{
+          if(item.id===id){
+            item.like=!item.like} 
+        
+         setDataProduct(dataProduct)
+         })
+       
+        
+      }
+   
 
-       }
+       
+     
+  
     
        let category2= new Set(data.map(item=>(item.type)));
        let category=["All" ,...category2] 
     
-    return(<>{product.map(item=><div className="linkpicture10 " data-aos="fade-up" key={item.id} >
+    return(<>{dataProduct.map(item=>( <div className="linkpicture10 " data-aos="fade-up" key={item.id} >
     <div   className="linkpictureImg10 ">
       <span></span>
     <img src={item.src} alt="" />
@@ -50,18 +67,20 @@ console.log(productData)
  
   
   <button className="heartbtn1">
-  
-  <IoHeart color={item.like?'red':''  } onClick={()=>clickHeart1(item.id)}  />
+
+  <IoHeart color={item.like?"red":"white"}   onClick={()=>likeHeart(item.id)}  />
+ 
   </button>
-<p className="picturedate">1403/11/25</p>
-<p className="picturetitlefood">FOOD, FLAVOUR</p>
-<h3 className="picturelorem">Flavour so good you’ll try to eat with your eyes.</h3>
+<p className="picturedate">{item.date}</p>
+<p className="picturetitlefood">{item.title}</p>
+<h3 className="picturelorem">{item.discription}</h3>
   
  <button className="btnLinkProduct"><Link  to={`/product/${item.type}`}>{item.type}</Link></button>
 
 
 
-    </div>)}
+    </div>))}
+   
         
     </>)
 }   

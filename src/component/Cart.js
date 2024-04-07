@@ -13,11 +13,11 @@ export default function Cart(){
     useEffect(() => {
         AOS.init({  duration : 2000});
       }, [])
-      let cart=[        {id:1 , title:"Healthy Halloween" ,discription:"10 Easy and Healthy Treats!" , src:"/cart/New folder/2148224532.jpg" , type:"Chicken" , like:"false"},
-      {id:2, title:"design food for kids" ,discription:"Easy Halloween Party Food Ideas" , src:"/cart/New folder/2148195563.jpg" , type:"Salmon", like:"false"},
-      {id:3 , title:"Quick & Easy" ,discription:"Quick & Easy Halloween Treats", src:"/cart/New folder/13166.jpg" ,type:"Rice", like:"false"},
+      let cart=[        {id:1 , title:"HEALTHY FOOD" ,discription:"Flavour so good you’ll try to eat with your eyes" , src:"/cart/New folder/2148224532.jpg" , type:"Chicken" , like:false , date:"08/09/2022"},
+      {id:2, title:"RECIPIE" ,discription:"Flavour so good you’ll try to eat with your eyes" , src:"/cart/New folder/2148195563.jpg" , type:"Salmon", like:false, date:"11/09/2022"},
+      {id:3 , title:"FOOD, FLAVOUR " ,discription:"Flavour so good you’ll try to eat with your eyes", src:"/cart/New folder/13166.jpg" ,type:"Rice", like:false, date:"10/09/2022"},
    
-   
+
     ]
     // 
 
@@ -54,9 +54,16 @@ export default function Cart(){
         <p className='offercartlorem'>Prepare yourself for a journey of flavors, textures, and aromas that will tantalize your taste buds and leave you craving for more .</p>
       </div>
          <div className='cartWrapper '>
-       
     
-          <CartItem product={cart}  />
+ 
+      {/* {rt.forEach(itcaem=>  <CartItem product={item}   />)} */}
+
+      {/* <CartItem product={cart} /> */}
+    
+   
+         
+       <CartItem product={cart} />
+     
   
     
       
