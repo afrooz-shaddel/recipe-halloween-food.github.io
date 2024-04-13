@@ -10,7 +10,7 @@ export default function Recipes(){
   const[btnShow , setBtnShow]=useState(false)
     const {id}=useParams()
     // let url=`https://recipefood-json-server.liara.run/recipes/${id}`
-    let url=`http://localhost:3000/recipes/${id}`
+    let url=`https://api-json-server-two.vercel.app/recipes/${id}`
     
     const {data ,  isLoading , error}=useFetch(url);
     

@@ -10,7 +10,7 @@ import Menu from "./Menu";
 import { Link } from "react-router-dom";
 import { click } from "@testing-library/user-event/dist/click";
 export default  function CartItem({product }){
-    const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
+    const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
     const[recipie , setRecipie]=useState("");
 // let [heart , setHeart]=useState(like)
     let [menu , setMenu]=useState("All") 
@@ -56,7 +56,7 @@ export default  function CartItem({product }){
     
        let category2= new Set(data.map(item=>(item.type)));
        let category=["All" ,...category2] 
-    
+  
     return(<>{dataProduct.map(item=>( <div className="linkpicture10 " data-aos="fade-up" key={item.id} >
     <div   className="linkpictureImg10 ">
       <span></span>

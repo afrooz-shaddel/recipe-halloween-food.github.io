@@ -6,7 +6,7 @@ export default function Product(){
 let {type}=useParams();
 let [recipie , setRecipie]=useState([])
 
-const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
+const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
 
 
     let md=data.filter(item=>item.type.toLowerCase()==type.toLowerCase())

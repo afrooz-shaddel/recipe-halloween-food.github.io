@@ -4,8 +4,12 @@ import {useFetch} from '../hook/useFetch'
 import { toast } from "react-toastify";
 import { useNavigate , Link } from 'react-router-dom'
 import {contexData}  from '../CreatContext2'
+import { FaLockOpen } from "react-icons/fa6";
 import InputComponent from './InputComponent/InputComponent';
 import { useEffect } from 'react';
+import { MdEmail } from "react-icons/md";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { FaUser } from "react-icons/fa6";
 export default function Register(){
 let { userInfo , isLogin , login,logOut}=useContext(contexData)
 let [userName , setUserName]=useState("")
@@ -112,28 +116,31 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
           <form action="" className='register-form'>
              <h2 className='register-title'>Registeration</h2>
              <div className='register-formWrapper'>
-             <div className='register'>
-                   <label className='register-label' htmlFor="">  Name <span>*</span> </label>
-                   <input className='register-input' value={fullName} type="text" onChange={(event)=>setFullName(event.target.value)} />
-                   {/* <InputComponent  className="register-input"  type="text" element="input" /> */}
-                </div>
+           
                 <div className='register'>
-                   <label htmlFor="" className='register-label'>UserName  <span>*</span> </label>
+                   {/* <label htmlFor="" className='register-label'>UserName  <span>*</span> </label> */}
                    {/* <InputComponent  className="register-input"  type="text" element="input" /> */}
-                   <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} />
+                   <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} placeholder='userName' />
+                   <span className='span-i'><FaUser/></span> 
                 </div>
                
                 <div className='register'>
-                   <label className='register-label' htmlFor="">Password  <span>*</span> </label>
+                   {/* <label className='register-label' htmlFor="">Password  <span>*</span> </label> */}
                    {/* <InputComponent  className="register-input"  type="password" element="input" /> */}
-                   <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} />
+                   <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' />
+                   <span className='span-i'><FaLockOpen /></span> 
                 </div>
 
            
                 <div className='register'>
-                   <label className='register-label' htmlFor="">Email  <span>*</span> </label>
+                   {/* <label className='register-label' htmlFor="">Email  <span>*</span> </label> */}
                    {/* <InputComponent  className="register-input"  type="email" element="input" /> */}
-                   <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)} />
+                    {/* <div className='register-wrapper-input' > */}
+                    <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)}  placeholder='Email'/>
+
+                    <span className='span-i'><MdEmail/></span> 
+                    {/* </div> */}
+      
                 </div>
              </div>
           

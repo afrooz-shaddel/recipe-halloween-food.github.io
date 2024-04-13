@@ -14,10 +14,16 @@ import Header from './Header/Header';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 export default function Newest(){
-    
-    const {data ,  isLoading , error}=useFetch('http://localhost:3000/recipes')
-   
-    const[recipie , setRecipie]=useState("")
+  
+  const[recipie , setRecipie]=useState("")
+    const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
+   useEffect(()=>{
+    fetch('https://api-json-server-two.vercel.app/recipes')
+    .then(response => response.json())
+    .then(json => console.log(json))
+   },[])
+   console.log(recipie)
+
     let navigate=useNavigate()
 let newData=[...data];
 

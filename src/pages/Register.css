@@ -55,19 +55,21 @@
 
 
 .register{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 
    
 }
-
+.register-wrapper-input{
+    display: flex;
+}
 
 .register-input{
     height: 2.4rem;
     border-radius: 0.4rem;
     width: 17rem;
     -webkit-border-radius: 0.4rem;
-
+    position: relative;
     -moz-border-radius: 0.4rem;
     -ms-border-radius: 0.4rem;
     -o-border-radius: 0.4rem;
@@ -77,12 +79,39 @@
     font-family: "Roboto";
     color: black;
     padding-left: 1rem;
+    /*top: 20%;
+    /* */transform: translateY(-10%);
+  margin-bottom: 0.5rem;
+font-family: "Roboto Medium";
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #0000;
+    --tw-bg-opacity: 1;
+    height: 3.25rem;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+.span-i{
+    position: absolute;
+    right: 235px;
+    line-height: 2.23rem;
+    /* left: 0.5rem; */
+    /* height: 1.25rem;
+    width: 1.25rem;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto; */
+
+}
+.span-i svg{
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .registerbtnwrapper{
   
     display: flex;
-    margin-top: 1rem;
+  
 }
 
 
@@ -113,7 +142,9 @@
 .registerbtn{
     background-color: red;
 }
-
+.register-label{
+    display: block;
+}
 .register-label span{
    
 

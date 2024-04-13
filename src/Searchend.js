@@ -20,7 +20,7 @@ import { FaHome } from "react-icons/fa";
 import HeaderType1 from './component/HeaderType/HeaderType';
 
 export default function Searchend(){
-    const {data}=useFetch('http://localhost:3000/recipes')
+    const {data}=useFetch('https://api-json-server-two.vercel.app/recipes')
 
     let category2= new Set(data.map(item=>(item.type)));
     let category21=["All" ,...category2] 

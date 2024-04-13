@@ -12,7 +12,7 @@ import PoletColor from "../component/PoletColor";
 export default function Allrecipes(){
     // const {data ,  isLoading , error}=useFetch(' http://localhost:3000/recipes')
 
-    const {data ,  isLoading , error}=useFetch('https://jsonploy-afroozs-projects.vercel.app/')
+    const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
     console.log(data)
 const[recipie , setRecipie]=useState("")
 useEffect(()=>{

@@ -22,7 +22,7 @@ import { FaHome } from "react-icons/fa";
     let [newIngredient ,setNewIngredient]=useState("")
     let [ingredients  ,setIngredients ]=useState([])
     let [valid ,setValid]=useState(false)
-    const {postData , data  , error}=useFetch('http://localhost:3000/recipes' , 'POST')
+    const {postData , data  , error}=useFetch('https://api-json-server-two.vercel.app/recipes' , 'POST')
     let options=["please select"  , "chicken" , "salmon" , "rice"]
 let exceptThisSymbols=["e" , "E" , "+" , "-" , "."]
   function submitHandeler(e){
