@@ -45,6 +45,7 @@ border-radius: 30px;
     text-align: center;
     margin-top: 1rem;
     margin-left: 1rem;
+    margin-right: 1rem;
     padding: 20px 20px;
     box-shadow: 0 0 19px rgba(168, 172, 185, 0.3);
     overflow: hidden;
@@ -63,6 +64,10 @@ border-radius: 30px;
     justify-content: flex-start;
     flex-direction: column;
     text-align: left;
+    
+}
+.m-r{
+margin-right: 1rem;
 }
 
 .productWrapper:hover{

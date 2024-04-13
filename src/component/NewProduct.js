@@ -85,7 +85,7 @@ export default function NewProduct1({product}){
         
         
 <div   key={product.id}>
-<div className='productWrapper'  data-aos="fade-up"   >
+<div className='productWrapper m-r'  data-aos="fade-up"   >
   
 
 
