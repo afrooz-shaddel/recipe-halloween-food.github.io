@@ -1,5 +1,6 @@
 .MassageWrapper{
 
+margin-top: 2rem;
     display: flex;
     height: fit-content;
  
@@ -9,7 +10,7 @@ justify-content: space-around;
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
-   margin-top: 4rem;
+   /* margin-top: 4rem; */
   
    max-width: 1600px;
   
@@ -30,6 +31,7 @@ border-top-left-radius: 0.75rem;
       background-size: cover;
     
 }
+.darkMode
 
 .MassageContent h3{
     color: #fff;

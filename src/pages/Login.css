@@ -5,9 +5,8 @@
 .loginWrapper{
     max-width: 25rem;
     height: fit-content;
+    position: relative!important;
   
-    z-index: 999;
-
     max-width: 25rem;
     background-color: #fff;
     margin: 5rem auto;
@@ -17,16 +16,42 @@
     padding-right: 4rem;
     font-family: "Roboto";
     border-radius: 1rem;
-    
     background-size: cover;
     background-position: center;
     color: white;
     color: black;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
     -webkit-border-radius: 1rem;
     background-color: #fff;
     height: fit-content;
+    border-bottom: 5px solid #ff8243;
+    box-shadow: 0 6px 20px rgba(168, 172, 185, 0.3);
+    border-radius:5px ;
+
+}
+
+.registerbtnlogin svg{
+position: absolute;
+line-height:2.5rem ;
+left: 265px;
+top: 204px;
+font-size: 1.5rem;
+
+color: #fff;
+
+stroke-width: 1;
+}
+
+@media screen and (max-width: 470px) {
+  .loginWrapper {
+      max-width: 22rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+  .span-i{
+      right: 64px;
+  }
 }

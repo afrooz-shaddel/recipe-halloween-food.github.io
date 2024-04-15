@@ -2,12 +2,14 @@ import { useState , useContext } from 'react'
 import './Register.css'
 import {useFetch} from '../hook/useFetch'
 import { toast } from "react-toastify";
+import { FaUserPlus } from "react-icons/fa";
 import { useNavigate , Link } from 'react-router-dom'
 import {contexData}  from '../CreatContext2'
 import { FaLockOpen } from "react-icons/fa6";
 import InputComponent from './InputComponent/InputComponent';
 import { useEffect } from 'react';
 import { MdEmail } from "react-icons/md";
+import Button1 from './Button1';
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
 export default function Register(){
@@ -60,24 +62,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
       return isproced;
     }
     let newDataRegister={userName , password, fullName, email , course}
-// useEffect(()=>{
-   
-//    fetch('http://localhost:3000/user',{
-//       method: 'POST',
-//       body:JSON.stringify(newDataRegister),
-     
-//       headers: {
-//          'Content-Type': 'application/json',
-//        },
-//      }).then(res=>res.json())
-//      .then(data=>{
 
-//      })
-
-//   console.log(newDataRegister)
-
-// } ,[])
-// console.log(newDataRegister)
 
     function submitRegister(event){
      event.preventDefault();
@@ -100,9 +85,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
     },
   }).then(res=>res.json())
   .then(data=>{
-   // if (res.error) {
-   //    throw new Error(res.error)
-   //  }
+ 
  console.log(data)
 
   
@@ -119,24 +102,24 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
            
                 <div className='register'>
                    {/* <label htmlFor="" className='register-label'>UserName  <span>*</span> </label> */}
-                   {/* <InputComponent  className="register-input"  type="text" element="input" /> */}
-                   <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} placeholder='userName' />
+                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} />
+                   {/* <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} placeholder='userName' /> */}
                    <span className='span-i'><FaUser/></span> 
                 </div>
                
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Password  <span>*</span> </label> */}
-                   {/* <InputComponent  className="register-input"  type="password" element="input" /> */}
-                   <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' />
+                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} />
+                   {/* <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' /> */}
                    <span className='span-i'><FaLockOpen /></span> 
                 </div>
 
            
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Email  <span>*</span> </label> */}
-                   {/* <InputComponent  className="register-input"  type="email" element="input" /> */}
+                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"} />
                     {/* <div className='register-wrapper-input' > */}
-                    <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)}  placeholder='Email'/>
+                    {/* <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)}  placeholder='Email'/> */}
 
                     <span className='span-i'><MdEmail/></span> 
                     {/* </div> */}
@@ -145,14 +128,9 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
              </div>
           
               <div className='registerbtnwrapper'>
-                <button type='submit' className='loginbtn' style={{color:"white" ,    width: "17rem",
-    height:" 2.5rem",
-    backgroundColor: "#ff8243",
-    borderRadius: "0.3rem",
-   
-    border: "none"}}  onClick={submitRegister}>Register</button>
-                {/* <a href="" >Login</a> */}
-                {/* <Link  to="/login" className='registerlink'>Login</Link> */}
+                {/* <button type='submit' className='registerbtn' ></button> */}
+                
+               <Button1 type="submit"  className="registerbtn" onClick={submitRegister}  disabled={false}>Register <FaUserPlus/></Button1>
               </div>
 
           </form>
@@ -160,8 +138,8 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
           <h3 href=""    style={{fontSize: '1rem',
     marginTop: "1rem",
     fontFamily: 'Roboto'}} >if you dont have account, Please </h3>
-     <p  className='loginbtnlink' onClick={clickNavigateLogin}> Login</p>
 
+    <Button1 className='loginbtnlink' to='/login'> Login</Button1>
 
         </div>
     )

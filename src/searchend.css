@@ -161,6 +161,7 @@
  width:18rem;
   background-color: #fff;
   height: 2.7rem;
+  height: 3.7rem;
   width: 100%;
   padding-left: 15px;
   border-radius: 3rem;
@@ -212,13 +213,16 @@ outline: none;
     /* font-weight: bold; */
     position: absolute;
     right: 0rem;
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 3.7rem;
+    height: 3.7rem;
     text-align: center;
     line-height: 2.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 5px solid #198754;
+    overflow-x: hidden;
+    overflow-y: hidden;
    
    
 }
@@ -265,6 +269,7 @@ outline: none;
 
    }
    .search2{
+   
     display:flex ;
    flex-direction:column;
    width: 100%;

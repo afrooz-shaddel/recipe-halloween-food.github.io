@@ -34,17 +34,17 @@
    height: 100vh;
 }
 
-.darkMode   {
+.darkMode body   {
     background-color: #3e2949f0;
-    background-color: #212529;
+    background-color: #212529 !important;
    
     border: none;
     box-shadow: 2px 1px 1px beige;
 }
 
-.lightMode  {
+.lightMode body  {
     background-color:#c7cbe4;
-    background-color: #ebe3dc;
+    background-color: #ebe3dc !important;
     
     
 }

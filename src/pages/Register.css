@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
 .registerWrapper{
-  
-    z-index: 999;
+    position: relative!important;
+
 
     max-width: 25rem;
     background-color: #fff;
+
     margin: 5rem auto;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -16,11 +19,11 @@
     background-position: center;
     color: white;
     color: black;
-    -webkit-border-radius: 0.25rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    -webkit-border-radius: 1rem;
+
+    border-bottom: 5px solid #ff8243;
+    box-shadow: 0 6px 20px rgba(168, 172, 185, 0.3);
+    border-radius: 5px;
+
    
 }
 
@@ -50,14 +53,50 @@
 
 .register-title{
     color:#ff8243;
-    margin-right: 6rem;
+    text-align: center;
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto Medium';
+    word-spacing: 5px;
+}
+
+.registerbtn{
+  height: 2.5rem;
+  background-color: "#ff8243";
+  border-radius:"0.3rem" ;
+ max-width: 17rem;
+ color: #fff;
+  -webkit-border-radius:"0.3rem" ;
+  -moz-border-radius:"0.3rem" ;
+  -ms-border-radius:"0.3rem" ;
+  -o-border-radius:"0.3rem" ;
+}
+.registerbtn svg{
+    position: absolute;
+line-height:2.5rem ;
+left: 270px;
+top: 273px;
+font-size: 1.2rem;
+color: #fff;
 }
 
 
 .register{
     /* display: flex; */
     /* flex-direction: column; */
-
+    width: 17rem;
+    height: 3.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+ margin-bottom: 1rem;
+ border-radius: 10px;
+ border-width: 1px;
+ border-color: #0000;
+ --tw-bg-opacity: 1;
+ background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+ 
    
 }
 .register-wrapper-input{
@@ -65,43 +104,42 @@
 }
 
 .register-input{
-    height: 2.4rem;
-    border-radius: 0.4rem;
-    width: 17rem;
-    -webkit-border-radius: 0.4rem;
-    position: relative;
-    -moz-border-radius: 0.4rem;
-    -ms-border-radius: 0.4rem;
-    -o-border-radius: 0.4rem;
-    border: 2px solid #ff8243;
-    background-color: rgba(243, 244, 246, 1) ;
+   
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));  
+    width:100%;
     outline: none;
     font-family: "Roboto";
     color: black;
     padding-left: 1rem;
-    /*top: 20%;
-    /* */transform: translateY(-10%);
-  margin-bottom: 0.5rem;
-font-family: "Roboto Medium";
-    border-radius: 10px;
-    border-width: 1px;
-    border-color: #0000;
-    --tw-bg-opacity: 1;
-    height: 3.25rem;
-    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+   font-family: "Roboto Medium";
+   border: none;
+   height: 100%;
+   overflow: hidden;
+   border-radius: 10px;
+   border-width: 1px;
+   border-color: #0000;
+   background-color: transparent;
+
+  
+   
+}
+.register-input::placeholder{
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-text-opacity));
+    
 }
 .span-i{
+   /* width: -10%; */
+    line-height: 3.25rem;
+    height:100%;
     position: absolute;
-    right: 235px;
-    line-height: 2.23rem;
-    /* left: 0.5rem; */
-    /* height: 1.25rem;
-    width: 1.25rem;
-    top: 0;
-    bottom: 0;
-    margin-top: auto;
-    margin-bottom: auto; */
+    right: 75px;
+  
 
+
+   
+   
 }
 .span-i svg{
     --tw-text-opacity: 1;
@@ -155,6 +193,7 @@ font-family: "Roboto Medium";
     text-decoration: none;
     color: #1520A6;
     color: #ff8243;
+    cursor: pointer;
 }
 
 
@@ -175,3 +214,14 @@ font-family: "Roboto Medium";
 .register-form{
 
 }
+
+@media screen and (max-width: 470px) {
+    .registerWrapper {
+        max-width: 22rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .span-i{
+        right: 64px;
+    }
+  }

@@ -19,6 +19,15 @@ body{
 
 }
 
+.darkMode body{
+  background-color: #212529 !important;
+
+}
+
+.lightMode body{
+  background-color:#ebe3dc!important;
+}
+
 
 
 
@@ -57,12 +66,14 @@ li , ul{list-style-type: none;}
 .darkMode  {
   background-color: #3e2949f0;
   background-color: #3e2949f0;
+  background-color:#212529;
   color: #fff;
 }
 
 
 .lightMode  {
-  background-color: #c7cbe4;
+  background-color:#ebe3dc;
+  
 }
 
 ::-webkit-scrollbar{

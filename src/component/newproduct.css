@@ -66,9 +66,7 @@ border-radius: 30px;
     text-align: left;
     
 }
-.m-r{
-margin-right: 1rem;
-}
+
 
 .productWrapper:hover{
    transform: scale(1.8);

@@ -24,7 +24,7 @@ import Newest from "../component/Newest";
 
 export default function Home(){
  
-//  const {data ,  isLoading , error}=useFetch('https://recipefood-json-server.liara.run/recipes')
+
  const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
  const[recipie , setRecipie]=useState("")
 
@@ -39,7 +39,11 @@ const[open ,setOpen]=useState(false)
 
 
    }
-   
+   let navigator=useNavigate();
+
+   function clickAllRecipe(){
+    navigator("/search")
+   }
 
 
   //  const [showDark , setShowDark]=useState(false);
@@ -167,7 +171,7 @@ The Best Recipes<br></br></h1>
 <div data-aos="fade-up" data-aos-duration="7000"   data-aos-delay="700">
               
               
-              <button className="btn5">view our Recipe</button>
+              <button className="btn5" onClick={clickAllRecipe}>view our Recipe</button>
               </div>                      
   
            

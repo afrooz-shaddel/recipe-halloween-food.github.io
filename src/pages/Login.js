@@ -1,12 +1,16 @@
 import './Login.css'
-
+import { FaLockOpen } from "react-icons/fa6";
+import { FaUser } from "react-icons/fa6";
 import { useState , useContext ,useEffect } from 'react'
 // import './Register.css'
 import { toast } from "react-toastify";
+import { IoEnterSharp } from "react-icons/io5";
+import { CiLogin } from "react-icons/ci";
 import InputComponent from './InputComponent/InputComponent';
 import { useNavigate , Link } from 'react-router-dom'
 import { useFetch } from '../hook/useFetch';
 import {contexData}  from '../CreatContext2'
+import Button1 from './Button1';
 // import { useFetch } from "../hook/useFetch";
 export default function Login(){
 let navigate=useNavigate()
@@ -20,29 +24,6 @@ let navigate=useNavigate()
    let errorMassage="please enter the valid in  "
   
   
-   // useEffect(()=>{
-      // let dataSaveLocal= JSON.parse(localStorage.getItem('user')) ;
-   //  console.log(dataSaveLocal)
- 
-  
-   //    if(dataSaveLocal.userName ===userName && dataSaveLocal.password===password){
-   //       setIsLogin(true)
-   //       toast.success("tjanks")
-   //       navigate("/")
-   //    }else{
-   //       navigate("/register")
-   //    }
-    
-   //  
-
-
-
-    
-
-  
-// }
-//    ,
-//    [])
 
    function loginPage(event){
       event.preventDefault();
@@ -105,27 +86,24 @@ let navigate=useNavigate()
              <h2 className='register-title'>Login</h2>
              <div className='register-formWrapper'>
                 <div className='register'>
-                   <label htmlFor="" className='register-labelusername'>UserName*</label>
-                 
-                   
-                   <input className='register-input'value={userName}  onChange={(event)=>setUserName(event.target.value)} type="text" />
+                   {/* <input className='register-input'value={userName}  onChange={(event)=>setUserName(event.target.value)} type="text" placeholder='userName' /> */}
+                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} />
+                    <span className='span-i'><FaUser/></span> 
                 </div>
                 <div className='register'>
-                   <label className='register-labelpassword' htmlFor="">Password*</label>
-                 
-                   <input className='register-input'value={password} onChange={(event)=>setPassword(event.target.value)} type="password"  />
+                <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} />
+                   {/* <input className='register-input'value={password} onChange={(event)=>setPassword(event.target.value)} type="password"   placeholder='password'/> */}
+                                      <span className='span-i'><FaLockOpen /></span> 
                 </div>
-
-             
              </div>
           
               <div className='registerbtnwrapper'>
-                <button type='submit' className='registerbtnlogin' onClick={loginPage} >login</button>
-                
+               
+                <Button1 type='submit' className='registerbtnlogin' onclick={loginPage} disabled={false}>login < CiLogin />  </Button1>
               </div>
               <h3 href=""    style={{fontSize: '1rem',
     marginTop: "1rem",
-    fontFamily: 'Roboto'}} >if you dont have account, Please  <Link to="/register" className='loginbtnlink'> Register</Link></h3>
+    fontFamily: 'Roboto'}} >if you dont have account, Please  <Button1 to="/register" className='loginbtnlink'> Register</Button1></h3>
           </form>
  
         </div>

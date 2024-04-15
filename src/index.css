@@ -26,3 +26,11 @@ a{
 button , input , select{
   font-family: inherit;
 }
+
+.darkMode body{
+  background-color: #3e2949f0;
+ background-color:  #212529 !important;
+}
+
+
+

@@ -17,12 +17,8 @@ export default function Newest(){
   
   const[recipie , setRecipie]=useState("")
     const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
-   useEffect(()=>{
-    fetch('https://api-json-server-two.vercel.app/recipes')
-    .then(response => response.json())
-    .then(json => console.log(json))
-   },[])
-   console.log(recipie)
+
+ 
 
     let navigate=useNavigate()
 let newData=[...data];

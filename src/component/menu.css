@@ -52,7 +52,13 @@
     -o-border-radius: 40px;
 }
 
+.lightMode .menu{
 
+}
+.darkMode .menu{
+    background-color: #212529;
+    color: #fff;
+}
 .darkMode .menuItem {
     color: #fff;
 }

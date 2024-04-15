@@ -8,6 +8,8 @@ import { TbCategory2 } from "react-icons/tb";
 import { BiSolidCategory } from "react-icons/bi";
 import { RxCross2 } from "react-icons/rx";
 import {SearchItem} from './Handeler';
+import Loader from './component/Loader';
+import Loder from './Loder/Loder';
 import { CategoriesItem1 } from './Handeler';
 import { useSearchParams } from 'react-router-dom';
 // import Categories from './Category/Modal';
@@ -167,7 +169,7 @@ let categoryItem="";
 
         <div>
             
-       {data!==undefined && data.length? <NewProduct1  product={product} />:<p>no match</p>}   
+       {data!==undefined && data.length? <NewProduct1  product={product} />:<Loder/>}   
 
         </div>
 
