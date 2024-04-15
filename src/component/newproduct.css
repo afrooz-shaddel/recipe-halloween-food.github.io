@@ -187,11 +187,13 @@ border-radius: 30px;
 
 .darkMode .moreLink1 {
     background-color: #af00ff17;
+    background-color: rgba(0, 0, 0, 0.125);;
     border: none;
   
     box-shadow: none;
     color: #ececec;
 }
+
 
 .lightMode .moreLink1 {
     background-color:#de879f4a;
@@ -206,9 +208,11 @@ border-radius: 30px;
 
 
 .moreLink1:hover{
-    background-color:#006939c9 ;
-    color: white;
+    transition: all 400ms ease-in;
+    background-color: #1c036d40;
+   
  }
+
  
 .heart{
     color: #fff;
@@ -248,10 +252,11 @@ border-radius: 30px;
     
     
     }}
-    @media (max-width:418px) {
+    @media (max-width:450px) {
         .productWrapper{
-            width: 20rem;
+           max-width: 24rem;
         }
+        
         .wrapperProduct{
     
             justify-content:center;
@@ -259,6 +264,22 @@ border-radius: 30px;
           
             
             }
+            
+    
+    }
+    @media (max-width:430px) {
+        .productWrapper{
+           max-width: 22rem;
+        }
+        
+        .wrapperProduct{
+    
+            justify-content:center;
+        
+          
+            
+            }
+            
     
     }
 

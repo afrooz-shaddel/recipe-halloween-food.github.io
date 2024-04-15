@@ -138,8 +138,20 @@ justify-content: center;
         max-width: fit-content;
     }
     }
+    @media screen and (max-width:490px){
+        .recipie-img {
+            max-width: 25rem;
+         
+         }
+    }
+    @media screen and (max-width:470px){
+        .recipie-img {
+            max-width: 23rem;
+         
+         }
+    }
 @media screen and (max-width:346px) {
-    .recipie-img img{
+    .recipie-img {
        max-width: 15rem;
     
     }
