@@ -109,7 +109,11 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Password  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} />
+                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"}
+                    validation={[
+                     {value:"required"},
+                    {value:"max "} ,
+                     {value:"min "}]} />
                    {/* <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' /> */}
                    <span className='span-i'><FaLockOpen /></span> 
                 </div>
@@ -130,7 +134,11 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
               <div className='registerbtnwrapper'>
                 {/* <button type='submit' className='registerbtn' ></button> */}
                 
-               <Button1 type="submit"  className="registerbtn" onClick={submitRegister}  disabled={false}>Register <FaUserPlus/></Button1>
+               <Button1 type="submit" 
+                className="registerbtn" 
+                onClick={submitRegister} 
+                 disabled={false}
+                 >Register <FaUserPlus/></Button1>
               </div>
 
           </form>

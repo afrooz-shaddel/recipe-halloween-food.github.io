@@ -38,6 +38,8 @@ border-top-left-radius: 0.75rem;
     font-size: 1.4rem;
     font-family: 'Roboto Medium';;
     margin-top: 1rem;
+    /* margin-bottom: 1rem; */
+
 
 }
 
@@ -202,6 +204,8 @@ border-top-left-radius: 0.75rem;
 
 .MassageContent h3{
     margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .MassageContent{
     width: 50%;

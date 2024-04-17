@@ -63,8 +63,10 @@ import { green } from "@mui/material/colors"
 //   )
 // }
 
-export default function InputComponent({placeholder,className ,type, element  }){
- function changeEventData(state , action){
+export default function InputComponent({placeholder,className ,type, element , validation }){
+ console.log(validation)
+ 
+  function changeEventData(state , action){
   switch (action.type) {
    
     case "CHANGE":{
