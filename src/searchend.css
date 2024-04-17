@@ -339,7 +339,7 @@ outline: none;
    
   
     .searchcategory{
-     padding: 2rem 4rem;
+     padding: 2rem 3rem;
     }
   }
   @media screen and (max-width:768px) {
@@ -422,6 +422,11 @@ outline: none;
   }
   .inputSearch{
     max-width:14rem ;
+    height: 2.7rem;
+  }
+  .inputSearch label{
+    height: 2.7rem;
+    width: 2.7rem;
   }
 }
 @media screen and (max-width:520px) {
