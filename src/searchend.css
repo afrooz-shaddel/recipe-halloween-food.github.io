@@ -428,6 +428,13 @@ outline: none;
   .inputSearch {
     max-width: 12rem;
   }
+  .inputSearch{
+    height: 2.7rem;
+  }
+  .inputSearch label {
+    height: 2.7rem;
+    width: 2.7rem;
+  }
 }
 @media screen and (max-width:450px) {
   .searchcategory {
