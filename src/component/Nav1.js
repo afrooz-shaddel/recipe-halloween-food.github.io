@@ -126,9 +126,9 @@ function cli1(){
              
              <button className="createButton1" onClick={cli1}> < CiUser/>  </button>
                
-               <button className="createButton1 between">
+               {/* <button className="createButton1 between">
                 <BsChatSquareHeart/>
-               </button>
+               </button> */}
 
 
 

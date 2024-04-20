@@ -57,8 +57,9 @@ background: linear-gradient(145deg, #ececec, #fdfdfd);
 }
 
 .darkMode .headertypelink{
-    color: #ffffff;
+    color:black
 }
+
 .darkMode .headertypelist{
     border-top: 2px solid bisque;
     box-shadow: none;

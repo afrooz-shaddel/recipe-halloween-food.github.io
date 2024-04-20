@@ -84,7 +84,7 @@
         font-size: 1.5rem;
     }
     .createButton1 {
-     margin-right: 1rem;
+     margin-right: 3rem;
        border-radius: 10px;
    
        border: none;
@@ -291,7 +291,6 @@
             
             .btnBar{display: flex;}
            .navMobile{
-
             display: flex;
             flex-direction: column;
             position: fixed;
@@ -308,16 +307,15 @@
             background-color: #33302f;
             background-color: #ebe3dc;
             overflow: hidden;
-            /* box-shadow: 2px 2px 12px rgba(179, 177, 175, 0.375); */
-            /* box-shadow: 2px 2px 12px rgb(99 65 211 / 38%); */
-            transition: height 0.3s ease-in-out;
-            -webkit-transition: height 0.3s ease-in-out;
-            -moz-transition: height 0.3s ease-in-out;
-            -ms-transition: height 0.3s ease-in-out;
-            -o-transition: height 0.3s ease-in-out;
-           text-align: center;
-           transition: all 0.3s ease 0s;
-            
+            /*box-shadow: 2px 2px 12px rgba(179, 177, 175, 0.375);
+            *//*box-shadow: 2px 2px 12px rgb(99 65 211 / 38%);
+            */transition: left 0.3s ease-in-out;
+            -webkit-transition: left 0.3s ease-in-out;
+            -moz-transition: left 0.3s ease-in-out;
+            -ms-transition: left 0.3s ease-in-out;
+            -o-transition: left 0.3s ease-in-out;
+            text-align: center;
+            transition: all 0.3s ease 0s;
 }
 .navb{
  border-bottom:  1px solid #fe5d42;
