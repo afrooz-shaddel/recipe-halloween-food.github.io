@@ -1,6 +1,7 @@
-let requiredValue="required-value"
-let maxValue="max-value";
-let minValue="min-value";
+  let requiredValue="required-value"
+  let maxValue="max-value";
+  let minValue="min-value";
+  let emailValue="email-value";
 
 export  function Validation1(){
     return{
@@ -8,14 +9,25 @@ export  function Validation1(){
     }}
 
 
- export  function ValidationMax(maxValue){
+ export  function ValidationMax(max){
         return{
             value: maxValue,
-            maxValue
+           max
         }}
 
- export  function ValidationMax(minValue){
+ export  function ValidationMin(min){
     return{
                 value: minValue,
-                minValue
+                min
     }}
+
+    export  function ValidationEmail(){
+        return{
+                    value: emailValue,
+                  
+        }}
+
+export default { requiredValue,
+    maxValue,
+    minValue ,
+emailValue}

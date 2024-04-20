@@ -12,6 +12,8 @@ import { MdEmail } from "react-icons/md";
 import Button1 from './Button1';
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
+import {Validation1, ValidationMax
+   ,ValidationMin , ValidationEmail} from '../pages/Validation/rules'
 export default function Register(){
 let { userInfo , isLogin , login,logOut}=useContext(contexData)
 let [userName , setUserName]=useState("")
@@ -102,7 +104,11 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
            
                 <div className='register'>
                    {/* <label htmlFor="" className='register-label'>UserName  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} />
+                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} 
+                   
+                     validation={[Validation1() ,ValidationMax(12), ValidationMin(8) ]}
+                   />                       
+                
                    {/* <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} placeholder='userName' /> */}
                    <span className='span-i'><FaUser/></span> 
                 </div>
@@ -111,9 +117,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                    {/* <label className='register-label' htmlFor="">Password  <span>*</span> </label> */}
                    <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"}
                     validation={[
-                     {value:"required"},
-                    {value:"max "} ,
-                     {value:"min "}]} />
+                     Validation1() ,ValidationMax(12), ValidationMin(8) ]} />
                    {/* <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' /> */}
                    <span className='span-i'><FaLockOpen /></span> 
                 </div>
@@ -121,7 +125,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
            
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Email  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"} />
+                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"}  validation={[ Validation1()  , ValidationEmail()]} />
                     {/* <div className='register-wrapper-input' > */}
                     {/* <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)}  placeholder='Email'/> */}
 

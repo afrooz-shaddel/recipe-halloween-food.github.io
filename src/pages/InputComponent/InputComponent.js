@@ -1,6 +1,7 @@
 import { useReducer, useState } from "react"
 import './inputComponent.css'
 import { green } from "@mui/material/colors"
+import ValidateFunction from "../Validation/ValidateFunction"
 // export default function InputComponent({className , placeholder ,type ,element  }){
 
 //   function reducerComponent(state , action){
@@ -64,17 +65,18 @@ import { green } from "@mui/material/colors"
 // }
 
 export default function InputComponent({placeholder,className ,type, element , validation }){
- console.log(validation)
+
  
   function changeEventData(state , action){
   switch (action.type) {
-   
+ 
     case "CHANGE":{
-      {console.log(action)}
+    
       return{
         ...state ,
         value:action.value,
-        isvalid:action.isvalid
+        isvalid:ValidateFunction(action.value ,action.valid1)
+        
       }
     }
       
@@ -92,9 +94,9 @@ export default function InputComponent({placeholder,className ,type, element , v
 
   let [changeInputData , dispatch]=useReducer(changeEventData,{value:"" , isvalid:false} )
   function changeHandelerData(event){
-   dispatch({type:"CHANGE" , value:event.target.value , isvalid:true})
+   dispatch({type:"CHANGE" , value:event.target.value , isvalid:true ,valid1:validation })
    }
   
-  return(<>{element==="input"?<input type={type} value={changeInputData.value} className={changeInputData.isvalid? `${className } greenBorder`:`${className } redBorder`} placeholder={placeholder} onChange={changeHandelerData} />:<textarea value={changeInputData.value} type={type} className={className} placeholder={placeholder} onChange={changeHandelerData} />}</>)
+  return(<>{element==="input"?<input type={type} value={changeInputData.value} valid1={validation} className={changeInputData.isvalid? `${className } greenBorder`:`${className } redBorder`} placeholder={placeholder} onChange={changeHandelerData} />:<textarea value={changeInputData.value} type={type} className={className} placeholder={placeholder} onChange={changeHandelerData} valid1={validation} />}</>)
 
 }

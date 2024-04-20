@@ -11,6 +11,7 @@ import { useNavigate , Link } from 'react-router-dom'
 import { useFetch } from '../hook/useFetch';
 import {contexData}  from '../CreatContext2'
 import Button1 from './Button1';
+import { Validation1 ,ValidationMax, ValidationMin , ValidationEmail} from '../pages/Validation/rules'
 // import { useFetch } from "../hook/useFetch";
 export default function Login(){
 let navigate=useNavigate()
@@ -87,11 +88,11 @@ let navigate=useNavigate()
              <div className='register-formWrapper'>
                 <div className='register'>
                    {/* <input className='register-input'value={userName}  onChange={(event)=>setUserName(event.target.value)} type="text" placeholder='userName' /> */}
-                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} />
+                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} validation={[ Validation1() ,ValidationMax(12), ValidationMin(8) ]} />
                     <span className='span-i'><FaUser/></span> 
                 </div>
                 <div className='register'>
-                <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} />
+                <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"}  validation={[ Validation1() ,ValidationMax(12), ValidationMin(8)]} />
                    {/* <input className='register-input'value={password} onChange={(event)=>setPassword(event.target.value)} type="password"   placeholder='password'/> */}
                                       <span className='span-i'><FaLockOpen /></span> 
                 </div>
