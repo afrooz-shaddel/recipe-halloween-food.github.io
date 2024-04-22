@@ -32,7 +32,12 @@
     border-radius:5px ;
 
 }
-
+.sucsess-login-form{
+    background-color: #2bce56;
+}
+.error-login-form{
+    background-color: red;
+}
 .registerbtnlogin svg{
 position: absolute;
 line-height:2.5rem ;

@@ -18,9 +18,9 @@
     console.log(validator.value)
     value.trim().length>validator.max && TrueFalse.push(false)
   }
-//   if(validator.value===rules.requiredValue){ 
-//         value.trim().length===0 && TrueFalse.push(false)
-//       }
+  if(validator.value===rules.requiredValue){ 
+        value.trim().length===0 && TrueFalse.push(false)
+      }
   if(validator.value===rules.emailValue){
     !emailPattern(value) && TrueFalse.push(false)
   
