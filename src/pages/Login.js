@@ -96,7 +96,7 @@ let navigate=useNavigate()
    }
     return(
 
-        <div className='loginWrapper'>
+        <div className={`loginWrapper ${formState.isFormValid ? 'loginWrapper-success' :'loginWrapper-error'}`}>
           <form action="" className='register-form'>
              <h2 className='register-title'>Login</h2>
              <div className='register-formWrapper'>

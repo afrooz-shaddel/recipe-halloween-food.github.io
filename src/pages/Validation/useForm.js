@@ -61,13 +61,13 @@ const formReducer = (state, action) => {
         let isFormValid = true
         for(const inputID in state.inputs) {
       
-          console.log(action.isValid)
+          
             if (inputID === action.inputID) {
                 isFormValid = isFormValid && action.isValid
             } else {
                 isFormValid = isFormValid && state.inputs[inputID].isValid
             }
-            console.log(isFormValid)
+           
         }
         return {
             ...state, 

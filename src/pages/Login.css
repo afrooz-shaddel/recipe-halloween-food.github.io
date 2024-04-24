@@ -38,6 +38,15 @@
 .error-login-form{
     background-color: red;
 }
+
+.loginWrapper-success{
+    border-bottom: 5px solid #2bce56;
+ 
+    
+}
+.loginWrapper-error{
+    border-bottom: 5px solid #ff8243; 
+}
 .registerbtnlogin svg{
 position: absolute;
 line-height:2.5rem ;

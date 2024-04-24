@@ -19,12 +19,21 @@
     background-position: center;
     color: white;
     color: black;
-
-    border-bottom: 5px solid #ff8243;
+/* 
+    border-bottom: 5px solid #ff8243; */
     box-shadow: 0 6px 20px rgba(168, 172, 185, 0.3);
     border-radius: 5px;
 
    
+}
+
+.registerWrapper-success{
+    border-bottom: 5px solid #2bce56;
+ 
+    
+}
+.registerWrapper-error{
+    border-bottom: 5px solid #ff8243; 
 }
 
  .modal_wrapper {

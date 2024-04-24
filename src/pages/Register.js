@@ -109,10 +109,10 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
    
  }, false)
 
- console.log(formState.isFormValid)
+ console.log(formState.inputs)
 
     return(
-        <div className='registerWrapper'>
+        <div className={`registerWrapper ${formState.isFormValid ?'registerWrapper-success' :'registerWrapper-error'}`}>
           <form action="" className='register-form'>
              <h2 className='register-title'>Registeration</h2>
              <div className='register-formWrapper'>
