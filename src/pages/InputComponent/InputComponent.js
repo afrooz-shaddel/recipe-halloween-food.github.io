@@ -29,6 +29,7 @@ function changeEventData(state , action){
 
 export default function InputComponent({placeholder,className ,type, element
    , validation , onInputHandler ,id  }){
+    
 
   let [changeInputData , dispatch]=useReducer(changeEventData,{value:"" , isvalid:false} )
   function changeHandelerData(event){
@@ -36,7 +37,7 @@ export default function InputComponent({placeholder,className ,type, element
    }
    const {value , isvalid}=changeInputData
    useEffect(()=>{
-    onInputHandler
+    onInputHandler( isvalid ,value, id)
   },[value])
   return(<>{element==="input"?<input type={type} value={changeInputData.value} valid1={validation} className={changeInputData.isvalid? `${className } greenBorder`:`${className } redBorder`} placeholder={placeholder} onChange={changeHandelerData} />:<textarea value={changeInputData.value} type={type} className={className} placeholder={placeholder} onChange={changeHandelerData} valid1={validation} />}</>)
 

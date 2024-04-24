@@ -11,11 +11,11 @@
 
 
   if(validator.value===rules.minValue){
-   console.log(validator.value)
+  
     value.trim().length<validator.min && TrueFalse.push(false)
   }
   if(validator.value===rules.maxValue){
-    console.log(validator.value)
+  
     value.trim().length>validator.max && TrueFalse.push(false)
   }
   if(validator.value===rules.requiredValue){ 

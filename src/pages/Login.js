@@ -11,12 +11,13 @@ import { useNavigate , Link } from 'react-router-dom'
 // import { useFetch } from '../hook/useFetch';
 import {contexData}  from '../CreatContext2'
 import Button1 from './Button1';
-import { Validation1 ,ValidationMax, ValidationMin , ValidationEmail} from '../pages/Validation/rules'
+import {Validation1, ValidationMax
+   ,ValidationMin , ValidationEmail} from '../pages/Validation/rules'
 import { useFetch } from "../hook/useFetch";
-import useForm from './Validation/useForm';
+import {useForm} from './Validation/useForm';
 export default function Login(){
 
-   let [fromState ,  onInputHandler]=useForm({
+   let [formState ,  onInputHandler]=useForm({
       userName:{
          value:"",
          isValid:false,
@@ -26,6 +27,7 @@ export default function Login(){
          isValid:false, 
       }
    },false)
+ console.log(formState.isFormValid)
 let navigate=useNavigate()
    let [userName , setUserName]=useState("");
    let [password , setPassword]=useState("")
@@ -100,8 +102,17 @@ let navigate=useNavigate()
              <div className='register-formWrapper'>
                 <div className='register'>
                    {/* <input className='register-input'value={userName}  onChange={(event)=>setUserName(event.target.value)} type="text" placeholder='userName' /> */}
-                   <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} validation={[ Validation1() ,ValidationMax(12), ValidationMin(8) ]} id="userName"   onInputHandler={onInputHandler}  />
-                    <span className='span-i'><FaUser/></span> 
+                   <InputComponent  className="register-input"
+                  type="text"
+                  element="input"
+                   placeholder={"userName"}
+                   validation={[ 
+                     Validation1() 
+                  ,ValidationMax(12), 
+                     ValidationMin(8) ]} 
+                  id="userName" 
+                  onInputHandler={onInputHandler}  />
+                  <span className='span-i'><FaUser/></span> 
                 </div>
                 <div className='register'>
                 <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"}  validation={[ Validation1() ,ValidationMax(12), ValidationMin(8)]} id="password"   onInputHandler={onInputHandler}  />
@@ -112,7 +123,7 @@ let navigate=useNavigate()
           
               <div className='registerbtnwrapper'>
                
-                <Button1 type='submit' className={`registerbtnlogin${fromState.isFormValid?'sucsess-login-form':'error-login-form' }`} onclick={loginPage} disabled={!fromState.isFormValid}>login < CiLogin />  </Button1>
+                <Button1 type='submit' className={`registerbtnlogin ${formState.isFormValid?'sucsess-login-form':'error-login-form' }`} onclick={loginPage} disabled={!formState.isFormValid}>login < CiLogin />  </Button1>
               </div>
               <h3 href=""    style={{fontSize: '1rem',
     marginTop: "1rem",

@@ -1,6 +1,6 @@
 import "./cartitem.css"
 import {useLocalStorage} from "usehooks-ts";
-
+import Loder from "../Loder/Loder";
 import { CiHeart } from "react-icons/ci";
 import { IoHeart } from "react-icons/io5";
 import { useEffect, useState } from "react";
@@ -12,6 +12,7 @@ import { click } from "@testing-library/user-event/dist/click";
 export default  function CartItem({product }){
     const {data ,  isLoading , error}=useFetch('https://api-json-server-two.vercel.app/recipes')
     const[recipie , setRecipie]=useState("");
+    let [load , setLoad]=useState(false)
 // let [heart , setHeart]=useState(like)
     let [menu , setMenu]=useState("All") 
     let [product1 , setProduct1]=useLocalStorage('data' ,product)
@@ -60,8 +61,10 @@ export default  function CartItem({product }){
     return(<>{dataProduct.map(item=>( <div className="linkpicture10 " data-aos="fade-up" key={item.id} >
     <div   className="linkpictureImg10 ">
       <span></span>
-    <img src={item.src} alt="" />
-    
+    <img src={item.src} alt=""   onLoad={()=>setLoad(true)} />
+    {
+      !load && <Loder/>
+    }
     </div>
     <div className="bac2"></div>
  

@@ -12,6 +12,7 @@ import { MdEmail } from "react-icons/md";
 import Button1 from './Button1';
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
+import {useForm }from './Validation/useForm';
 import {Validation1, ValidationMax
    ,ValidationMin , ValidationEmail} from '../pages/Validation/rules'
 export default function Register(){
@@ -27,7 +28,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
     let [error1 , setError1]=useState("")
     let [valid , setValid]=useState(true)
     let navigator=useNavigate();
-
+   
    
    //  const {postData , data  , error}=useFetch('http://localhost:3000/user','POST')
     
@@ -95,6 +96,20 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
 
   }}
 
+ let [formState, onInputHandler]=useForm({
+   usernamer:{value:"",
+   isValid:false,},
+  passwordr:{
+   value:"",
+   isValid:false, },
+   emailr:{
+      value:"",
+      isValid:false,
+   }
+   
+ }, false)
+
+ console.log(formState.isFormValid)
 
     return(
         <div className='registerWrapper'>
@@ -106,7 +121,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                    {/* <label htmlFor="" className='register-label'>UserName  <span>*</span> </label> */}
                    <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} 
                    
-                     validation={[Validation1() ,ValidationMax(12), ValidationMin(8) ]}
+                     validation={[Validation1() ,ValidationMax(12), ValidationMin(8) ]} id="usernamer" onInputHandler={onInputHandler}
                    />                       
                 
                    {/* <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} placeholder='userName' /> */}
@@ -115,7 +130,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Password  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"}
+                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} id="passwordr" onInputHandler={onInputHandler}
                     validation={[
                      Validation1() ,ValidationMax(12), ValidationMin(8) ]} />
                    {/* <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' /> */}
@@ -125,7 +140,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
            
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Email  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"}  validation={[ Validation1()  , ValidationEmail()]} />
+                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"}  validation={[ Validation1()  , ValidationEmail()]} id="emailr" onInputHandler={onInputHandler} />
                     {/* <div className='register-wrapper-input' > */}
                     {/* <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)}  placeholder='Email'/> */}
 
@@ -134,14 +149,14 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
       
                 </div>
              </div>
-          
+
               <div className='registerbtnwrapper'>
                 {/* <button type='submit' className='registerbtn' ></button> */}
                 
                <Button1 type="submit" 
-                className="registerbtn" 
+              className={`registerbtn ${formState.isFormValid ?'register-sucsess':'register-error' }`}
                 onClick={submitRegister} 
-                 disabled={false}
+                 disabled={formState.isFormValid}
                  >Register <FaUserPlus/></Button1>
               </div>
 

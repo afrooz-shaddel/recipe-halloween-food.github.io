@@ -73,11 +73,18 @@
   -ms-border-radius:"0.3rem" ;
   -o-border-radius:"0.3rem" ;
 }
+
+.register-sucsess{
+    background-color:  #2bce56;
+}
+.register-error{
+    background-color: red;
+}
 .registerbtn svg{
     position: absolute;
 line-height:2.5rem ;
-left: 270px;
-top: 273px;
+left: 289px;
+top: 270px;
 font-size: 1.2rem;
 color: #fff;
 }
@@ -158,13 +165,13 @@ color: #fff;
 ,.registerbtnlogin{
     width: 17rem;
     height: 2.5rem;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 0.3rem;
     color: white;
     border: none;
 }
 .registerbtnlogin{
-    background-color: green;
+    /* background-color: green; */
 }
 
 .registerlink{
@@ -177,9 +184,9 @@ color: #fff;
     margin-left: 0.5rem;
 }
 
-.registerbtn{
+/* .registerbtn{
     background-color: red;
-}
+} */
 .register-label{
     display: block;
 }
