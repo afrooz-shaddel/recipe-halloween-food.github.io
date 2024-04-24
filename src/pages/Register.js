@@ -38,45 +38,55 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
       
     }
     
-    const isvalid=()=>{
-      let isproced=true;
-      let errorMassage="please enter the value in  "
-      // let errorRegister="You already used this email to sign up with a social account"
-      if(userName===null  || userName==""){
-         isproced=false
-         errorMassage +=' userName'
-      }
-      if(password===null  || password==""){
-         isproced=false
-         errorMassage +=' password'
-      }else if(password.length<6){
-         isproced=false
-         toast.warning('password length at least 6 character')
-      }
-      if(email===null  || email==""){
-         isproced=false
-         errorMassage +=' email'
-      }else if(!/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(email)){
-         isproced=false
-         toast.warning('please enter valid email')
-      }
+   //  const isvalid=()=>{
+   //    let isproced=true;
+   //    let errorMassage="please enter the value in  "
+      
+   //    if(userName===null  || userName==""){
+   //       isproced=false
+   //       errorMassage +=' userName'
+   //    }
+   //    if(password===null  || password==""){
+   //       isproced=false
+   //       errorMassage +=' password'
+   //    }else if(password.length<6){
+   //       isproced=false
+   //       toast.warning('password length at least 6 character')
+   //    }
+   //    if(email===null  || email==""){
+   //       isproced=false
+   //       errorMassage +=' email'
+   //    }else if(!/^[a-zA-Z0-9]+@(?:[a-zA-Z0-9]+\.)+[A-Za-z]+$/.test(email)){
+   //       isproced=false
+   //       toast.warning('please enter valid email')
+   //    }
      
      
-      return isproced;
-    }
-    let newDataRegister={userName , password, fullName, email , course}
+   //    return isproced;
+   //  }
 
 
+    let [formState, onInputHandler]=useForm({
+      username:{value:"",
+      isValid:false,},
+     password:{
+      value:"",
+      isValid:false, },
+      email:{
+         value:"",
+         isValid:false,
+      }
+      
+    }, false)
     function submitRegister(event){
-     event.preventDefault();
+      event.preventDefault()
 
-
-  if(isvalid()){
- 
+console.log("T")
   
-   let newDataRegister={userName , password, fullName, email , course}
+   let newDataRegister={userName:formState.inputs.username.value ,
+   password: formState.inputs.password.value  , email:formState.inputs.email.value}
 
-
+console.log(formState.inputs.email.value)
  
 
   fetch('http://localhost:3000/user',{
@@ -94,26 +104,14 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
   
   })
 
-  }}
+  }
 
- let [formState, onInputHandler]=useForm({
-   usernamer:{value:"",
-   isValid:false,},
-  passwordr:{
-   value:"",
-   isValid:false, },
-   emailr:{
-      value:"",
-      isValid:false,
-   }
-   
- }, false)
 
- console.log(formState.inputs)
+
 
     return(
         <div className={`registerWrapper ${formState.isFormValid ?'registerWrapper-success' :'registerWrapper-error'}`}>
-          <form action="" className='register-form'>
+          <form action="" className='register-form'  onSubmit={submitRegister}>
              <h2 className='register-title'>Registeration</h2>
              <div className='register-formWrapper'>
            
@@ -121,7 +119,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                    {/* <label htmlFor="" className='register-label'>UserName  <span>*</span> </label> */}
                    <InputComponent  className="register-input"  type="text" element="input" placeholder={"userName"} 
                    
-                     validation={[Validation1() ,ValidationMax(12), ValidationMin(8) ]} id="usernamer" onInputHandler={onInputHandler}
+                     validation={[Validation1() ,ValidationMax(12), ValidationMin(8) ]} id="username" onInputHandler={onInputHandler}
                    />                       
                 
                    {/* <input required className='register-input' value={userName} type="text" onChange={(event)=>setUserName(event.target.value)} placeholder='userName' /> */}
@@ -130,7 +128,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Password  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} id="passwordr" onInputHandler={onInputHandler}
+                   <InputComponent  className="register-input"  type="password" element="input" placeholder={"password"} id="password" onInputHandler={onInputHandler}
                     validation={[
                      Validation1() ,ValidationMax(12), ValidationMin(8) ]} />
                    {/* <input className='register-input' value={password} type="password"  onChange={(event)=>setPassword(event.target.value)} placeholder='password' /> */}
@@ -140,7 +138,7 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
            
                 <div className='register'>
                    {/* <label className='register-label' htmlFor="">Email  <span>*</span> </label> */}
-                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"}  validation={[ Validation1()  , ValidationEmail()]} id="emailr" onInputHandler={onInputHandler} />
+                   <InputComponent  className="register-input"  type="email" element="input" placeholder={"email"}  validation={[ Validation1()  , ValidationEmail()]} id="email" onInputHandler={onInputHandler} />
                     {/* <div className='register-wrapper-input' > */}
                     {/* <input className='register-input' value={email} type="email" onChange={(event)=>setEmail(event.target.value)}  placeholder='Email'/> */}
 
@@ -155,8 +153,8 @@ const {postData , data  , error}=useFetch('http://localhost:3000/user' , 'POST')
                 
                <Button1 type="submit" 
               className={`registerbtn ${formState.isFormValid ?'register-sucsess':'register-error' }`}
-                onClick={submitRegister} 
-                 disabled={formState.isFormValid}
+                
+                 disabled={!formState.isFormValid}
                  >Register <FaUserPlus/></Button1>
               </div>
 
