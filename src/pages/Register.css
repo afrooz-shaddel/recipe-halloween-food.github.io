@@ -19,8 +19,7 @@
     background-position: center;
     color: white;
     color: black;
-/* 
-    border-bottom: 5px solid #ff8243; */
+
     box-shadow: 0 6px 20px rgba(168, 172, 185, 0.3);
     border-radius: 5px;
 
@@ -239,5 +238,12 @@ color: #fff;
     }
     .span-i{
         right: 64px;
+    }
+
+    .registerbtn svg {
+       
+        left: 277px;
+        top: 271px;
+        
     }
   }
